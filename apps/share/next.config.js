@@ -5,7 +5,6 @@ const withTM = require("next-transpile-modules")(["@dotoriham/ui"]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/",
   compiler: { styledComponents: true },
   images: {
     unoptimized: true,

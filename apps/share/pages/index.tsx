@@ -20,7 +20,6 @@ export default function Home() {
         </h1>
 
         <Input />
-        <Button />
 
         <p className={styles.description}>
           Get started by editing{" "}

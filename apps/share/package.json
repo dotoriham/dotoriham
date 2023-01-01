@@ -1,0 +1,29 @@
+{
+  "name": "share",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dotoriham/ui": "workspace:*",
+    "@dotoriham/utilities": "workspace:*",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "babel-loader": "^9.1.0",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "eslint-config-snap": "workspace:*",
+    "eslint-plugin-import": "^2.26.0",
+    "next": "13.0.5",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "4.7.4"
+  }
+}

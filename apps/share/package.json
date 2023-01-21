@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dotoriham/eslint-config": "workspace:*",
     "@dotoriham/ui": "workspace:*",
     "@dotoriham/utilities": "workspace:*",
     "@types/node": "18.11.9",
@@ -17,7 +18,6 @@
     "babel-loader": "^9.1.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
-    "eslint-config-snap": "workspace:*",
     "eslint-plugin-import": "^2.26.0",
     "next": "13.0.5",
     "next-transpile-modules": "^10.0.0",

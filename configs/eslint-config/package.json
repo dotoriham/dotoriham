@@ -1,0 +1,39 @@
+{
+  "name": "@dotoriham/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "files": [
+    "index.js",
+    "nextjs.js",
+    "react.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/eslint-plugin-packlets": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.32.0",
+    "eslint-config-next": "13.1.2",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": ">=4.2.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

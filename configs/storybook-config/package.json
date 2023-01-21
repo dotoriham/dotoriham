@@ -1,0 +1,8 @@
+{
+  "name": "@dotoriham/storybook-config",
+  "version": "0.0.0",
+  "description": "storybook config for dotoriham",
+  "main": "src/index.js",
+  "author": "leedohyeon <ksmfou98@naver.com>",
+  "license": "MIT"
+}

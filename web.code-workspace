@@ -5,8 +5,8 @@
       "path": "."
     },
     {
-      "name": "libs",
-      "path": "libs"
+      "name": "configs",
+      "path": "configs"
     },
     {
       "name": "packages",
@@ -21,7 +21,7 @@
     "files.exclude": {
       // "node_modules/": true,
       "packages/": true,
-      "libs/": true,
+      "configs/": true,
       "apps/": true,
       "**/.yarn/cache/*": true
     },

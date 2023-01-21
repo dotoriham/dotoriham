@@ -1,0 +1,8 @@
+{
+  "name": "@dotoriham/prettier-config",
+  "version": "1.0.0",
+  "description": "prettier config for dotoriham",
+  "main": "index.js",
+  "author": "leedohyeon <ksmfou98@naver.com>",
+  "license": "MIT"
+}

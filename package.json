@@ -9,7 +9,7 @@
     ]
   },
   "scripts": {
-    "share:dev": "yarn workspace share dev"
+    "web:dev": "yarn workspace web dev"
   },
   "packageManager": "yarn@3.3.0",
   "devDependencies": {

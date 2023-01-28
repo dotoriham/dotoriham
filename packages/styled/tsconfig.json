@@ -1,9 +1,9 @@
 {
   "extends": "../../configs/tsconfig/react-library.json",
+  "include": ["src"],
 
   "compilerOptions": {
-    "jsx": "preserve"
+    "keyofStringsOnly": true
   },
-  "include": ["src", "types"],
   "exclude": ["dist", "build", "node_modules"]
 }

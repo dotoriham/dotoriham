@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dotoriham/eslint-config": "workspace:*",
     "@dotoriham/ui": "workspace:*",
     "@dotoriham/utilities": "workspace:*",
     "@types/node": "18.11.9",
@@ -17,6 +16,7 @@
     "@types/react-dom": "18.0.9",
     "babel-loader": "^9.1.0",
     "eslint": "8.28.0",
+    "eslint-config-dotoriham": "workspace:*",
     "eslint-config-next": "13.0.5",
     "eslint-plugin-import": "^2.26.0",
     "next": "13.0.5",

@@ -1,8 +1,9 @@
-import { test } from "@dotoriham/utilities";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { Input } from "@dotoriham/ui";
+import { test } from '@dotoriham/utilities';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import { Input, BaseButton } from '@dotoriham/ui';
+import styled from 'styled-components';
 
 export default function Home() {
   test();
@@ -20,9 +21,10 @@ export default function Home() {
         </h1>
 
         <Input />
+        <BaseButton />
 
         <p className={styles.description}>
-          Get started by editing{" "}
+          Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
@@ -65,7 +67,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
@@ -74,3 +76,7 @@ export default function Home() {
     </div>
   );
 }
+
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.colors.accent};
+`;

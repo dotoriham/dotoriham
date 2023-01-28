@@ -1,7 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 // https://github.com/vercel/next.js/issues/5602
-const withTM = require("next-transpile-modules")(["@dotoriham/ui"]);
+const withTM = require('next-transpile-modules')([
+  '@dotoriham/ui',
+  '@dotoriham/styled',
+]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

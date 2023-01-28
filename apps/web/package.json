@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dotoriham/styled": "workspace:*",
     "@dotoriham/ui": "workspace:*",
     "@dotoriham/utilities": "workspace:*",
     "@types/node": "18.11.9",
@@ -23,7 +24,13 @@
     "next-transpile-modules": "^10.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.6",
     "tsconfig": "workspace:*",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "vite": "^3.1.7"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26"
   }
 }

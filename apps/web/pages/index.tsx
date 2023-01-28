@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { Input, BaseButton } from '@dotoriham/ui';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 
 export default function Home() {
   test();

@@ -2,8 +2,8 @@
 
 // https://github.com/vercel/next.js/issues/5602
 const withTM = require('next-transpile-modules')([
-  '@dotoriham/ui',
   '@dotoriham/styled',
+  '@dotoriham/ui',
 ]);
 
 /** @type {import('next').NextConfig} */
@@ -14,6 +14,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+
   typescript: {
     // ignoreBuildErrors: true,
   },

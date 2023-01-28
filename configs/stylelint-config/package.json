@@ -1,7 +1,7 @@
 {
   "name": "@dotoriham/stylelint-config",
   "version": "0.0.0",
-  "description": "stylint-config-snap for dotoriham",
+  "description": "stylint-config-dotoriham for dotoriham",
   "main": "base.js",
   "files": [
     "base.js",

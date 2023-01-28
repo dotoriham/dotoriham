@@ -1,0 +1,10 @@
+vite.config.js
+package.json
+.history
+.vscode
+scripts
+**/.history
+**/node_modules
+**/dist
+**/out
+**/.next

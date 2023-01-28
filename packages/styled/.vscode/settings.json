@@ -1,0 +1,4 @@
+{
+  "eslint.nodePath": "../../.yarn/sdks",
+  "stylelint.validate": ["css", "typescriptreact"]
+}

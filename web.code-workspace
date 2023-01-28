@@ -51,6 +51,7 @@
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
+    "eslint.validate": ["javascript"],
     "cSpell.words": ["Unfollow"]
   },
   "extensions": {

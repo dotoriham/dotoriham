@@ -7,7 +7,7 @@
     "type-check": "tsc -p tsconfig.json --noEmit",
     "eslint": "eslint -c .eslintrc.js  --ignore-path  ../../.eslintignore --ext .js,.jsx,.ts,.tsx . --cache",
     "eslint:fix": "yarn eslint --fix",
-    "prettier": "prettier --config ../../libs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
+    "prettier": "prettier --config ../../configs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
     "prettier:fix": "yarn prettier --write"
   },
   "dependencies": {

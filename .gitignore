@@ -1,8 +1,27 @@
+# using Zero Install
 .yarn/*
 !.yarn/patches
 !.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
-.pnp.*
 node_modules
+temp_workspace
+WORKSPACE_HASH
+
+# workspace file module
+# @musinsa-snap-shared-ts-file-*
+# api-client-file-*
+
+.eslintcache
+dist
+tsconfig.tsbuildinfo
+build.tar.gz
+
+.history
+
+# jetbrain editor
+.idea/
+static_resource
+.DS_Store
+storybook-static

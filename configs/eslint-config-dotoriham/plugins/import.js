@@ -1,27 +1,27 @@
 module.exports = {
   rules: [
-    "error",
+    'error',
     {
-      groups: [
-        "builtin",
-        "external",
-        "internal",
-        ["parent", "sibling"],
-        "index",
+      'groups': [
+        'builtin',
+        'external',
+        'internal',
+        ['parent', 'sibling'],
+        'index',
       ],
-      pathGroups: [
+      'pathGroups': [
         {
-          pattern: "react",
-          group: "builtin",
-          position: "before",
+          pattern: 'react',
+          group: 'builtin',
+          position: 'before',
         },
       ],
-      pathGroupsExcludedImportTypes: ["react"],
-      alphabetize: {
-        order: "asc",
+      'pathGroupsExcludedImportTypes': ['react'],
+      'alphabetize': {
+        order: 'asc',
         caseInsensitive: false,
       },
-      "newlines-between": "always",
+      'newlines-between': 'always',
     },
   ],
 };

@@ -9148,8 +9148,10 @@ __metadata:
     eslint: ^8.32.0
     eslint-config-next: 13.1.2
     eslint-config-prettier: ^8.6.0
+    eslint-module-utils: ^2.7.4
     eslint-plugin-import: ^2.27.5
     eslint-plugin-react: ^7.32.1
+    eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-sort-keys-fix: ^1.1.2
   peerDependencies:
     eslint: ^8.0.0
@@ -9334,7 +9336,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.5.0":
+"eslint-plugin-react-hooks@npm:^4.5.0, eslint-plugin-react-hooks@npm:^4.6.0":
   version: 4.6.0
   resolution: "eslint-plugin-react-hooks@npm:4.6.0"
   peerDependencies:

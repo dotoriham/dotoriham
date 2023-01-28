@@ -1,3 +1,9 @@
+import styled from 'styled-components';
+
 export const BaseButton = () => {
-  return <div>BaseButton</div>;
+  return <Container>BaseButton</Container>;
 };
+
+const Container = styled.button`
+  color: ${({ theme }) => theme.colors.primary};
+`;

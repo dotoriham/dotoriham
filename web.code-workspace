@@ -19,7 +19,6 @@
   ],
   "settings": {
     "files.exclude": {
-      // "node_modules/": true,
       "packages/": true,
       "configs/": true,
       "apps/": true,
@@ -28,7 +27,6 @@
     "search.exclude": {
       "**/dist": true,
       "**/out": true,
-      "**/_nuxt": true,
       "**/_next": true,
       "**/.history": true,
       "**/.yarn": true,
@@ -41,23 +39,11 @@
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
     "typescript.tsdk": ".yarn/sdks/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
-
-    // "git.confirmSync": false,
-
-    // "files.autoSave": "onWindowChange",
-
-    // "javascript.format.enable": false,
-    // "html.format.enable": false,
     "files.associations": {
       "**/templates/*.tsx": "typescriptreact",
       "**/templates/*.ts": "typescript"
     },
     "editor.formatOnSave": true,
-    // "eslint.codeAction.showDocumentation": {
-    //   "enable": true
-    // },
-    // "eslint.format.enable": false,
-    // "eslint.workingDirectories": ["apps/nextsnap", "apps/vuesnap"],
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
       "source.fixAll.stylelint": true
@@ -66,34 +52,6 @@
     "less.validate": false,
     "scss.validate": false,
     "cSpell.words": ["Unfollow"]
-    // "stylelint.packageManager": "yarn"
-
-    // "diffEditor.ignoreTrimWhitespace": false,
-    // "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-    // "gitlens.advanced.messages": {
-    //   "suppressGitMissingWarning": true
-    // },
-    // "workbench.editorAssociations": {
-    //   "*.ipynb": "jupyter-notebook"
-    // },
-    // "[html]": {
-    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // },
-    // "notebook.cellToolbarLocation": {
-    //   "default": "right",
-    //   "jupyter-notebook": "left"
-    // },
-
-    // "jest.disabledWorkspaceFolders": ["root", "activation", "prerender"],
-    // "json.schemas": [
-    //   {
-    //     "fileMatch": ["cosmos.config.json"],
-    //     "url": "http://json.schemastore.org/cosmos-config"
-    //   }
-    // ],
-
-    // "typescript.preferences.importModuleSpecifier": "project-relative",
   },
   "extensions": {
     "recommendations": [

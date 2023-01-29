@@ -1,0 +1,4 @@
+{
+  "prettier.prettierPath": "../.yarn/sdks/prettier/index.js",
+  "prettier.configPath": "./prettier-config/index.json"
+}

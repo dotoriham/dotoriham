@@ -2,7 +2,6 @@
   "name": "eslint-config-dotoriham",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
   "files": [
     "index.js",
     "nextjs.js",

@@ -1,0 +1,6 @@
+{
+  "prettier.prettierPath": "../.yarn/sdks/prettier/index.js",
+  "prettier.configPath": "../configs/prettier-config/index.json",
+  "eslint.nodePath": "../.yarn/sdks",
+  "stylelint.validate": ["css", "typescriptreact"]
+}

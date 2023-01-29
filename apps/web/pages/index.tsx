@@ -1,12 +1,30 @@
+import { useEffect, useState } from 'react';
+
+import { Input, BaseButton } from '@dotoriham/ui';
 import { test } from '@dotoriham/utilities';
 import Head from 'next/head';
 import Image from 'next/image';
+import styled from 'styled-components';
+
 import styles from '../styles/Home.module.css';
-import { Input, BaseButton } from '@dotoriham/ui';
-import styled, { useTheme } from 'styled-components';
+
 
 export default function Home() {
   test();
+
+  const [play, setPlay] = useState(false);
+
+  useEffect(() => {
+    if (play) {
+
+
+
+
+
+
+      console.log('play');
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -77,6 +95,4 @@ export default function Home() {
   );
 }
 
-const Container = styled.div`
-  background-color: ${({ theme }) => theme.colors.accent};
-`;
+

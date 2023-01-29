@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['dotoriham/react'],
-  root: true,
+	extends: ['dotoriham/react'],
+	root: true,
 };

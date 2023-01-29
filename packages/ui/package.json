@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/runtime": "^7.19.4",
+    "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/styled": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
     "@mdx-js/react": "^1.6.22",

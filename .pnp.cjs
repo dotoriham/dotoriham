@@ -28,10 +28,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:configs/eslint-config-dotoriham"\
       },\
       {\
-        "name": "eslint-config-snap",\
-        "reference": "workspace:configs/eslint-config-snap"\
-      },\
-      {\
         "name": "@dotoriham/prettier-config",\
         "reference": "workspace:configs/prettier-config"\
       },\
@@ -71,7 +67,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@dotoriham/utilities", ["workspace:packages/utilities"]],\
       ["dotoriham", ["workspace:."]],\
       ["eslint-config-dotoriham", ["virtual:b4ca09b726f20ec724683c0f0208bd156c783093003aacf4a687b50412d27027e9ed7dd3c5fa3a41fcbca4c7584289250bb86b7248c79ff27edbd4dfc15c6dc1#workspace:configs/eslint-config-dotoriham", "workspace:configs/eslint-config-dotoriham"]],\
-      ["eslint-config-snap", ["workspace:configs/eslint-config-snap"]],\
       ["landing", ["workspace:apps/landing"]],\
       ["tsconfig", ["workspace:configs/tsconfig"]],\
       ["web", ["workspace:apps/web"]]\
@@ -14233,27 +14228,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "eslint"\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["eslint-config-snap", [\
-        ["workspace:configs/eslint-config-snap", {\
-          "packageLocation": "./configs/eslint-config-snap/",\
-          "packageDependencies": [\
-            ["eslint-config-snap", "workspace:configs/eslint-config-snap"],\
-            ["@rushstack/eslint-patch", "npm:1.2.0"],\
-            ["@rushstack/eslint-plugin-packlets", "virtual:a2b1137efcc764a1f7267e0dc5adb419555f0a8d1b3770b1b3ec22197c85c865a82cbfc67c587f947920f8e99377b67ebd98ad2220305d220c2b6efebb22158f#npm:0.2.2"],\
-            ["@typescript-eslint/eslint-plugin", "virtual:7ef3458044b5bebeceed86c8e93f364b926be5db8520a290e60bc940244a5f4f224131ddb0128d1c90810bf67d2c2dfcb818af5d36c765d099d07ab6487ba60c#npm:5.48.2"],\
-            ["@typescript-eslint/parser", "virtual:7ef3458044b5bebeceed86c8e93f364b926be5db8520a290e60bc940244a5f4f224131ddb0128d1c90810bf67d2c2dfcb818af5d36c765d099d07ab6487ba60c#npm:5.48.2"],\
-            ["eslint", "npm:8.32.0"],\
-            ["eslint-config-next", "virtual:7ef3458044b5bebeceed86c8e93f364b926be5db8520a290e60bc940244a5f4f224131ddb0128d1c90810bf67d2c2dfcb818af5d36c765d099d07ab6487ba60c#npm:13.1.2"],\
-            ["eslint-config-prettier", "virtual:a2b1137efcc764a1f7267e0dc5adb419555f0a8d1b3770b1b3ec22197c85c865a82cbfc67c587f947920f8e99377b67ebd98ad2220305d220c2b6efebb22158f#npm:8.6.0"],\
-            ["eslint-module-utils", "virtual:7ef3458044b5bebeceed86c8e93f364b926be5db8520a290e60bc940244a5f4f224131ddb0128d1c90810bf67d2c2dfcb818af5d36c765d099d07ab6487ba60c#npm:2.7.4"],\
-            ["eslint-plugin-import", "virtual:7ef3458044b5bebeceed86c8e93f364b926be5db8520a290e60bc940244a5f4f224131ddb0128d1c90810bf67d2c2dfcb818af5d36c765d099d07ab6487ba60c#npm:2.27.5"],\
-            ["eslint-plugin-react", "virtual:f907b90cf6cabf6c931c1d7c77ef584b033a1366764ae76c49cc9aeb05678c9d331a6c9d4e968125d081d2a4f2559812b22409059c1c25460f44d0211cb2bad8#npm:7.32.1"],\
-            ["eslint-plugin-react-hooks", "virtual:f907b90cf6cabf6c931c1d7c77ef584b033a1366764ae76c49cc9aeb05678c9d331a6c9d4e968125d081d2a4f2559812b22409059c1c25460f44d0211cb2bad8#npm:4.6.0"],\
-            ["eslint-plugin-sort-keys-fix", "npm:1.1.2"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["eslint-import-resolver-node", [\

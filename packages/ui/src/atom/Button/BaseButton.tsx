@@ -1,16 +1,11 @@
-import React from "react"
+import React from 'react';
 
 import styled from 'styled-components';
 
 export const BaseButton = () => {
-
-
-
-
-
-  return <Container>BaseButton</Container>;
+	return <Container>BaseButton</Container>;
 };
 
 const Container = styled.button`
-  color: ${({ theme }) => theme.colors.primary};
+	color: ${({ theme }) => theme.colors.primary};
 `;

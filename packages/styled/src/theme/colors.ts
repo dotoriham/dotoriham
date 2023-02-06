@@ -1,32 +1,4 @@
-import { makeVariant } from '../theme.utils';
-
-const gray = {
-	'100': '#F9F9F9',
-	'200': '#F3F3F3',
-	'300': '#E5E5E5',
-	'400': '#D1D1D1',
-	'500': '#B3B3B3',
-	'600': '#919191',
-	'700': '#6E6E6E',
-	'800': '#4F4F4F',
-	'900': '#333333',
-} as const;
-
-const blue = {
-	'100': '#BAE0FF',
-	'200': '#8BCEFF',
-	'300': '#53BAFF',
-	'400': '#14AAFF',
-	'50': '#E2F3FF',
-	'500': '#009AFF',
-	'600': '#008BFF',
-	'700': '#0078FF',
-	'800': '#1564EC',
-	'900': '#2242CD',
-} as const;
-
 const palette = {
-	border0: '#eee',
 	error: '#F4364C',
 	gray: '#AAAAAA',
 	grayDark: '#848484',
@@ -34,40 +6,187 @@ const palette = {
 	grayDarkest: '#323232',
 	grayLight: '#D4D2CF',
 	grayLightest: '#F3F2EF',
-	hover0: 'rgba(72, 191, 145, 0.1)',
-	hover1: '#f7fcf9',
-	lightGreen: '#BAE303',
-	link0: '#0BAA78',
 	primary: '#48bf91',
 	primaryDark: '#0baa78',
 	primaryLight: '#f8ffed',
 	purple: '#963CBD',
 	purpleDark: '#4A25AA',
-	shadow0: 'rgba(0, 0, 0, 0.15)',
-	shadow1: 'rgba(0, 174, 199, 0.1)',
-	shadow2: 'rgba(0, 0, 0, 0.1)',
-	shadow3: 'rgba(0, 0, 0, 0.08)',
 	skyBlue: '#00B7EB',
 } as const;
 
-const semantic = {
-	caution: '#FF923A',
-	cautionText: '#FF5300',
-	error: '#FF0000',
+const defaultColors = {
+	// blue
+	blue_0: '#e7f5ff',
+	blue_1: '#d0ebff',
+	blue_2: '#a5d8ff',
+	blue_3: '#74c0fc',
+	blue_4: '#4dabf7',
+	blue_5: '#339af0',
+	blue_6: '#228be6',
+	blue_7: '#1c7ed6',
+	blue_8: '#1971c2',
+	blue_9: '#1864ab',
+
+	// cyan
+	cyan_0: '#e3fafc',
+	cyan_1: '#c5f6fa',
+	cyan_2: '#99e9f2',
+	cyan_3: '#66d9e8',
+	cyan_4: '#3bc9db',
+	cyan_5: '#22b8cf',
+	cyan_6: '#15aabf',
+	cyan_7: '#1098ad',
+	cyan_8: '#0c8599',
+	cyan_9: '#0b7285',
+
+	// dark
+	dark_0: '#C1C2C5',
+	dark_1: '#A6A7AB',
+	dark_2: '#909296',
+	dark_3: '#5c5f66',
+	dark_4: '#373A40',
+	dark_5: '#2C2E33',
+	dark_6: '#25262b',
+	dark_7: '#1A1B1E',
+	dark_8: '#141517',
+	dark_9: '#101113',
+
+	// grape
+	grape_0: '#f8f0fc',
+	grape_1: '#f3d9fa',
+	grape_2: '#eebefa',
+	grape_3: '#e599f7',
+	grape_4: '#da77f2',
+	grape_5: '#cc5de8',
+	grape_6: '#be4bdb',
+	grape_7: '#ae3ec9',
+	grape_8: '#9c36b5',
+	grape_9: '#862e9c',
+
+	// gray
+	gray_0: '#f8f9fa',
+	gray_1: '#f1f3f5',
+	gray_2: '#e9ecef',
+	gray_3: '#dee2e6',
+	gray_4: '#ced4da',
+	gray_5: '#adb5bd',
+	gray_6: '#868e96',
+	gray_7: '#495057',
+	gray_8: '#343a40',
+	gray_9: '#212529',
+
+	// green
+	green_0: '#ebfbee',
+	green_1: '#d3f9d8',
+	green_2: '#b2f2bb',
+	green_3: '#8ce99a',
+	green_4: '#69db7c',
+	green_5: '#51cf66',
+	green_6: '#40c057',
+	green_7: '#37b24d',
+	green_8: '#2f9e44',
+	green_9: '#2b8a3e',
+
+	// indigo
+	indigo_0: '#edf2ff',
+	indigo_1: '#dbe4ff',
+	indigo_2: '#bac8ff',
+	indigo_3: '#91a7ff',
+	indigo_4: '#748ffc',
+	indigo_5: '#5c7cfa',
+	indigo_6: '#4c6ef5',
+	indigo_7: '#4263eb',
+	indigo_8: '#3b5bdb',
+	indigo_9: '#364fc7',
+
+	// lime
+	lime_0: '#f4fce3',
+	lime_1: '#e9fac8',
+	lime_2: '#d8f5a2',
+	lime_3: '#c0eb75',
+	lime_4: '#a9e34b',
+	lime_5: '#94d82d',
+	lime_6: '#82c91e',
+	lime_7: '#74b816',
+	lime_8: '#66a80f',
+	lime_9: '#5c940d',
+
+	// orange
+	orange_0: '#fff4e6',
+	orange_1: '#ffe8cc',
+	orange_2: '#ffd8a8',
+	orange_3: '#ffc078',
+	orange_4: '#ffa94d',
+	orange_5: '#ff922b',
+	orange_6: '#fd7e14',
+	orange_7: '#f76707',
+	orange_8: '#e8590c',
+	orange_9: '#d9480f',
+
+	// pink
+	pink_0: '#fff0f6',
+	pink_1: '#ffdeeb',
+	pink_2: '#fcc2d7',
+	pink_3: '#faa2c1',
+	pink_4: '#f783ac',
+	pink_5: '#f06595',
+	pink_6: '#e64980',
+	pink_7: '#d6336c',
+	pink_8: '#c2255c',
+	pink_9: '#a61e4d',
+
+	// red
+	red_0: '#fff5f5',
+	red_1: '#ffe3e3',
+	red_2: '#ffc9c9',
+	red_3: '#ffa8a8',
+	red_4: '#ff8787',
+	red_5: '#ff6b6b',
+	red_6: '#fa5252',
+	red_7: '#f03e3e',
+	red_8: '#e03131',
+	red_9: '#c92a2a',
+
+	// teal
+	teal_0: '#e6fcf5',
+	teal_1: '#c3fae8',
+	teal_2: '#96f2d7',
+	teal_3: '#63e6be',
+	teal_4: '#38d9a9',
+	teal_5: '#20c997',
+	teal_6: '#12b886',
+	teal_7: '#0ca678',
+	teal_8: '#099268',
+	teal_9: '#087f5b',
+
+	// violet
+	violet_0: '#f3f0ff',
+	violet_1: '#e5dbff',
+	violet_2: '#d0bfff',
+	violet_3: '#b197fc',
+	violet_4: '#9775fa',
+	violet_5: '#845ef7',
+	violet_6: '#7950f2',
+	violet_7: '#7048e8',
+	violet_8: '#6741d9',
+	violet_9: '#5f3dc4',
+
+	// yellow
+	yellow_0: '#fff9db',
+	yellow_1: '#fff3bf',
+	yellow_2: '#ffec99',
+	yellow_3: '#ffe066',
+	yellow_4: '#ffd43b',
+	yellow_5: '#fcc419',
+	yellow_6: '#fab005',
+	yellow_7: '#f59f00',
+	yellow_8: '#f08c00',
+	yellow_9: '#e67700',
 } as const;
 
-const colorVariants = {
-	...makeVariant('gray', gray),
-	...makeVariant('blue', blue),
-};
-const processedColors = {
-	accent: colorVariants['blue_700'],
-	black: '#000000',
-	negative: semantic['error'],
-	white: '#ffffff',
+const mergedColors = {
 	...palette,
-	...semantic,
-	...colorVariants,
+	...defaultColors,
 } as const;
 
-export const colors = processedColors;
+export const colors = mergedColors;

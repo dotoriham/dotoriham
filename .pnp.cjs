@@ -48,6 +48,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/bucket"\
       },\
       {\
+        "name": "@dotoriham/hooks",\
+        "reference": "workspace:packages/hooks"\
+      },\
+      {\
         "name": "@dotoriham/package-template",\
         "reference": "workspace:packages/package-template"\
       },\
@@ -68,6 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@dotoriham/bucket", ["workspace:packages/bucket"]],\
+      ["@dotoriham/hooks", ["workspace:packages/hooks"]],\
       ["@dotoriham/package-template", ["workspace:packages/package-template"]],\
       ["@dotoriham/prettier-config", ["workspace:configs/prettier-config"]],\
       ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
@@ -4561,6 +4566,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-dotoriham", "virtual:b4ca09b726f20ec724683c0f0208bd156c783093003aacf4a687b50412d27027e9ed7dd3c5fa3a41fcbca4c7584289250bb86b7248c79ff27edbd4dfc15c6dc1#workspace:configs/eslint-config-dotoriham"],\
             ["prettier", "npm:2.8.3"],\
+            ["tsconfig", "workspace:configs/tsconfig"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@dotoriham/hooks", [\
+        ["workspace:packages/hooks", {\
+          "packageLocation": "./packages/hooks/",\
+          "packageDependencies": [\
+            ["@dotoriham/hooks", "workspace:packages/hooks"],\
+            ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+            ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["@types/react", "npm:18.0.27"],\
+            ["eslint", "npm:8.32.0"],\
+            ["eslint-config-dotoriham", "virtual:b4ca09b726f20ec724683c0f0208bd156c783093003aacf4a687b50412d27027e9ed7dd3c5fa3a41fcbca4c7584289250bb86b7248c79ff27edbd4dfc15c6dc1#workspace:configs/eslint-config-dotoriham"],\
+            ["prettier", "npm:2.8.3"],\
+            ["react", "npm:18.2.0"],\
             ["tsconfig", "workspace:configs/tsconfig"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\

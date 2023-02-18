@@ -2026,6 +2026,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dotoriham/hooks@workspace:packages/hooks":
+  version: 0.0.0-use.local
+  resolution: "@dotoriham/hooks@workspace:packages/hooks"
+  dependencies:
+    "@dotoriham/prettier-config": "workspace:*"
+    "@dotoriham/stylelint-config": "workspace:*"
+    "@types/react": ^18
+    eslint: 8.32.0
+    eslint-config-dotoriham: "workspace:*"
+    prettier: ^2.8.3
+    react: 18.2.0
+    tsconfig: "workspace:*"
+    typescript: ^4.9.4
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@dotoriham/package-template@workspace:packages/package-template":
   version: 0.0.0-use.local
   resolution: "@dotoriham/package-template@workspace:packages/package-template"

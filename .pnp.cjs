@@ -44,6 +44,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:configs/tsconfig"\
       },\
       {\
+        "name": "@dotoriham/bucket",\
+        "reference": "workspace:packages/bucket"\
+      },\
+      {\
+        "name": "@dotoriham/package-template",\
+        "reference": "workspace:packages/package-template"\
+      },\
+      {\
         "name": "@dotoriham/styled",\
         "reference": "workspace:packages/styled"\
       },\
@@ -59,6 +67,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@dotoriham/bucket", ["workspace:packages/bucket"]],\
+      ["@dotoriham/package-template", ["workspace:packages/package-template"]],\
       ["@dotoriham/prettier-config", ["workspace:configs/prettier-config"]],\
       ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
       ["@dotoriham/styled", ["workspace:packages/styled"]],\
@@ -4539,6 +4549,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@discoveryjs/json-ext", "npm:0.5.7"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@dotoriham/bucket", [\
+        ["workspace:packages/bucket", {\
+          "packageLocation": "./packages/bucket/",\
+          "packageDependencies": [\
+            ["@dotoriham/bucket", "workspace:packages/bucket"],\
+            ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+            ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["eslint", "npm:8.32.0"],\
+            ["eslint-config-dotoriham", "virtual:b4ca09b726f20ec724683c0f0208bd156c783093003aacf4a687b50412d27027e9ed7dd3c5fa3a41fcbca4c7584289250bb86b7248c79ff27edbd4dfc15c6dc1#workspace:configs/eslint-config-dotoriham"],\
+            ["prettier", "npm:2.8.3"],\
+            ["tsconfig", "workspace:configs/tsconfig"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@dotoriham/package-template", [\
+        ["workspace:packages/package-template", {\
+          "packageLocation": "./packages/package-template/",\
+          "packageDependencies": [\
+            ["@dotoriham/package-template", "workspace:packages/package-template"],\
+            ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+            ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["eslint", "npm:8.32.0"],\
+            ["eslint-config-dotoriham", "virtual:b4ca09b726f20ec724683c0f0208bd156c783093003aacf4a687b50412d27027e9ed7dd3c5fa3a41fcbca4c7584289250bb86b7248c79ff27edbd4dfc15c6dc1#workspace:configs/eslint-config-dotoriham"],\
+            ["prettier", "npm:2.8.3"],\
+            ["tsconfig", "workspace:configs/tsconfig"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@dotoriham/prettier-config", [\

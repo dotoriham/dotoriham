@@ -1,0 +1,28 @@
+{
+	"name": "@dotoriham/styles",
+	"version": "0.0.0",
+	"main": "./src/index.ts",
+	"license": "MIT",
+	"scripts": {
+		"type-check": "tsc -p tsconfig.json --noEmit",
+		"eslint": "eslint -c .eslintrc.js  --ignore-path  ../../.eslintignore --ext .js,.jsx,.ts,.tsx . --cache",
+		"eslint:fix": "yarn eslint --fix",
+		"prettier": "prettier --config ../../configs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
+		"prettier:fix": "yarn prettier --write"
+	},
+	"dependencies": {
+		"eslint-config-dotoriham": "workspace:*"
+	},
+	"devDependencies": {
+		"@dotoriham/prettier-config": "workspace:*",
+		"@dotoriham/stylelint-config": "workspace:*",
+		"eslint": "8.32.0",
+		"prettier": "^2.8.3",
+		"tsconfig": "workspace:*",
+		"typescript": "^4.9.4"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+		"react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+	}
+}

@@ -8,14 +8,9 @@
 		"build-storybook": "build-storybook"
 	},
 	"dependencies": {
-		"eslint-plugin-import": "^2.26.0",
-		"lodash.startcase": "^4.4.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-is": "^18.2.0",
-		"react-lazy-load-image-component": "^1.5.5",
-		"react-swipeable-views": "^0.14.0",
-		"react-swipeable-views-utils": "^0.14.0",
 		"styled-components": "^5.3.6"
 	},
 	"devDependencies": {
@@ -43,19 +38,11 @@
 		"@storybook/react": "^6.5.15",
 		"@storybook/testing-library": "^0.0.13",
 		"@stylelint/postcss-css-in-js": "^0.38.0",
-		"@types/chai": "^4",
-		"@types/enzyme": "^3",
-		"@types/lodash.startcase": "^4",
 		"@types/node": "^18.11.18",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
-		"@types/react-lazy-load-image-component": "^1",
-		"@types/react-swipeable-views": "^0",
-		"@types/react-swipeable-views-utils": "^0",
 		"@types/styled-components": "^5",
 		"babel-loader": "^8.2.5",
-		"chai": "^4.3.6",
-		"enzyme": "^3.11.0",
 		"eslint": "8.32.0",
 		"eslint-config-dotoriham": "workspace:*",
 		"eslint-plugin-storybook": "^0.6.10",
@@ -64,18 +51,13 @@
 		"stylelint-config-prettier": "^9.0.4",
 		"tsconfig": "workspace:*",
 		"typescript": "^4.9.4",
-		"vite": "^3.1.7"
+		"vite": "^4.1.1"
 	},
 	"peerDependencies": {
 		"@stylelint/postcss-css-in-js": "*",
 		"postcss": ">=7",
 		"postcss-syntax": "*",
 		"react": "*",
-		"react-lazy-load-image-component": "^1.5.5",
-		"react-loading-skeleton": "^3.1.0",
-		"react-swipeable-views": "^0.14.0",
-		"react-swipeable-views-utils": "^0.14.0",
-		"styled-components": "^5.3.6",
-		"swiper": "^8.4.5"
+		"styled-components": "^5.3.6"
 	}
 }

@@ -14,9 +14,6 @@
 		"prettier:fix": "yarn prettier --write"
 	},
 	"dependencies": {
-		"@dotoriham/styled": "workspace:*",
-		"@dotoriham/ui": "workspace:*",
-		"@dotoriham/utilities": "workspace:*",
 		"@types/react-dom": "18.0.9",
 		"next": "13.0.5",
 		"next-transpile-modules": "^10.0.0",

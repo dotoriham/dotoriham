@@ -1,5 +1,5 @@
 {
-	"name": "@dotoriham/package-template",
+	"name": "@dotoriham/pagination",
 	"version": "0.0.0",
 	"main": "./src/index.ts",
 	"license": "MIT",

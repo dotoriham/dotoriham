@@ -10,7 +10,7 @@
 	},
 	"scripts": {
 		"web:dev": "yarn workspace web dev",
-		"storybook": "yarn workspace @dotoriham/storybook storybook"
+		"storybook": "yarn workspace @dotoriham/ui storybook"
 	},
 	"packageManager": "yarn@3.3.0",
 	"devDependencies": {

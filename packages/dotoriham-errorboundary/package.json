@@ -1,5 +1,5 @@
 {
-	"name": "@dotoriham/form",
+	"name": "@dotoriham/error-boundary",
 	"version": "0.0.0",
 	"main": "./src/index.ts",
 	"license": "MIT",
@@ -11,16 +11,11 @@
 		"prettier:fix": "yarn prettier --write"
 	},
 	"dependencies": {
-		"eslint-config-dotoriham": "workspace:*",
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"eslint-config-dotoriham": "workspace:*"
 	},
 	"devDependencies": {
 		"@dotoriham/prettier-config": "workspace:*",
 		"@dotoriham/stylelint-config": "workspace:*",
-		"@types/node": "^18.11.18",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
 		"eslint": "8.32.0",
 		"prettier": "^2.8.3",
 		"tsconfig": "workspace:*",

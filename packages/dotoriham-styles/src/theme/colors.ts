@@ -1,6 +1,6 @@
 import { makeColorVariant } from '../utils';
 
-const palette = {
+export const palette = {
 	dark: {
 		'100': '#C1C2C5',
 		'200': '#A6A7AB',
@@ -38,10 +38,10 @@ const palette = {
 	},
 } as const;
 
-const semantic = {
+export const semantic = {
 	error: '#F4364C',
 	primary: '#48BF91',
-	primaryDark: '#00AEC7',
+	primaryDark: '#0baa78',
 };
 
 const colorVariants = {

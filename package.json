@@ -10,18 +10,38 @@
 	},
 	"scripts": {
 		"web:dev": "yarn workspace web dev",
-		"storybook": "yarn workspace @dotoriham/ui storybook"
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"packageManager": "yarn@3.3.0",
 	"devDependencies": {
 		"@babel/core": "^7.20.5",
+		"@babel/preset-env": "^7.21.4",
+		"@babel/preset-react": "^7.18.6",
+		"@babel/preset-typescript": "^7.21.4",
 		"@dotoriham/prettier-config": "workspace:*",
+		"@storybook/addon-essentials": "^7.0.5",
+		"@storybook/addon-interactions": "^7.0.5",
+		"@storybook/addon-links": "^7.0.5",
+		"@storybook/blocks": "^7.0.5",
+		"@storybook/builder-vite": "^7.0.5",
+		"@storybook/react": "^7.0.5",
+		"@storybook/react-webpack5": "^7.0.5",
+		"@storybook/testing-library": "^0.0.14-next.2",
+		"@types/babel__preset-env": "^7",
+		"@types/prop-types": "^15",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
 		"eslint": "^8.28.0",
 		"eslint-plugin-import": "^2.26.0",
 		"prettier": "^2.8.0",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"storybook": "^7.0.5",
 		"typescript": "4.7.4"
 	},
 	"dependencies": {
-		"@storybook/react": "^6.5.15"
+		"vite": "^4.2.1"
 	}
 }

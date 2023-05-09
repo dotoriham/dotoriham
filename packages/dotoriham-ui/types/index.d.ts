@@ -1,5 +1,3 @@
+import '@dotoriham/styles';
+
 export {};
-
-import '@dotoriham/styled/types/index.d';
-
-declare global {}

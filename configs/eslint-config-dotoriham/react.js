@@ -14,7 +14,7 @@ module.exports = {
 	'react/no-unknown-property': ['error', { ignore: ['css'] }],
 	'rules': {
 		...base.rules,
-		'react/react-in-jsx-scope': 0,
+		'react/react-in-jsx-scope': 'off',
 		'react/prop-types': 0,
 		'react/display-name': 0,
 	},

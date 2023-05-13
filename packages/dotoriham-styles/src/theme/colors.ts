@@ -36,24 +36,30 @@ export const palette = {
 		'800': '#37b24d',
 		'900': '#2f9e44',
 	},
-} as const;
 
-export const semantic = {
-	error: '#F4364C',
-	primary: '#48BF91',
-	primaryDark: '#0baa78',
-};
+	red: {
+		'100': '#fff5f5',
+		'200': '#ffe3e3',
+		'300': '#ffc9c9',
+		'400': '#ffa8a8',
+		'500': '#ff8787',
+		'600': '#ff6b6b',
+		'700': '#fa5252',
+		'800': '#f03e3e',
+		'900': '#e03131',
+	},
+} as const;
 
 const colorVariants = {
 	...makeColorVariant('dark', palette.dark),
 	...makeColorVariant('gray', palette.gray),
 	...makeColorVariant('green', palette.green),
+	...makeColorVariant('red', palette.red),
 } as const;
 
 const colors = {
 	...colorVariants,
-	...semantic,
-};
+} as const;
 
 export type DotorihamColors = typeof colors;
 

@@ -1,6 +1,6 @@
 {
 	"extends": "../../configs/tsconfig/react-library.json",
-	"include": ["src"],
+	"include": ["src", "types"],
 
 	"compilerOptions": {
 		"keyofStringsOnly": true,

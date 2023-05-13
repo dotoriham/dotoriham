@@ -1,9 +1,9 @@
 {
-  "extends": "../../configs/tsconfig/react-library.json",
+	"extends": "../../configs/tsconfig/react-library.json",
 
-  "compilerOptions": {
-    "jsx": "preserve"
-  },
-  "include": ["src", "types"],
-  "exclude": ["dist", "build", "node_modules"]
+	"compilerOptions": {
+		"jsx": "preserve"
+	},
+	"include": ["src", "types"],
+	"exclude": ["dist", "build", "node_modules"]
 }

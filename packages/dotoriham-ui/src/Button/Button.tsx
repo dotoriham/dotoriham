@@ -7,7 +7,6 @@ import {
 	DotorihamNumberSize,
 	DotorihamColors,
 } from '@dotoriham/styles';
-import { css } from '@emotion/react';
 import { createStyles } from './Button.styles';
 
 type ButtonVariant = 'filled' | 'outlined' | 'text' | 'light';
@@ -66,14 +65,32 @@ export interface ButtonProps extends DefaultProps {
 	 * @default 300
 	 */
 	debounceTime?: number;
+	/**
+	 * click
+	 */
+	onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
-const _Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-	const { styles } = createStyles(props);
+const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(
+	(props, ref) => {
+		const {
+			styles,
+			leftIcon,
+			rightIcon,
+			debounce,
+			debounceTime,
+			onClick,
+			...others
+		} = createStyles(props);
 
-	return <div css={styles}>Button</div>;
-});
+		return (
+			<button ref={ref} css={styles} {...others}>
+				Button
+			</button>
+		);
+	},
+);
 
 export const Button = createPolymorphicComponent<'button', ButtonProps>(
-	_Button,
+	ButtonComponent,
 );

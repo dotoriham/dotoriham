@@ -3,7 +3,7 @@ import { StyleSystemProps } from '../types';
 
 export function extractSystemStyles<T extends Record<string, any>>(
 	others: StyleSystemProps & T,
-): { systemStyles: StyleSystemProps; rest: T } {
+): { systemStylesProps: StyleSystemProps; rest: T } {
 	const {
 		m,
 		mx,
@@ -21,53 +21,25 @@ export function extractSystemStyles<T extends Record<string, any>>(
 		pr,
 		bg,
 		c,
-		opacity,
-		ff,
-		fz,
-		fw,
-		lts,
-		ta,
-		lh,
-		fs,
-		tt,
-		td,
 		w,
 		miw,
 		maw,
 		h,
 		mih,
 		mah,
-		bgsz,
-		bgp,
-		bgr,
-		bga,
 		pos,
 		top,
 		left,
 		bottom,
 		right,
-		inset,
-		display,
 		...rest
 	} = others;
-	const systemStyles = filterProps({
+	const systemStylesProps = filterProps({
 		bg,
-		bga,
-		bgp,
-		bgr,
-		bgsz,
 		bottom,
 		c,
-		display,
-		ff,
-		fs,
-		fw,
-		fz,
 		h,
-		inset,
 		left,
-		lh,
-		lts,
 		m,
 		mah,
 		maw,
@@ -79,7 +51,6 @@ export function extractSystemStyles<T extends Record<string, any>>(
 		mt,
 		mx,
 		my,
-		opacity,
 		p,
 		pb,
 		pl,
@@ -89,12 +60,9 @@ export function extractSystemStyles<T extends Record<string, any>>(
 		px,
 		py,
 		right,
-		ta,
-		td,
 		top,
-		tt,
 		w,
 	});
 
-	return { rest: rest as unknown as T, systemStyles };
+	return { rest: rest as unknown as T, systemStylesProps };
 }

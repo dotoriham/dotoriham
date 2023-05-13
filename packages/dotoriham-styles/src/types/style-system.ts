@@ -28,7 +28,6 @@ export interface StyleSystemProps {
 
 	bg?: SystemProp<DotorihamColors>;
 	c?: SystemProp<DotorihamColors>;
-	opacity?: SystemProp<CSSProperties['opacity']>;
 
 	w?: SystemProp<CSSProperties['width']>;
 	miw?: SystemProp<CSSProperties['minWidth']>;
@@ -42,7 +41,4 @@ export interface StyleSystemProps {
 	left?: SystemProp<CSSProperties['left']>;
 	bottom?: SystemProp<CSSProperties['bottom']>;
 	right?: SystemProp<CSSProperties['right']>;
-	inset?: SystemProp<CSSProperties['inset']>;
-
-	display?: SystemProp<CSSProperties['display']>;
 }

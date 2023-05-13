@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { forwardRef, ReactNode } from 'react';
 
 import { createPolymorphicComponent } from '@dotoriham/core';
 import {
@@ -7,6 +7,8 @@ import {
 	DotorihamNumberSize,
 	DotorihamColors,
 } from '@dotoriham/styles';
+import { css } from '@emotion/react';
+import { createStyles } from './Button.styles';
 
 type ButtonVariant = 'filled' | 'outlined' | 'text' | 'light';
 
@@ -66,9 +68,11 @@ export interface ButtonProps extends DefaultProps {
 	debounceTime?: number;
 }
 
-const _Button = ({ ...rest }: ButtonProps) => {
-	return <div>Button</div>;
-};
+const _Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+	const { styles } = createStyles(props);
+
+	return <div css={styles}>Button</div>;
+});
 
 export const Button = createPolymorphicComponent<'button', ButtonProps>(
 	_Button,

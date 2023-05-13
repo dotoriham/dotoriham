@@ -13,6 +13,10 @@ const config: StorybookConfig = {
 			directory: '../packages/dotoriham-form',
 			titlePrefix: 'Form',
 		},
+		{
+			directory: '../packages/dotoriham-ui',
+			titlePrefix: 'UI',
+		},
 	],
 	addons: [
 		path.dirname(

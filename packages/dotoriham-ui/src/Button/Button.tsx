@@ -9,7 +9,7 @@ import {
 } from '@dotoriham/styles';
 import { createStyles } from './Button.styles';
 
-type ButtonVariant = 'filled' | 'outlined' | 'text' | 'light';
+export type ButtonVariant = 'filled' | 'outlined' | 'text' | 'light';
 
 export interface ButtonProps extends DefaultProps {
 	/**

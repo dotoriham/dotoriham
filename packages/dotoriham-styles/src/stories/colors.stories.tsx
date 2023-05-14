@@ -1,11 +1,11 @@
-import { palette } from '../theme/colors';
+import { colors } from '../theme/colors';
 
 export default {
 	title: 'Colors',
 };
 
 const Template = () => {
-	const paletteArray = Object.entries(palette);
+	const paletteArray = Object.entries(colors);
 
 	return (
 		<div

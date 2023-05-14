@@ -1,4 +1,6 @@
+import { css } from '@emotion/react';
 import { Meta, StoryObj } from '@storybook/react';
+import { useDotorihamTheme } from '@dotoriham/styles';
 
 import { Button } from './Button';
 
@@ -11,31 +13,97 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
+const wrapper = css`
+	display: flex;
+	gap: 8px;
+	margin-bottom: 10px;
+`;
+
 /**
  * 기본
  */
-export const Base: Story = {
-	args: {},
-};
+export const Base: Story = {};
 /**
  * 버튼 사이즈
  */
 export const Size: Story = {
-	args: {},
+	render: () => (
+		<div css={wrapper}>
+			<Button size="xs">Extra Small</Button>
+			<Button size="sm">Small</Button>
+			<Button size="md">Medium</Button>
+			<Button size="lg">Large</Button>
+			<Button size="xl">Extra Large</Button>
+		</div>
+	),
 };
 
 /**
  * 버튼 종류 (기본, 아웃라인, 텍스트)
  */
 export const Variant: Story = {
-	args: {},
+	render: () => {
+		const {
+			theme: { colors },
+		} = useDotorihamTheme();
+
+		console.log({ colors });
+
+		return (
+			<>
+				<div css={wrapper}>
+					<Button color="dark">Dark</Button>
+					<Button color="dark">Dark</Button>
+					<Button color="dark">Dark</Button>
+					<Button color="dark">Dark</Button>
+					<Button color="dark">Dark</Button>
+				</div>
+				<div css={wrapper}>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+				</div>
+				<div css={wrapper}>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+				</div>
+				<div css={wrapper}>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+				</div>
+				<div css={wrapper}>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+					<Button color="gray">Gray</Button>
+				</div>
+			</>
+		);
+	},
 };
 
 /**
  * 버튼 색상
  */
 export const Color: Story = {
-	args: {},
+	render: () => (
+		<div css={wrapper}>
+			<Button color="dark">Dark</Button>
+			<Button color="gray">Gray</Button>
+			<Button color="green">Green</Button>
+			<Button color="red">Red</Button>
+			<Button color="lime">Green</Button>
+		</div>
+	),
 };
 
 /**

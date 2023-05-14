@@ -7148,6 +7148,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dotoriham/styles", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-styles"],\
             ["@emotion/babel-preset-css-prop", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:11.11.0"],\
             ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@storybook/react", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["eslint", "npm:8.32.0"],\
@@ -12115,6 +12116,48 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/react", "npm:7.0.5"]\
           ],\
           "linkType": "SOFT"\
+        }],\
+        ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/@storybook-react-virtual-9022246af4/0/cache/@storybook-react-npm-7.0.5-2ffa3c418e-4c7f486dbf.zip/node_modules/@storybook/react/",\
+          "packageDependencies": [\
+            ["@storybook/react", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5"],\
+            ["@storybook/client-logger", "npm:7.0.5"],\
+            ["@storybook/core-client", "npm:7.0.5"],\
+            ["@storybook/docs-tools", "npm:7.0.5"],\
+            ["@storybook/global", "npm:5.0.0"],\
+            ["@storybook/preview-api", "npm:7.0.5"],\
+            ["@storybook/react-dom-shim", "virtual:7cc488191c972e84cf232955e97241da22b4a8299f469f07aec7ac7fdea0b84c7c270bb57a5af801f2bb53067609192ed3cc6ae699620a18f38ad7c32bc13208#npm:7.0.5"],\
+            ["@storybook/types", "npm:7.0.5"],\
+            ["@types/escodegen", "npm:0.0.6"],\
+            ["@types/estree", "npm:0.0.51"],\
+            ["@types/node", "npm:16.18.23"],\
+            ["@types/react", "npm:18.0.27"],\
+            ["@types/react-dom", "npm:18.0.10"],\
+            ["@types/typescript", null],\
+            ["acorn", "npm:7.4.1"],\
+            ["acorn-jsx", "virtual:7b8d46d30742181871b6c7469342d249db179e001b20a62b24ba6208f8110500dddbdabef2a3fb836a8e496656babe2f484b4400e904f8bfcd6255e6efade2ae#npm:5.3.2"],\
+            ["acorn-walk", "npm:7.2.0"],\
+            ["escodegen", "npm:2.0.0"],\
+            ["html-tags", "npm:3.2.0"],\
+            ["lodash", "npm:4.17.21"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
+            ["react-element-to-jsx-string", "virtual:7b8d46d30742181871b6c7469342d249db179e001b20a62b24ba6208f8110500dddbdabef2a3fb836a8e496656babe2f484b4400e904f8bfcd6255e6efade2ae#npm:15.0.0"],\
+            ["ts-dedent", "npm:2.2.0"],\
+            ["type-fest", "npm:2.19.0"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"],\
+            ["util-deprecate", "npm:1.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "@types/typescript",\
+            "react-dom",\
+            "react",\
+            "typescript"\
+          ],\
+          "linkType": "HARD"\
         }],\
         ["virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:7.0.5", {\
           "packageLocation": "./.yarn/__virtual__/@storybook-react-virtual-7b8d46d307/0/cache/@storybook-react-npm-7.0.5-2ffa3c418e-4c7f486dbf.zip/node_modules/@storybook/react/",\

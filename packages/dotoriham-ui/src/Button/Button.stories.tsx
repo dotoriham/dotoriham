@@ -1,51 +1,81 @@
+import { Meta, StoryObj } from '@storybook/react';
+
 import { Button } from './Button';
 
-export default {
-	component: Button,
+const meta: Meta<typeof Button> = {
 	title: 'Button',
+	component: Button,
 };
 
-const Template = () => (
-	<Button as="a" href="www.naver.com" mt={10} px={10} h={70} />
-);
+export default meta;
+
+type Story = StoryObj<typeof Button>;
 
 /**
  * 기본
  */
-export const Base = Template.bind({});
+export const Base: Story = {
+	args: {},
+};
 /**
  * 버튼 사이즈
  */
-export const Size = Template.bind({});
+export const Size: Story = {
+	args: {},
+};
+
 /**
  * 버튼 종류 (기본, 아웃라인, 텍스트)
  */
-export const Variant = Template.bind({});
+export const Variant: Story = {
+	args: {},
+};
+
 /**
  * 버튼 색상
  */
-export const Color = Template.bind({});
+export const Color: Story = {
+	args: {},
+};
+
 /**
  * 버튼 로딩
  */
-export const Loading = Template.bind({});
+export const Loading: Story = {
+	args: {},
+};
+
 /**
  * 버튼 디바운스
  */
-export const Debounce = Template.bind({});
+export const Debounce: Story = {
+	args: {},
+};
+
 /**
  * 버튼 비활성화
  */
-export const Disabled = Template.bind({});
+export const Disabled: Story = {
+	args: {},
+};
+
 /**
  * 버튼 컴팩트
  */
-export const Campact = Template.bind({});
+export const Campact: Story = {
+	args: {},
+};
+
 /**
  * 버튼 Full Width
  */
-export const FullWidth = Template.bind({});
+export const FullWidth: Story = {
+	args: {},
+};
+
 /**
  * 버튼 아이콘
  */
-export const Icon = Template.bind({});
+export const Icon: Story = {
+	args: {},
+};

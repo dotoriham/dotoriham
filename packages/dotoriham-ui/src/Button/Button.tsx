@@ -80,13 +80,16 @@ const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(
 			debounce,
 			debounceTime,
 			onClick,
+			as,
 			...others
 		} = createStyles(props);
 
+		const ButtonElement = as || 'button';
+
 		return (
-			<button ref={ref} css={styles} {...others}>
+			<ButtonElement ref={ref} css={styles} {...others}>
 				Button
-			</button>
+			</ButtonElement>
 		);
 	},
 );

@@ -3,17 +3,24 @@ import { createContext, ReactNode, useContext } from 'react';
 import { ThemeProvider } from '@emotion/react';
 
 import { Theme, theme } from './theme';
+import { GlobalStyles, NormalizeCSS } from '../components';
 
 export interface DotorihamThemeProviderProps {
 	children: ReactNode;
+	withNormalize?: boolean;
+	withGlobalStyle?: boolean;
 }
 
 export const DotorihamThemeProvider = ({
 	children,
+	withGlobalStyle,
+	withNormalize,
 }: DotorihamThemeProviderProps) => {
 	return (
 		<ThemeProvider theme={theme}>
 			<DotorihamThemeContext.Provider value={{ theme }}>
+				{withNormalize && <NormalizeCSS />}
+				{withGlobalStyle && <GlobalStyles />}
 				{children}
 			</DotorihamThemeContext.Provider>
 		</ThemeProvider>

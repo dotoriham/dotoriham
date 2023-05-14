@@ -1,3 +1,3 @@
-export type DotorihamSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | (string & {});
+export type DotorihamSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type DotorihamNumberSize = DotorihamSize | number | (string & {});
 export type DotorihamSizes = Record<DotorihamSize, string>;

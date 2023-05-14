@@ -15,6 +15,7 @@ module.exports = {
 	rules: {
 		'prefer-template': 1,
 		'import/order': require('./plugins/import').rules,
+		'@typescript-eslint/no-explicit-any': 'off',
 		'import/no-anonymous-default-export': [
 			1,
 			{

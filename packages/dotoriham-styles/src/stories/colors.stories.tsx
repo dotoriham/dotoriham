@@ -1,12 +1,11 @@
-import { palette, semantic } from '../theme/colors';
+import { colors } from '../theme/colors';
 
 export default {
 	title: 'Colors',
 };
 
 const Template = () => {
-	const paletteArray = Object.entries(palette);
-	const semanticArray = Object.entries(semantic);
+	const paletteArray = Object.entries(colors);
 
 	return (
 		<div
@@ -29,18 +28,6 @@ const Template = () => {
 							{color}_{num}
 						</div>
 					))}
-				</div>
-			))}
-
-			{semanticArray.map(([color, value]) => (
-				<div
-					style={{
-						backgroundColor: value,
-						color: 'white',
-						height: '30px',
-						width: '100px',
-					}}>
-					{color}
 				</div>
 			))}
 		</div>

@@ -4,10 +4,11 @@ import { createPolymorphicComponent } from '@dotoriham/core';
 import {
 	DefaultProps,
 	DotorihamSize,
-	DotorihamNumberSize,
 	DotorihamColors,
 } from '@dotoriham/styles';
 import { createStyles } from './Button.styles';
+import { Loading } from '../Loading';
+import { css } from '@emotion/react';
 
 export type ButtonVariant = 'filled' | 'outlined' | 'text' | 'light';
 
@@ -38,7 +39,7 @@ export interface ButtonProps extends DefaultProps {
 	 * 버튼 둥글기
 	 * @default 'sm'
 	 */
-	radius?: DotorihamNumberSize;
+	radius?: DotorihamSize;
 	/**
 	 * 버튼 종류
 	 * @default 'filled'
@@ -57,18 +58,10 @@ export interface ButtonProps extends DefaultProps {
 	 */
 	compact?: boolean;
 	/**
-	 * 디바운스
-	 */
-	debounce?: boolean;
-	/**
-	 * 디바운스 시간
-	 * @default 300
-	 */
-	debounceTime?: number;
-	/**
 	 * click
 	 */
 	onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+	children: ReactNode;
 }
 
 const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -77,9 +70,9 @@ const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(
 			styles,
 			leftIcon,
 			rightIcon,
-			debounce,
-			debounceTime,
 			onClick,
+			loading,
+			children,
 			as,
 			...others
 		} = createStyles(props);
@@ -87,8 +80,18 @@ const ButtonComponent = forwardRef<HTMLButtonElement, ButtonProps>(
 		const ButtonElement = as || 'button';
 
 		return (
-			<ButtonElement ref={ref} css={styles} {...others}>
-				Button
+			<ButtonElement ref={ref} css={styles} onClick={onClick} {...others}>
+				{children}
+				{loading && (
+					<Loading
+						css={css`
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						`}
+					/>
+				)}
 			</ButtonElement>
 		);
 	},

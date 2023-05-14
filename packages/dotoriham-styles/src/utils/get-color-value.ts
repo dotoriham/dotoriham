@@ -6,18 +6,18 @@ export type ThemeColor = keyof DotorihamColors;
 export type ThemeWithCustomColor = LiteralUnion<keyof DotorihamColors>;
 
 export const themeColorGuard = (
-	color: string | undefined,
-	colors: Record<string, string>,
+  color: string | undefined,
+  colors: Record<string, string>,
 ) => {
-	if (!color) {
-		return 'currentColor';
-	}
-	if (color in colors) {
-		return colors[color];
-	}
-	return color;
+  if (!color) {
+    return 'currentColor';
+  }
+  if (color in colors) {
+    return colors[color];
+  }
+  return color;
 };
 
 export function getColorValue(color: ThemeWithCustomColor, theme: Theme) {
-	return themeColorGuard(color, theme.colors);
+  return themeColorGuard(color, theme.colors);
 }

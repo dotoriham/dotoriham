@@ -12,7 +12,11 @@
 		"web:dev": "yarn workspace web dev",
 		"storybook": "storybook dev -p 6006",
 		"type-check": "yarn workspaces foreach -pi run type-check",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"eslint": "yarn workspaces foreach -pi run eslint",
+		"eslint:fix": "yarn workspaces foreach -pi run eslint:fix --cache",
+		"prettier": "yarn workspaces foreach -pi run prettier",
+		"prettier:fix": "yarn workspaces foreach -pi run prettier:fix --cache"
 	},
 	"packageManager": "yarn@3.3.0",
 	"devDependencies": {

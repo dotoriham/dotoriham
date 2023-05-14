@@ -1,8 +1,8 @@
 import { Box } from './Box';
 
 export default {
-	component: Box,
-	title: 'Box',
+  component: Box,
+  title: 'Box',
 };
 
 const Template = () => <Box />;

@@ -1,4 +1,4 @@
 module.exports = {
-	extends: ['dotoriham'],
-	root: true,
+  extends: ['dotoriham'],
+  root: true,
 };

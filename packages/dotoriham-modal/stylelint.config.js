@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@dotoriham/stylelint-config/styled"],
+  extends: ['@dotoriham/stylelint-config/styled'],
 };

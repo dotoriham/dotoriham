@@ -1,7 +1,7 @@
 import { DefaultProps } from '@dotoriham/styles';
 
 // TODO 추상화 해야함
-interface LoadingProps extends DefaultProps {}
+export interface LoadingProps extends DefaultProps {}
 
 export const Loading = ({ ...rest }: LoadingProps) => {
 	return (

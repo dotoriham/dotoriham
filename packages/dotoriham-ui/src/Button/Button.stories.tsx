@@ -5,7 +5,9 @@ export default {
 	title: 'Button',
 };
 
-const Template = () => <Button as="a" href="www.naver.com" mt={10} px={10} />;
+const Template = () => (
+	<Button as="a" href="www.naver.com" mt={10} px={10} h={70} />
+);
 
 /**
  * 기본

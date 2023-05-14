@@ -29,11 +29,8 @@ export const createStyles = (props: ButtonProps) => {
 		...others
 	} = props;
 
-	const { rest, systemStylesProps } = extractSystemStyles(others);
 	const { theme } = useDotorihamTheme();
-	const systemStyles = css`
-		${getSystemStyles(systemStylesProps)}
-	`;
+	const { rest, systemStyles } = extractSystemStyles(others);
 
 	const styles = [systemStyles, buttonStyle(theme)];
 

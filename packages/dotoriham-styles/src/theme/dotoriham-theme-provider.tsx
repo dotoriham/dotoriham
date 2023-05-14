@@ -31,7 +31,9 @@ const DotorihamThemeContext = createContext<ThemeContextProps>({
 export function useDotorihamTheme() {
 	const value = useContext(DotorihamThemeContext);
 	if (!value) {
-		throw new Error('useTheme must be used within a ThemeProvider');
+		throw new Error(
+			'useDotorihamTheme 은 DotorihamThemeProvider 내부에서 사용해야 합니다.',
+		);
 	}
 	return value;
 }

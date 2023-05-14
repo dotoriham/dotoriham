@@ -1,9 +1,16 @@
+import { css } from '@emotion/react';
+
 import { filterProps } from './filter-props';
+import { getSystemStyles } from './get-system-styles';
 import { StyleSystemProps } from '../types';
 
 export function extractSystemStyles<T extends Record<string, any>>(
 	others: StyleSystemProps & T,
-): { systemStylesProps: StyleSystemProps; rest: T } {
+): {
+	systemStylesProps: StyleSystemProps;
+	rest: T;
+	systemStyles: ReturnType<typeof css>;
+} {
 	const {
 		m,
 		mx,
@@ -64,5 +71,9 @@ export function extractSystemStyles<T extends Record<string, any>>(
 		w,
 	});
 
-	return { rest: rest as unknown as T, systemStylesProps };
+	const systemStyles = css`
+		${getSystemStyles(systemStylesProps)}
+	`;
+
+	return { rest: rest as unknown as T, systemStyles, systemStylesProps };
 }

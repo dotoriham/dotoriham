@@ -2331,11 +2331,17 @@ __metadata:
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
+    "@storybook/react": ^7.0.5
+    "@types/react": ^18
+    "@types/react-dom": ^18
     eslint: 8.32.0
     eslint-config-dotoriham: "workspace:*"
     prettier: ^2.8.3
     tsconfig: "workspace:*"
     typescript: 5.0.4
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
   languageName: unknown
   linkType: soft
 

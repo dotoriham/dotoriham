@@ -3,7 +3,6 @@
   "include": ["src"],
 
   "compilerOptions": {
-    "keyofStringsOnly": true
   },
   "exclude": ["dist", "build", "node_modules"]
 }

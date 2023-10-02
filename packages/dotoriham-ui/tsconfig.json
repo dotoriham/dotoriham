@@ -1,10 +1,9 @@
 {
-	"extends": "../../configs/tsconfig/react-library.json",
-	"include": ["src", "types"],
+  "extends": "../../configs/tsconfig/react-library.json",
+  "include": ["src", "types"],
 
-	"compilerOptions": {
-		"keyofStringsOnly": true,
-		"jsxImportSource": "@emotion/react"
-	},
-	"exclude": ["dist", "build", "node_modules"]
+  "compilerOptions": {
+    "jsxImportSource": "@emotion/react"
+  },
+  "exclude": ["dist", "build", "node_modules"]
 }

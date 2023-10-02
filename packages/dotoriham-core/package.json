@@ -11,15 +11,19 @@
     "prettier:fix": "yarn prettier --write"
   },
   "devDependencies": {
-    "eslint-config-dotoriham": "workspace:*",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.17.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-jest": "^29.4.3",
     "eslint": "8.32.0",
+    "eslint-config-dotoriham": "workspace:*",
+    "jest": "^29.4.3",
     "prettier": "^2.8.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "5.0.4"
   },

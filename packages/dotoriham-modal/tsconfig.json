@@ -3,6 +3,7 @@
   "include": ["src"],
 
   "compilerOptions": {
+    "jsxImportSource": "@emotion/react"
   },
   "exclude": ["dist", "build", "node_modules"]
 }

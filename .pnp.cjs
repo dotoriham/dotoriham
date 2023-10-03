@@ -132,7 +132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@dotoriham/bottomsheet", ["workspace:packages/dotoriham-bottomsheet"]],\
-      ["@dotoriham/core", ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-core", "workspace:packages/dotoriham-core"]],\
+      ["@dotoriham/core", ["virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-core", "workspace:packages/dotoriham-core"]],\
       ["@dotoriham/dragdrop", ["workspace:packages/dotoriham-dragdrop"]],\
       ["@dotoriham/dropdown", ["workspace:packages/dotoriham-dropdown"]],\
       ["@dotoriham/error-boundary", ["workspace:packages/dotoriham-errorboundary"]],\
@@ -149,7 +149,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@dotoriham/store", ["workspace:packages/dotoriham-store"]],\
       ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
       ["@dotoriham/stylelint-config", ["workspace:configs/stylelint-config"]],\
-      ["@dotoriham/styles", ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-styles", "workspace:packages/dotoriham-styles"]],\
+      ["@dotoriham/styles", ["virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-styles", "workspace:packages/dotoriham-styles"]],\
       ["@dotoriham/swiper", ["workspace:packages/dotoriham-swiper"]],\
       ["@dotoriham/toast", ["workspace:packages/dotoriham-toast"]],\
       ["@dotoriham/tooltip", ["workspace:packages/dotoriham-tooltip"]],\
@@ -5140,10 +5140,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dotoriham/core", [\
-        ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-core", {\
-          "packageLocation": "./.yarn/__virtual__/@dotoriham-core-virtual-6dce6abea4/1/packages/dotoriham-core/",\
+        ["virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-core", {\
+          "packageLocation": "./.yarn/__virtual__/@dotoriham-core-virtual-0e58d30caf/1/packages/dotoriham-core/",\
           "packageDependencies": [\
-            ["@dotoriham/core", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-core"],\
+            ["@dotoriham/core", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-core"],\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
             ["@types/jest", "npm:29.5.5"],\
@@ -5313,14 +5313,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/dotoriham-modal/",\
           "packageDependencies": [\
             ["@dotoriham/modal", "workspace:packages/dotoriham-modal"],\
+            ["@dotoriham/core", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-core"],\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["@dotoriham/styles", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-styles"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
             ["@storybook/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:7.0.5"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-dotoriham", "virtual:b4f8f3807872c3a78afaa36601a3c7e6ee901a54e380252155259886a66772564beb564011868a19ee1c4fa5a1676f2a1cca4e2ee8c6e93d433b738183c3b169#workspace:configs/eslint-config-dotoriham"],\
             ["prettier", "npm:2.8.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
             ["tsconfig", "workspace:configs/tsconfig"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
@@ -5443,14 +5448,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@dotoriham/styles", [\
-        ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-styles", {\
-          "packageLocation": "./.yarn/__virtual__/@dotoriham-styles-virtual-148def4202/1/packages/dotoriham-styles/",\
+        ["virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-styles", {\
+          "packageLocation": "./.yarn/__virtual__/@dotoriham-styles-virtual-304ab3527f/1/packages/dotoriham-styles/",\
           "packageDependencies": [\
-            ["@dotoriham/styles", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-styles"],\
+            ["@dotoriham/styles", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-styles"],\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-            ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
-            ["@emotion/styled", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
+            ["@emotion/styled", "virtual:304ab3527f7da96eca09dabc083d074cc9af7f8476d7da9ed6f66fbc7f7f372328f1a9ff5696c6a19f6adcc3a1f2512a3a0d42650dc14c556d78fa4c5f00736e#npm:11.10.6"],\
             ["@types/emotion__react", null],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
@@ -5478,8 +5483,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dotoriham/styles", "workspace:packages/dotoriham-styles"],\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-            ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
-            ["@emotion/styled", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
+            ["@emotion/styled", "virtual:304ab3527f7da96eca09dabc083d074cc9af7f8476d7da9ed6f66fbc7f7f372328f1a9ff5696c6a19f6adcc3a1f2512a3a0d42650dc14c556d78fa4c5f00736e#npm:11.10.6"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["eslint", "npm:8.32.0"],\
@@ -5546,13 +5551,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/dotoriham-ui/",\
           "packageDependencies": [\
             ["@dotoriham/ui", "workspace:packages/dotoriham-ui"],\
-            ["@dotoriham/core", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-core"],\
+            ["@dotoriham/core", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-core"],\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-            ["@dotoriham/styles", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#workspace:packages/dotoriham-styles"],\
+            ["@dotoriham/styles", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#workspace:packages/dotoriham-styles"],\
             ["@emotion/babel-preset-css-prop", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:11.11.0"],\
-            ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
-            ["@storybook/react", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
+            ["@storybook/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:7.0.5"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["eslint", "npm:8.32.0"],\
@@ -5748,10 +5753,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6", {\
-          "packageLocation": "./.yarn/__virtual__/@emotion-react-virtual-0f7161f632/0/cache/@emotion-react-npm-11.10.6-655b70ad8d-4762042e39.zip/node_modules/@emotion/react/",\
+        ["virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6", {\
+          "packageLocation": "./.yarn/__virtual__/@emotion-react-virtual-e89e4b7801/0/cache/@emotion-react-npm-11.10.6-655b70ad8d-4762042e39.zip/node_modules/@emotion/react/",\
           "packageDependencies": [\
-            ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
             ["@babel/runtime", "npm:7.21.0"],\
             ["@emotion/babel-plugin", "npm:11.10.6"],\
             ["@emotion/cache", "npm:11.10.7"],\
@@ -5813,14 +5818,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6", {\
-          "packageLocation": "./.yarn/__virtual__/@emotion-styled-virtual-2058b11d63/0/cache/@emotion-styled-npm-11.10.6-b860023bfd-ed0ee4bec3.zip/node_modules/@emotion/styled/",\
+        ["virtual:304ab3527f7da96eca09dabc083d074cc9af7f8476d7da9ed6f66fbc7f7f372328f1a9ff5696c6a19f6adcc3a1f2512a3a0d42650dc14c556d78fa4c5f00736e#npm:11.10.6", {\
+          "packageLocation": "./.yarn/__virtual__/@emotion-styled-virtual-b452bbea79/0/cache/@emotion-styled-npm-11.10.6-b860023bfd-ed0ee4bec3.zip/node_modules/@emotion/styled/",\
           "packageDependencies": [\
-            ["@emotion/styled", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@emotion/styled", "virtual:304ab3527f7da96eca09dabc083d074cc9af7f8476d7da9ed6f66fbc7f7f372328f1a9ff5696c6a19f6adcc3a1f2512a3a0d42650dc14c556d78fa4c5f00736e#npm:11.10.6"],\
             ["@babel/runtime", "npm:7.21.0"],\
             ["@emotion/babel-plugin", "npm:11.10.6"],\
             ["@emotion/is-prop-valid", "npm:1.2.0"],\
-            ["@emotion/react", "virtual:7558099ea322d126f24f739374f17a6204a0eba49b6d07039990f444d21baf512713036d8155a936c89c15b45b61d1750fd2f514fbffdb56d36ea702a219f697#npm:11.10.6"],\
+            ["@emotion/react", "virtual:220644f0434b98e1c67bd15c5ca97fda65cdbf8e5b4a627633456ef69b37e07fdcd3f93445e4de403e072881e13922f91171ecbd899b7ed367bef6f94bf6cad2#npm:11.10.6"],\
             ["@emotion/serialize", "npm:1.1.1"],\
             ["@emotion/use-insertion-effect-with-fallbacks", "virtual:b947b9ebe66e75ae6089ab7360a0d318baf6dc6cbd0265451ed5bb46c28a52440aa763661d7c18185a0903c86a11c556ed7dfa6beee4cd091d470c1c7f9f3f41#npm:1.0.0"],\
             ["@emotion/utils", "npm:1.2.0"],\
@@ -8619,48 +8624,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["html-tags", "npm:3.2.0"],\
             ["lodash", "npm:4.17.21"],\
             ["prop-types", "npm:15.8.1"],\
-            ["react", null],\
-            ["react-dom", null],\
-            ["react-element-to-jsx-string", "virtual:9618a397a16ef8db3dbdefb69610dd19e5c6956caa9c018c8f523654910c6116f442030efe2490ae40eea3eff114c0b501882c1e118e128dc2870a0b32c4f829#npm:15.0.0"],\
-            ["ts-dedent", "npm:2.2.0"],\
-            ["type-fest", "npm:2.19.0"],\
-            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"],\
-            ["util-deprecate", "npm:1.0.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react",\
-            "@types/typescript",\
-            "react-dom",\
-            "react",\
-            "typescript"\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5", {\
-          "packageLocation": "./.yarn/__virtual__/@storybook-react-virtual-9022246af4/0/cache/@storybook-react-npm-7.0.5-2ffa3c418e-4c7f486dbf.zip/node_modules/@storybook/react/",\
-          "packageDependencies": [\
-            ["@storybook/react", "virtual:56af6b570a64ebba9c0b1e1bef488a131e82d214b20e79c59d10ae44907a259a4f75cf836917eea286eae138ac97c72fa1b3891f6ab8817f4530964dff52db3a#npm:7.0.5"],\
-            ["@storybook/client-logger", "npm:7.0.5"],\
-            ["@storybook/core-client", "npm:7.0.5"],\
-            ["@storybook/docs-tools", "npm:7.0.5"],\
-            ["@storybook/global", "npm:5.0.0"],\
-            ["@storybook/preview-api", "npm:7.0.5"],\
-            ["@storybook/react-dom-shim", "virtual:9022246af4e2a342acb7b4b69933790a20197d37185d96b3629bd3a5f2092f0eca51dca3e09e79030f99b0ed13e1216a14b3a2142bf98703cde4e5e80eefdaa7#npm:7.0.5"],\
-            ["@storybook/types", "npm:7.0.5"],\
-            ["@types/escodegen", "npm:0.0.6"],\
-            ["@types/estree", "npm:0.0.51"],\
-            ["@types/node", "npm:16.18.23"],\
-            ["@types/react", "npm:18.0.27"],\
-            ["@types/react-dom", "npm:18.0.10"],\
-            ["@types/typescript", null],\
-            ["acorn", "npm:7.4.1"],\
-            ["acorn-jsx", "virtual:7f43c2006ccc84e97176aaed36ffa6c1e24e1f8f80141c645d25745d429e9beaedc8975e6515344c8a71f7830f6169c8ccfe62c2c9505164f2d5698563b0480d#npm:5.3.2"],\
-            ["acorn-walk", "npm:7.2.0"],\
-            ["escodegen", "npm:2.0.0"],\
-            ["html-tags", "npm:3.2.0"],\
-            ["lodash", "npm:4.17.21"],\
-            ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
             ["react-element-to-jsx-string", "virtual:7f43c2006ccc84e97176aaed36ffa6c1e24e1f8f80141c645d25745d429e9beaedc8975e6515344c8a71f7830f6169c8ccfe62c2c9505164f2d5698563b0480d#npm:15.0.0"],\
@@ -8787,31 +8750,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:9022246af4e2a342acb7b4b69933790a20197d37185d96b3629bd3a5f2092f0eca51dca3e09e79030f99b0ed13e1216a14b3a2142bf98703cde4e5e80eefdaa7#npm:7.0.5", {\
-          "packageLocation": "./.yarn/__virtual__/@storybook-react-dom-shim-virtual-72c824e64a/0/cache/@storybook-react-dom-shim-npm-7.0.5-d3090b3d7c-2f11637f10.zip/node_modules/@storybook/react-dom-shim/",\
-          "packageDependencies": [\
-            ["@storybook/react-dom-shim", "virtual:9022246af4e2a342acb7b4b69933790a20197d37185d96b3629bd3a5f2092f0eca51dca3e09e79030f99b0ed13e1216a14b3a2142bf98703cde4e5e80eefdaa7#npm:7.0.5"],\
-            ["@types/react", "npm:18.0.27"],\
-            ["@types/react-dom", "npm:18.0.10"],\
-            ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react",\
-            "react-dom",\
-            "react"\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["virtual:9618a397a16ef8db3dbdefb69610dd19e5c6956caa9c018c8f523654910c6116f442030efe2490ae40eea3eff114c0b501882c1e118e128dc2870a0b32c4f829#npm:7.0.5", {\
           "packageLocation": "./.yarn/__virtual__/@storybook-react-dom-shim-virtual-f7f2dff047/0/cache/@storybook-react-dom-shim-npm-7.0.5-d3090b3d7c-2f11637f10.zip/node_modules/@storybook/react-dom-shim/",\
           "packageDependencies": [\
             ["@storybook/react-dom-shim", "virtual:9618a397a16ef8db3dbdefb69610dd19e5c6956caa9c018c8f523654910c6116f442030efe2490ae40eea3eff114c0b501882c1e118e128dc2870a0b32c4f829#npm:7.0.5"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
-            ["react", null],\
-            ["react-dom", null]\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"]\
           ],\
           "packagePeers": [\
             "@types/react-dom",\
@@ -21096,26 +21042,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-plain-object", "npm:5.0.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
-            ["react-is", "npm:18.1.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react",\
-            "react-dom",\
-            "react"\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["virtual:9618a397a16ef8db3dbdefb69610dd19e5c6956caa9c018c8f523654910c6116f442030efe2490ae40eea3eff114c0b501882c1e118e128dc2870a0b32c4f829#npm:15.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-element-to-jsx-string-virtual-75d4a1571f/0/cache/react-element-to-jsx-string-npm-15.0.0-54fc35db27-c3907cc4c1.zip/node_modules/react-element-to-jsx-string/",\
-          "packageDependencies": [\
-            ["react-element-to-jsx-string", "virtual:9618a397a16ef8db3dbdefb69610dd19e5c6956caa9c018c8f523654910c6116f442030efe2490ae40eea3eff114c0b501882c1e118e128dc2870a0b32c4f829#npm:15.0.0"],\
-            ["@base2/pretty-print-object", "npm:1.0.1"],\
-            ["@types/react", "npm:18.0.27"],\
-            ["@types/react-dom", "npm:18.0.10"],\
-            ["is-plain-object", "npm:5.0.0"],\
-            ["react", null],\
-            ["react-dom", null],\
             ["react-is", "npm:18.1.0"]\
           ],\
           "packagePeers": [\

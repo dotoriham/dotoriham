@@ -12,10 +12,6 @@ const _Box = ({ ...rest }: BoxProps) => {
   );
 };
 
-const Wrapper = css`
-  background-color: red;
-  width: 100px;
-  height: 200px;
-`;
+const Wrapper = css``;
 
 export const Box = createPolymorphicComponent<'button', BoxProps>(_Box);

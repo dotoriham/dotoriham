@@ -17,10 +17,6 @@ const config: StorybookConfig = {
       directory: '../packages/dotoriham-ui',
       titlePrefix: 'UI',
     },
-    {
-      directory: '../packages/dotoriham-modal',
-      titlePrefix: 'Modal',
-    },
   ],
   addons: [
     path.dirname(

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 import { css } from '@emotion/react';
+import { Overlay } from '../Overlay/Overlay';
 
 interface ModalProps {
   open: boolean;
@@ -17,35 +18,29 @@ export const Modal = ({ open, onClose, children }: ModalProps) => {
     <>
       <div css={wrapper}>
         <div css={inner}>{children}</div>
+        <Overlay visible={open} onClick={onClose} />
       </div>
-      <div css={backdrop} onClick={onClose}></div>
     </>
   );
 };
 
 const wrapper = css`
   position: fixed;
-  z-index: 1999; // TODO theme zIndex
-  inset: 0;
+  z-index: 9999;
+  display: grid;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  inset: 0px;
+  place-items: center;
+  opacity: 1;
+  transition: all 0s ease 0s;
 `;
 
 const inner = css`
-  width: 500px;
   position: relative;
-  top: 100px;
-  margin: 0 auto;
+  z-index: 600;
+  max-width: 310px;
+  margin: auto;
+  padding: 24px 16px 16px;
   background-color: white;
-`;
-
-const backdrop = css`
-  position: absolute;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 `;

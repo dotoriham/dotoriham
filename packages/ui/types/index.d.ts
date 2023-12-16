@@ -1,0 +1,3 @@
+import '@dotoriham/store';
+
+export {};

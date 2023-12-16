@@ -37,6 +37,7 @@ export function createStore<State>(initialState: State) {
 
   return {
     getState,
+    initialState,
     reset,
     setState,
     subscribe,

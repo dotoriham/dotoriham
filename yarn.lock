@@ -2325,31 +2325,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/modal@workspace:packages/dotoriham-modal":
-  version: 0.0.0-use.local
-  resolution: "@dotoriham/modal@workspace:packages/dotoriham-modal"
-  dependencies:
-    "@dotoriham/core": "workspace:*"
-    "@dotoriham/prettier-config": "workspace:*"
-    "@dotoriham/stylelint-config": "workspace:*"
-    "@dotoriham/styles": "workspace:*"
-    "@emotion/react": ^11.10.6
-    "@storybook/react": ^7.0.5
-    "@types/react": ^18
-    "@types/react-dom": ^18
-    eslint: 8.32.0
-    eslint-config-dotoriham: "workspace:*"
-    prettier: ^2.8.3
-    react: ^18
-    react-dom: ^18
-    tsconfig: "workspace:*"
-    typescript: 5.0.4
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
 "@dotoriham/package-template@workspace:packages/package-template":
   version: 0.0.0-use.local
   resolution: "@dotoriham/package-template@workspace:packages/package-template"
@@ -2536,6 +2511,27 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dotoriham/use-overlay@workspace:*, @dotoriham/use-overlay@workspace:packages/use-overlay":
+  version: 0.0.0-use.local
+  resolution: "@dotoriham/use-overlay@workspace:packages/use-overlay"
+  dependencies:
+    "@dotoriham/prettier-config": "workspace:*"
+    "@dotoriham/stylelint-config": "workspace:*"
+    "@types/react": ^18
+    "@types/react-dom": ^18
+    eslint: 8.32.0
+    eslint-config-dotoriham: "workspace:*"
+    prettier: ^2.8.3
+    react: 18.2.0
+    react-dom: 18.2.0
+    tsconfig: "workspace:*"
+    typescript: 5.0.4
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
   languageName: unknown
   linkType: soft
 
@@ -9820,6 +9816,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-next-app-router@workspace:apps/example-next-app-router"
   dependencies:
+    "@dotoriham/use-overlay": "workspace:*"
     "@types/node": latest
     "@types/react": latest
     "@types/react-dom": latest
@@ -15097,7 +15094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0, react-dom@npm:^18, react-dom@npm:^18.2.0, react-dom@npm:latest":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0, react-dom@npm:latest":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -15167,7 +15164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18, react@npm:^18.2.0, react@npm:latest":
+"react@npm:18.2.0, react@npm:^18.2.0, react@npm:latest":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:

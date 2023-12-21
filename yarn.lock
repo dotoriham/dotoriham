@@ -2578,9 +2578,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/virtualscroll@workspace:packages/dotoriham-virtualscroll":
+"@dotoriham/virtualscroll@workspace:packages/virtual-scroll":
   version: 0.0.0-use.local
-  resolution: "@dotoriham/virtualscroll@workspace:packages/dotoriham-virtualscroll"
+  resolution: "@dotoriham/virtualscroll@workspace:packages/virtual-scroll"
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
@@ -8703,9 +8703,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotoriham.com@workspace:apps/dotoriham.com":
+"dotoriham-web@workspace:apps/dotoriham-web":
   version: 0.0.0-use.local
-  resolution: "dotoriham.com@workspace:apps/dotoriham.com"
+  resolution: "dotoriham-web@workspace:apps/dotoriham-web"
   dependencies:
     "@types/node": ^20
     "@types/react": ^18

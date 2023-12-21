@@ -1,3 +1,4 @@
+import { VirtualScroll } from '@dotoriham/virtual-scroll';
 const mockList = Array.from({ length: 10000 }).map((_, index) => index);
 
 function Page() {
@@ -9,11 +10,12 @@ function Page() {
         padding: '0 20px',
         border: '1px solid black',
       }}>
-      <ul>
+      {/* <ul>
         {mockList.map((item) => {
           return <Item key={item} />;
         })}
-      </ul>
+      </ul> */}
+      <VirtualScroll list={mockList} columns={2} />
     </div>
   );
 }

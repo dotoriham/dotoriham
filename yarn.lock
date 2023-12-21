@@ -2578,17 +2578,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/virtualscroll@workspace:packages/virtual-scroll":
+"@dotoriham/virtual-scroll@workspace:*, @dotoriham/virtual-scroll@workspace:packages/virtual-scroll":
   version: 0.0.0-use.local
-  resolution: "@dotoriham/virtualscroll@workspace:packages/virtual-scroll"
+  resolution: "@dotoriham/virtual-scroll@workspace:packages/virtual-scroll"
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
+    "@types/react": ^18
+    "@types/react-dom": ^18
     eslint: 8.32.0
     eslint-config-dotoriham: "workspace:*"
     prettier: ^2.8.3
+    react: 18.2.0
+    react-dom: 18.2.0
     tsconfig: "workspace:*"
     typescript: 5.0.4
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
   languageName: unknown
   linkType: soft
 
@@ -10070,6 +10077,7 @@ __metadata:
   resolution: "example-next-app-router@workspace:apps/example-next-app-router"
   dependencies:
     "@dotoriham/use-overlay": "workspace:*"
+    "@dotoriham/virtual-scroll": "workspace:*"
     "@types/node": latest
     "@types/react": latest
     "@types/react-dom": latest

@@ -1,5 +1,5 @@
 {
-  "name": "@dotoriham/package-template",
+  "name": "@dotoriham/query",
   "version": "0.0.0",
   "main": "./src/index.ts",
   "license": "MIT",
@@ -13,10 +13,18 @@
   "devDependencies": {
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "8.32.0",
     "eslint-config-dotoriham": "workspace:*",
     "prettier": "^2.8.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
   }
 }

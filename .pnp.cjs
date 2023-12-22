@@ -124,6 +124,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/package-template"\
       },\
       {\
+        "name": "@dotoriham/query",\
+        "reference": "workspace:packages/query"\
+      },\
+      {\
         "name": "@dotoriham/ui",\
         "reference": "workspace:packages/ui"\
       },\
@@ -154,6 +158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@dotoriham/picker", ["workspace:packages/dotoriham-picker"]],\
       ["@dotoriham/pinchzoom", ["workspace:packages/dotoriham-pinchzoom"]],\
       ["@dotoriham/prettier-config", ["workspace:configs/prettier-config"]],\
+      ["@dotoriham/query", ["workspace:packages/query"]],\
       ["@dotoriham/store", ["virtual:8fe5c377c196b15e47b40d98b51c8fccd1ae425434ea54f2502700954b16647c8f1aff75b65b3beabf455bd1671fb4bbb0d23de24b83e652aeaeb7deb7e33031#workspace:packages/dotoriham-store", "workspace:packages/dotoriham-store"]],\
       ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
       ["@dotoriham/stylelint-config", ["workspace:configs/stylelint-config"]],\
@@ -5412,6 +5417,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./configs/prettier-config/",\
           "packageDependencies": [\
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@dotoriham/query", [\
+        ["workspace:packages/query", {\
+          "packageLocation": "./packages/query/",\
+          "packageDependencies": [\
+            ["@dotoriham/query", "workspace:packages/query"],\
+            ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+            ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["@types/react", "npm:18.0.27"],\
+            ["@types/react-dom", "npm:18.0.10"],\
+            ["eslint", "npm:8.32.0"],\
+            ["eslint-config-dotoriham", "virtual:430b561ed30d96ab31557f71b07dec1d33ebe03078114bd0b595398d1059eac4fa13dd55ceedbe04f12568e534bb799e45a871f04aac381c6f11753e862b2f82#workspace:configs/eslint-config-dotoriham"],\
+            ["prettier", "npm:2.8.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
+            ["tsconfig", "workspace:configs/tsconfig"],\
+            ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
           ],\
           "linkType": "SOFT"\
         }]\

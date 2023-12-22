@@ -38,6 +38,7 @@ export default function Home() {
       <Button onClick={() => router.push('/virtual-scroll')}>
         virtual-scroll
       </Button>
+      <Button onClick={() => router.push('/query')}>query</Button>
     </main>
   );
 }

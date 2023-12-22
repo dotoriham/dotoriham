@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dotoriham/query": "workspace:*",
     "@dotoriham/use-overlay": "workspace:*",
     "@dotoriham/virtual-scroll": "workspace:*",
     "next": "latest",

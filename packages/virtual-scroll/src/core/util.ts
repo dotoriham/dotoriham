@@ -1,11 +1,17 @@
-export function chunk<T>(arr: T[], size: number): (T & { _index: number })[][] {
-  const chunkedArr: (T & { _index: number })[][] = [];
-  for (let i = 0; i < arr.length; i += size) {
-    const chunkedItem = arr.slice(i, i + size).map((item) => ({
+type ChunkResult<T> = (T & { _index: number })[][];
+
+export function chunk<T>(arr: T[], size: number): ChunkResult<T> {
+  const chunkedArr: ChunkResult<T> = [];
+  let index = 0;
+
+  while (index < arr.length) {
+    const chunkedItem = arr.slice(index, index + size).map((item, i) => ({
       ...item,
-      _index: i,
+      _index: index + i,
     }));
     chunkedArr.push(chunkedItem);
+    index += size;
   }
+
   return chunkedArr;
 }

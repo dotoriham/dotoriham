@@ -2413,7 +2413,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/query@workspace:packages/query":
+"@dotoriham/query@workspace:*, @dotoriham/query@workspace:packages/query":
   version: 0.0.0-use.local
   resolution: "@dotoriham/query@workspace:packages/query"
   dependencies:
@@ -10160,6 +10160,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-next-app-router@workspace:apps/example-next-app-router"
   dependencies:
+    "@dotoriham/query": "workspace:*"
     "@dotoriham/use-overlay": "workspace:*"
     "@dotoriham/virtual-scroll": "workspace:*"
     "@types/node": latest

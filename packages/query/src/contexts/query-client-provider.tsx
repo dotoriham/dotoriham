@@ -1,6 +1,7 @@
+'use client';
 import { ReactNode, createContext, useContext, useEffect } from 'react';
 
-type QueryClient = any;
+import { QueryClient } from '../core';
 
 export const QueryClientContext = createContext<QueryClient | undefined>(
   undefined,

@@ -10,15 +10,13 @@
     "prettier": "prettier --config ../../configs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
     "prettier:fix": "yarn prettier --write"
   },
-  "dependencies": {
-    "eslint-config-dotoriham": "workspace:*"
-  },
   "devDependencies": {
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "8.32.0",
+    "eslint-config-dotoriham": "workspace:*",
     "prettier": "^2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",

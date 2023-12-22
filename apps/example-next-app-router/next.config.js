@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const transpilePackages = ['@dotoriham/virtual-scroll'];
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  transpilePackages,
+};
+
+module.exports = nextConfig;

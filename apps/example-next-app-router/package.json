@@ -20,6 +20,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
+    "eslint-config-dotoriham": "workspace:*",
     "eslint-config-next": "latest",
     "typescript": "5.0.4"
   }

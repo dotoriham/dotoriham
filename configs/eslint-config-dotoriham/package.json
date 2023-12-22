@@ -12,7 +12,7 @@
     "@rushstack/eslint-patch": "^1.0.6",
     "@rushstack/eslint-plugin-packlets": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
+    "@typescript-eslint/parser": "^6.15.0",
     "eslint": "^8.32.0",
     "eslint-config-next": "13.1.2",
     "eslint-config-prettier": "^8.6.0",

@@ -25,4 +25,50 @@ export class FocusManager extends Subscribable {
       return;
     };
   }
+
+  protected onSubscribe(): void {
+    if (this.#cleanup == null) {
+      this.setEventListener(this.#setup);
+    }
+  }
+
+  protected onUnsubscribe() {
+    if (this.hasListeners() == null) {
+      this.#cleanup?.();
+      this.#cleanup = undefined;
+    }
+  }
+
+  setEventListener(setup: SetupFn): void {
+    this.#setup = setup;
+    this.#cleanup?.();
+    this.#cleanup = setup((focused) => {
+      if (typeof focused === 'boolean') {
+        this.setFocused(focused);
+      } else {
+        this.onFocus();
+      }
+    });
+  }
+
+  setFocused(focused?: boolean): void {
+    const changed = this.#focused !== focused;
+    if (changed === true) {
+      this.#focused = focused;
+      this.onFocus();
+    }
+  }
+
+  onFocus(): void {
+    this.listeners.forEach((listener) => listener());
+  }
+
+  isFocused(): boolean {
+    if (typeof this.#focused === 'boolean') {
+      return this.#focused;
+    }
+
+    // document global can be unavailable in react native
+    return globalThis.document.visibilityState !== 'hidden';
+  }
 }

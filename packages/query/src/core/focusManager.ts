@@ -5,6 +5,10 @@ type SetupFn = (
   setFocused: (focused?: boolean) => void,
 ) => (() => void) | undefined;
 
+/**
+ * @description 기본 이벤트 리스너를 변경하거나 포커스 상태를 수동으로 변경하는 데 사용할 수 있습니다.
+ * 포커스 상태를 수동으로 변경하면서 구독된 이벤트 리스너들을 실행시킬 수 있음
+ */
 export class FocusManager extends Subscribable {
   #focused?: boolean;
   #cleanup?: () => void;

@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@dotoriham/store": "workspace:*",
-    "eslint-config-dotoriham": "workspace:*"
+    "eslint-config-dotoriham": "workspace:*",
+    "typescript-plugin-css-modules": "^5.0.2"
   },
   "devDependencies": {
     "@dotoriham/prettier-config": "workspace:*",

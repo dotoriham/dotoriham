@@ -5642,6 +5642,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
             ["@dotoriham/store", "virtual:8fe5c377c196b15e47b40d98b51c8fccd1ae425434ea54f2502700954b16647c8f1aff75b65b3beabf455bd1671fb4bbb0d23de24b83e652aeaeb7deb7e33031#workspace:packages/dotoriham-store"],\
             ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+            ["@storybook/react", "virtual:4b190b221697e72528aeec64d8f67380744a3c6d3e22815e5a1d8d08abe31eb4a797af066bba4ebb5e73830bac7285708537550463824092f0e2e112974d14dc#npm:7.0.5"],\
             ["@types/react", "npm:18.0.27"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["eslint", "npm:8.32.0"],\

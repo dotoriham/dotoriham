@@ -15,6 +15,10 @@ const config: StorybookConfig = {
     },
     {
       directory: '../packages/dotoriham-ui',
+      titlePrefix: 'UI-LEGACY',
+    },
+    {
+      directory: '../packages/ui',
       titlePrefix: 'UI',
     },
   ],

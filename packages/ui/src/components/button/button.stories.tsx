@@ -17,7 +17,11 @@ const meta: Meta<typeof Button> = {
 type Story = StoryObj<typeof Button>;
 
 export const Base: Story = {
-  render: () => <Button>Base</Button>,
+  render: () => (
+    <Button size="xl" variant="filled">
+      Base
+    </Button>
+  ),
 };
 
 export default meta;

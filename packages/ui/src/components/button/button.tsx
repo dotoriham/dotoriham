@@ -1,11 +1,18 @@
 import { CSSProperties, ReactNode } from 'react';
-import { getClassNames, getDataProps } from '../../styles';
 import classes from './button.module.css';
-import { Size, getSize } from '../../styles/get-size';
+import {
+  DotorihamSize,
+  getClassNames,
+  getDataProps,
+  getSize,
+} from '../../utils';
+import { DotorihamColors } from '../../styles';
+import { computedButtonColor } from './button.utils';
+import { getRadius } from '../../utils/get-radius';
 
 const cx = getClassNames(classes);
 
-type ButtonVariant = 'filled' | 'light' | 'outline' | 'text';
+export type ButtonVariant = 'filled' | 'light' | 'outline' | 'text';
 
 interface ButtonProps {
   /**
@@ -19,28 +26,34 @@ interface ButtonProps {
   /**
    * 버튼 크기 default: sm
    */
-  size?: Size;
+  size?: DotorihamSize | `compact-${DotorihamSize}` | (string & {});
   /**
-   * 버튼 타입
+   * 버튼 타입 default: filled
    */
   variant?: ButtonVariant;
+  /**
+   * 버튼 색상 default: green
+   */
+  color?: DotorihamColors;
+  /**
+   * 버튼 둥글기
+   */
+  radius?: DotorihamSize | number;
 }
 
 export const Button = ({
   children,
   fullWidth = false,
+  color = 'green',
   variant = 'filled',
+  radius,
   size = 'sm',
 }: ButtonProps) => {
   const buttonStyles = {
     '--button-height': getSize('button-height', size),
     '--button-padding-x': getSize('button-padding-x', size),
-    // '--button-radius': radius === undefined ? undefined : getRadius(radius),
-    // '--button-bg': color || variant ? colors.background : undefined,
-    // '--button-hover': color || variant ? colors.hover : undefined,
-    // '--button-color': color || variant ? colors.color : undefined,
-    // '--button-bd': color || variant ? colors.border : undefined,
-    // '--button-hover-color': color || variant ? colors.hoverColor : undefined,
+    ...computedButtonColor(variant, color),
+    '--button-radius': radius === undefined ? undefined : getRadius(radius),
   } as CSSProperties;
 
   return (

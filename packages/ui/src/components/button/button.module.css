@@ -27,7 +27,7 @@
   --button-padding-x: var(--button-padding-x-sm);
   --button-color: var(--dotoriham-color-white);
 
-  &[data-variant='filled'] {
+  /* &[data-variant='filled'] {
     --button-bg: var(--dotoriham-color-green-filled);
     --button-bd: 1px solid transparent;
     --button-color: var(--dotoriham-color-white);
@@ -55,7 +55,7 @@
     --button-color: var(--dotoriham-color-white);
     --button-hover: var(--dotoriham-primary-color-filled-hover);
     --button-hover-bg: var(--dotoriham-primary-color-filled-hover);
-  }
+  } */
 
   user-select: none;
   font-weight: 600;
@@ -92,6 +92,13 @@
   &[data-full] {
     --_button-display: block;
     --_button-width: 100%;
+  }
+
+  &:hover {
+    --_button-bg: var(
+      --button-hover,
+      var(--dotoriham-primary-color-filled-hover)
+    );
   }
 
   /* &[data-loading] {

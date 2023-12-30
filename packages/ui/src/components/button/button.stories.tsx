@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Base: Story = {
   render: () => (
-    <Button size="xl" variant="filled">
+    <Button variant="outline" color="red" radius="sm">
       Base
     </Button>
   ),

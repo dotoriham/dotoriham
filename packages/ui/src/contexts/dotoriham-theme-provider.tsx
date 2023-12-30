@@ -1,15 +1,25 @@
 import { ReactNode, createContext } from 'react';
+import { ColorMode, useColorMode } from '../hooks';
+
 import '../styles/global.css';
 
 const DotorihamThemeContext = createContext({});
 
 interface DotorihamThemeProviderProps {
   children: ReactNode;
+  colorMode?: ColorMode;
+  getRootElement?: () => HTMLElement | undefined;
 }
 
 export const DotorihamThemeProvider = ({
   children,
+  colorMode = 'auto',
+  getRootElement = () => document.documentElement,
 }: DotorihamThemeProviderProps) => {
+  useColorMode({
+    colorMode,
+    getRootElement,
+  });
   return (
     <DotorihamThemeContext.Provider value={{}}>
       {children}

@@ -27,36 +27,6 @@
   --button-padding-x: var(--button-padding-x-sm);
   --button-color: var(--dotoriham-color-white);
 
-  /* &[data-variant='filled'] {
-    --button-bg: var(--dotoriham-color-green-filled);
-    --button-bd: 1px solid transparent;
-    --button-color: var(--dotoriham-color-white);
-    --button-hover: var(--dotoriham-color-green-filled-hover);
-  }
-
-  &[data-variant='light'] {
-    --button-bg: var(--dotoriham-color-green-light);
-    --button-bd: 1px solid transparent;
-    --button-color: var(--dotoriham-color-green-light-color);
-    --button-hover-bg: var(--dotoriham-color-green-light-hover);
-  }
-
-  &[data-variant='outline'] {
-    --button-bg: var(--dotoriham-primary-color-filled);
-    --button-bd: 1px solid transparent;
-    --button-color: var(--dotoriham-color-white);
-    --button-hover: var(--dotoriham-primary-color-filled-hover);
-    --button-hover-bg: var(--dotoriham-primary-color-filled-hover);
-  }
-
-  &[data-variant='text'] {
-    --button-bg: var(--dotoriham-primary-color-filled);
-    --button-bd: 1px solid transparent;
-    --button-color: var(--dotoriham-color-white);
-    --button-hover: var(--dotoriham-primary-color-filled-hover);
-    --button-hover-bg: var(--dotoriham-primary-color-filled-hover);
-  } */
-
   user-select: none;
   font-weight: 600;
   position: relative;
@@ -100,8 +70,4 @@
       var(--dotoriham-primary-color-filled-hover)
     );
   }
-
-  /* &[data-loading] {
-    border: 1px solid black;
-  } */
 }

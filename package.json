@@ -9,7 +9,7 @@
     ]
   },
   "scripts": {
-    "web:dev": "yarn workspace web dev",
+    "web:dev": "yarn workspace dotoriham-web dev",
     "storybook": "storybook dev -p 6006",
     "type-check": "yarn workspaces foreach -pi run type-check",
     "build-storybook": "storybook build",

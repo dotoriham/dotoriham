@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { useMounted } from './use-mounted';
-import { getIsMobile, isServer } from './utils';
+import { getIsMobile } from './utils';
 
 export const useMatchMobile = (
   mobileBreakpoint: number,
@@ -17,7 +17,11 @@ export const useMatchMobile = (
       return;
     }
 
-    setIsMobile(() => getIsMobile(mobileBreakpoint));
+    const _isMobile = getIsMobile(mobileBreakpoint);
+
+    if (isMobile !== _isMobile) {
+      setIsMobile(() => getIsMobile(mobileBreakpoint));
+    }
 
     const mqMobile = window.matchMedia(
       `screen and (max-width: ${mobileBreakpoint - 1}px)`,

@@ -9,3 +9,8 @@ export const getUserAgent = () => {
 
   return ua;
 };
+
+export const getIsMobileForUserAgent = () => {
+  const ua = getUserAgent();
+  return ua.device?.type === 'mobile';
+};

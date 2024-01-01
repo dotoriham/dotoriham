@@ -20,15 +20,15 @@ interface DeviceDetectProviderProps {
   /**
    * server-side device detect
    */
-  initialIsMobile?: boolean;
+  ssrIsMobile?: boolean;
 }
 
 export const DeviceDetectProvider = ({
   children,
   mobileBreakpoint = 768,
-  initialIsMobile,
+  ssrIsMobile,
 }: DeviceDetectProviderProps) => {
-  const isMobile = useMatchMobile(mobileBreakpoint, initialIsMobile);
+  const isMobile = useMatchMobile(mobileBreakpoint, ssrIsMobile);
 
   return (
     <DeviceDetectContext.Provider value={{ isMobile }}>

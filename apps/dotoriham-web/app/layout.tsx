@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className={inter.className}>
-        <DeviceDetectProvider initialIsMobile={isMobile}>
+        <DeviceDetectProvider ssrIsMobile={isMobile}>
           {children}
         </DeviceDetectProvider>
       </body>

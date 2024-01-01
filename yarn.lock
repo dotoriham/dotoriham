@@ -2229,6 +2229,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dotoriham/device-detect@workspace:*, @dotoriham/device-detect@workspace:packages/device-detect":
+  version: 0.0.0-use.local
+  resolution: "@dotoriham/device-detect@workspace:packages/device-detect"
+  dependencies:
+    "@dotoriham/prettier-config": "workspace:*"
+    "@dotoriham/stylelint-config": "workspace:*"
+    "@types/react": ^18
+    "@types/react-dom": ^18
+    eslint: 8.32.0
+    eslint-config-dotoriham: "workspace:*"
+    prettier: ^2.8.3
+    react: 18.2.0
+    react-dom: 18.2.0
+    tsconfig: "workspace:*"
+    typescript: 5.0.4
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
 "@dotoriham/dragdrop@workspace:packages/dotoriham-dragdrop":
   version: 0.0.0-use.local
   resolution: "@dotoriham/dragdrop@workspace:packages/dotoriham-dragdrop"
@@ -2290,17 +2311,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/hooks@workspace:packages/dotoriham-hooks":
+"@dotoriham/hooks@workspace:*, @dotoriham/hooks@workspace:packages/hooks":
   version: 0.0.0-use.local
-  resolution: "@dotoriham/hooks@workspace:packages/dotoriham-hooks"
+  resolution: "@dotoriham/hooks@workspace:packages/hooks"
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
+    "@types/react": ^18
     eslint: 8.32.0
     eslint-config-dotoriham: "workspace:*"
     prettier: ^2.8.3
+    react: 18.2.0
     tsconfig: "workspace:*"
     typescript: 5.0.4
+  peerDependencies:
+    react: ^18
   languageName: unknown
   linkType: soft
 
@@ -8841,6 +8866,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dotoriham-web@workspace:apps/dotoriham-web"
   dependencies:
+    "@dotoriham/device-detect": "workspace:*"
+    "@dotoriham/hooks": "workspace:*"
     "@types/node": ^20
     "@types/react": ^18
     "@types/react-dom": ^18

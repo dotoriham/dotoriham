@@ -1,7 +1,15 @@
 .root {
-  --button-height-xs: 30px;
-  --button-height-sm: 36px;
-  --button-height-md: 42px;
-  --button-height-lg: 50px;
-  --button-height-xl: 60px;
+  position: relative;
+
+  --input-height-xs: 30px;
+  --input-height-sm: 36px;
+  --input-height-md: 42px;
+  --input-height-lg: 50px;
+  --input-height-xl: 60px;
+
+  --input-padding-y-xs: 5px;
+  --input-padding-y-sm: 6px;
+  --input-padding-y-md: 8px;
+  --input-padding-y-lg: 10px;
+  --input-padding-y-xl: 13px;
 }

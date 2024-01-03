@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Button, ButtonVariant } from './button';
-import { DotorihamThemeProvider } from '../../contexts';
 import { DotorihamColors } from '../../styles';
 import { DotorihamSize } from '../../utils';
 

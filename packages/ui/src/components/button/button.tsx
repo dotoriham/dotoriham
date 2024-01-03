@@ -14,7 +14,7 @@ const cx = getClassNames(classes);
 
 export type ButtonVariant = 'filled' | 'light' | 'outline' | 'text';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
    *  버튼 내용
    */

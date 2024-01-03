@@ -1,4 +1,4 @@
-import { CSSProperties, ReactNode } from 'react';
+import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
 import classes from './button.module.css';
 import {
   DotorihamSize,
@@ -14,7 +14,7 @@ const cx = getClassNames(classes);
 
 export type ButtonVariant = 'filled' | 'light' | 'outline' | 'text';
 
-interface ButtonProps {
+interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
    *  버튼 내용
    */
@@ -39,6 +39,7 @@ interface ButtonProps {
    * 버튼 둥글기
    */
   radius?: DotorihamSize | number;
+  className?: string;
 }
 
 export const Button = ({
@@ -48,23 +49,28 @@ export const Button = ({
   variant = 'filled',
   radius,
   size = 'sm',
+  className,
+  style,
+  ...props
 }: ButtonProps) => {
   const buttonStyles = {
     '--button-height': getSize('button-height', size),
     '--button-padding-x': getSize('button-padding-x', size),
     ...computedButtonColor(variant, color),
     '--button-radius': radius === undefined ? undefined : getRadius(radius),
+    ...style,
   } as CSSProperties;
 
   return (
     <button
-      className={cx('root')}
+      className={cx('root', className)}
       style={buttonStyles}
       {...getDataProps({
         loading: true,
         variant,
         full: fullWidth,
-      })}>
+      })}
+      {...props}>
       {children}
     </button>
   );

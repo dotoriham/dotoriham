@@ -10,14 +10,6 @@ const config: StorybookConfig = {
       titlePrefix: 'Styles',
     },
     {
-      directory: '../packages/dotoriham-form',
-      titlePrefix: 'Form',
-    },
-    {
-      directory: '../packages/dotoriham-ui',
-      titlePrefix: 'UI-LEGACY',
-    },
-    {
       directory: '../packages/ui',
       titlePrefix: 'UI',
     },

@@ -7,13 +7,7 @@ import { DotorihamSize } from '../../utils';
 const meta: Meta<typeof Button> = {
   title: 'Button',
   component: Button,
-  decorators: [
-    (Story) => (
-      <DotorihamThemeProvider>
-        <Story />
-      </DotorihamThemeProvider>
-    ),
-  ],
+  decorators: [(Story) => <Story />],
 };
 
 type Story = StoryObj<typeof Button>;

@@ -1,0 +1,7 @@
+.root {
+  --button-height-xs: 30px;
+  --button-height-sm: 36px;
+  --button-height-md: 42px;
+  --button-height-lg: 50px;
+  --button-height-xl: 60px;
+}

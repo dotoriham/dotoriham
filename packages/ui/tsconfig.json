@@ -1,6 +1,6 @@
 {
   "extends": "../../configs/tsconfig/react-library.json",
-  "include": ["src", "types"],
+  "include": ["src", "types", "types/**/*.d.ts"],
 
   "compilerOptions": {
     "plugins": [{ "name": "typescript-plugin-css-modules" }]

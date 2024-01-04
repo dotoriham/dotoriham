@@ -21,6 +21,7 @@ export const Variant: Story = {
     <>
       {variants.map((variant) => (
         <Button
+          key={variant}
           variant={variant}
           style={{
             marginRight: '8px',
@@ -40,6 +41,7 @@ export const Color: Story = {
         <div style={{ marginBottom: '8px' }}>
           {colors.map((color) => (
             <Button
+              key={color}
               variant={variant}
               color={color}
               style={{
@@ -62,6 +64,7 @@ export const Radius: Story = {
         {radius.map((radius) => (
           <Button
             radius={radius}
+            key={radius}
             style={{
               marginRight: '8px',
             }}>
@@ -92,6 +95,7 @@ export const Size: Story = {
       {sizes.map((size) => (
         <Button
           size={size}
+          key={size}
           style={{
             marginRight: '8px',
           }}>
@@ -108,6 +112,7 @@ export const FullWidth: Story = {
       {variants.map((variant) => (
         <Button
           variant={variant}
+          key={variant}
           fullWidth
           style={{
             marginBottom: '8px',
@@ -115,6 +120,24 @@ export const FullWidth: Story = {
           {variant}
         </Button>
       ))}
+    </>
+  ),
+};
+
+export const Polymorphic: Story = {
+  render: () => (
+    <>
+      <Button
+        as="a"
+        href="https://google.com"
+        style={{
+          marginRight: '8px',
+        }}>
+        a
+      </Button>
+      <Button as="button" onClick={() => alert('clicked')}>
+        button
+      </Button>
     </>
   ),
 };

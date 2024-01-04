@@ -2,6 +2,7 @@ import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
 import classes from './button.module.css';
 import {
   DotorihamSize,
+  createPolymorphicComponent,
   getClassNames,
   getDataProps,
   getSize,
@@ -9,12 +10,15 @@ import {
 import { DotorihamColors } from '../../styles';
 import { computedButtonColor } from './button.utils';
 import { getRadius } from '../../utils/get-radius';
+import { DefaultComponentProps } from '../../utils/style-props';
 
 const cx = getClassNames(classes);
 
 export type ButtonVariant = 'filled' | 'light' | 'outline' | 'text';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends DefaultComponentProps,
+    HTMLAttributes<HTMLButtonElement> {
   /**
    *  버튼 내용
    */
@@ -39,16 +43,16 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
    * 버튼 둥글기
    */
   radius?: DotorihamSize | number;
-  className?: string;
 }
 
-export const Button = ({
+const _Button = ({
   children,
   fullWidth = false,
   color = 'green',
   variant = 'filled',
   radius,
   size = 'sm',
+  as,
   className,
   style,
   ...props
@@ -61,8 +65,10 @@ export const Button = ({
     ...style,
   } as CSSProperties;
 
+  const Element = as || 'button';
+
   return (
-    <button
+    <Element
       className={cx('root', className)}
       style={buttonStyles}
       {...getDataProps({
@@ -72,6 +78,10 @@ export const Button = ({
       })}
       {...props}>
       {children}
-    </button>
+    </Element>
   );
 };
+
+export const Button = createPolymorphicComponent<'button', ButtonProps>(
+  _Button,
+);

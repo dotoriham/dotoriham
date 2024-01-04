@@ -37,7 +37,9 @@
 
   width: var(--_button-width, auto);
   cursor: var(--_button-cursor, pointer);
-  display: var(--_button-display, inline-block);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--button-radius, var(--dotoriham-radius-default));
   font-size: var(--button-fz, var(--dotoriham-font-size-sm));
   background: var(

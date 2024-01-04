@@ -147,6 +147,10 @@ button {
   padding: 0;
 }
 
+input {
+  outline: none;
+}
+
 :root {
   color-scheme: var(--dotoriham-color-scheme);
 

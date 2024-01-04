@@ -1,12 +1,15 @@
 import { CSSProperties, HTMLAttributes } from 'react';
 import classes from './input.module.css';
 import { DotorihamSize, getClassNames } from '../../utils';
+import { DefaultComponentProps } from '../../utils/style-props';
 
 const cx = getClassNames(classes);
 
 export type InputVariant = 'default' | 'filled' | 'text';
 
-export interface InputProps extends HTMLAttributes<HTMLInputElement> {
+export interface InputProps
+  extends DefaultComponentProps,
+    HTMLAttributes<HTMLInputElement> {
   /**
    * 인풋 타입 default: default
    */
@@ -19,7 +22,6 @@ export interface InputProps extends HTMLAttributes<HTMLInputElement> {
    * 인풋 둥글기 default: sm
    */
   radius?: DotorihamSize | number;
-  className?: string;
 }
 
 export const Input = ({
@@ -27,6 +29,7 @@ export const Input = ({
   size,
   radius,
   className,
+  as,
   style,
   ...props
 }: InputProps) => {
@@ -34,8 +37,10 @@ export const Input = ({
     ...style,
   } as CSSProperties;
 
+  const Element = as || 'input';
+
   return (
-    <input
+    <Element
       style={inputStyles}
       className={cx('root', className)}
       type="text"

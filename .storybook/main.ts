@@ -26,6 +26,17 @@ const config: StorybookConfig = {
         path.join('@storybook/addon-interactions', 'package.json'),
       ),
     ),
+    // {
+    //   name: '@storybook/addon-postcss',
+    //   options: {
+    //     postcssLoaderOptions: {
+    //       implementation: require('postcss'),
+    //     },
+    //   },
+    // },
+    path.dirname(
+      require.resolve(path.join('@storybook/addon-postcss', 'package.json')),
+    ),
   ],
   framework: '@storybook/react-webpack5',
   docs: {

@@ -12,4 +12,12 @@
   --input-padding-y-md: 8px;
   --input-padding-y-lg: 10px;
   --input-padding-y-xl: 13px;
+
+  @mixin light {
+    border: 1px solid black;
+  }
+
+  @mixin dark {
+    border: 1px solid red;
+  }
 }

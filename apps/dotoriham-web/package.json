@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@dotoriham/hooks": "workspace:*",
+    "@dotoriham/icons": "workspace:*",
     "@dotoriham/ui": "workspace:*",
     "next": "14.0.4",
     "react": "^18",

@@ -1,0 +1,39 @@
+{
+  "name": "@dotoriham/icons",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "type-check": "tsc -p tsconfig.json --noEmit",
+    "eslint": "eslint -c .eslintrc.js  --ignore-path  ../../.eslintignore --ext .js,.jsx,.ts,.tsx . --cache",
+    "eslint:fix": "yarn eslint --fix",
+    "prettier": "prettier --config ../../configs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
+    "prettier:fix": "yarn prettier --write",
+    "gen": "svgr --index-template src/templates/indexTemplate.cjs  --config-file src/config/basic.config.cjs",
+    "build": "yarn gen --out-dir ./src/components ./src/svgs"
+  },
+  "dependencies": {
+    "@svgr/plugin-jsx": "^6.3.1",
+    "@svgr/plugin-prettier": "^6.3.1"
+  },
+  "devDependencies": {
+    "@dotoriham/prettier-config": "workspace:*",
+    "@dotoriham/stylelint-config": "workspace:*",
+    "@svgr/cli": "^7.0.0",
+    "@svgr/core": "^7.0.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "8.32.0",
+    "eslint-config-dotoriham": "workspace:*",
+    "prettier": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "@svgr/core": "*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

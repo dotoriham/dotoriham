@@ -1,13 +1,14 @@
 import { PropsWithChildren } from 'react';
-import { DeviceDetectProvider } from '@dotoriham/device-detect';
 import { ClientSideProvider } from './client-side-provider';
+import { DeviceDetectProvider } from './device-detect-provider';
 import { getUserAgent } from '@/utils/getUserAgent';
 
 export const DotorihamCoreProvider = ({ children }: PropsWithChildren) => {
   const ua = getUserAgent();
-  const isMobile = ua.device?.type === 'mobile';
+  const device = ua.device?.type === 'mobile' ? 'mobile' : 'desktop';
+
   return (
-    <DeviceDetectProvider ssrIsMobile={isMobile}>
+    <DeviceDetectProvider device={device}>
       <ClientSideProvider>{children}</ClientSideProvider>
     </DeviceDetectProvider>
   );

@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dotoriham/device-detect": "workspace:*",
     "@dotoriham/hooks": "workspace:*",
     "@dotoriham/ui": "workspace:*",
     "next": "14.0.4",

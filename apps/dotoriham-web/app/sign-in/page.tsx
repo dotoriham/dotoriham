@@ -1,11 +1,11 @@
 'use client';
-import { useDeviceDetect } from '@dotoriham/device-detect';
 import { MobilePage } from './mobile';
 import { DesktopPage } from './desktop';
+import { useDeviceDetect } from '@/providers/device-detect-provider';
 
 function Page() {
-  const { isMobile } = useDeviceDetect();
-  return <div>{isMobile === true ? <MobilePage /> : <DesktopPage />}</div>;
+  const device = useDeviceDetect();
+  return <div>{device === 'mobile' ? <MobilePage /> : <DesktopPage />}</div>;
 }
 
 export default Page;

@@ -1,7 +1,11 @@
 module.exports = {
-  plugins: [
-    require('postcss-import'),
-    require('postcss-mixins'),
-    require('autoprefixer'),
-  ],
+  plugins: {
+    'postcss-import': {},
+    'postcss-mixins': {},
+    'autoprefixer': {},
+  },
+  //   require('postcss-import'),
+  //   require('postcss-mixins'),
+  //   require('autoprefixer'),
+  // ],
 };

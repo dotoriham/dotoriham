@@ -1,7 +1,7 @@
 import { CSSProperties, HTMLAttributes } from 'react';
-import classes from './input.module.css';
 import { DotorihamSize, getClassNames } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
+import classes from './input.module.css';
 
 const cx = getClassNames(classes);
 

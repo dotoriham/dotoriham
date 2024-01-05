@@ -1,6 +1,8 @@
+'use client';
+
 import { ReactNode, createContext } from 'react';
 import { ColorMode, useColorMode } from '../hooks';
-
+import '../styles/typography.module.css';
 import '../styles/global.css';
 
 const DotorihamThemeContext = createContext({});

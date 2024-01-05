@@ -4,6 +4,14 @@ body,
   height: 100%;
 }
 
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -332,6 +340,7 @@ input {
   --dotoriham-color-scheme: dark;
   --dotoriham-color-bright: var(--dotoriham-color-white);
   --dotoriham-color-text: var(--dotoriham-color-dark-0);
+  --dotoriham-color-primary: var(--dotoriham-color-green-8);
   --dotoriham-color-body: var(--dotoriham-color-dark-7);
   --dotoriham-color-error: var(--dotoriham-color-red-8);
   --dotoriham-color-placeholder: var(--dotoriham-color-dark-3);
@@ -388,6 +397,7 @@ input {
   --dotoriham-color-bright: var(--dotoriham-color-black);
   --dotoriham-color-text: #000;
   --dotoriham-color-body: #fff;
+  --dotoriham-color-primary: var(--dotoriham-color-green-6);
   --dotoriham-color-error: var(--dotoriham-color-red-6);
   --dotoriham-color-placeholder: var(--dotoriham-color-gray-5);
   --dotoriham-color-anchor: var(--dotoriham-primary-color-filled);

@@ -1,3 +1,5 @@
+import typography from '../styles/typography.module.css';
+
 type Styles = { [key: string]: string };
 export function getClassNames<T extends Styles>(styles: T) {
   type BooleanMap = Partial<
@@ -7,6 +9,7 @@ export function getClassNames<T extends Styles>(styles: T) {
   type ExtraClassName = ClassNames | Omit<string, keyof T>;
 
   const styleUtils = {
+    ...typography,
     ...styles,
   } as const;
 

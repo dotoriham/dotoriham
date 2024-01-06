@@ -6,11 +6,11 @@ const config: StorybookConfig = {
     // '../stories/**/*.mdx',
     // '../stories/**/*.stories.@(js|jsx|ts|tsx)',
     {
-      directory: '../packages/dotoriham-styles',
+      directory: '../packages/ui/src/styles',
       titlePrefix: 'Styles',
     },
     {
-      directory: '../packages/ui',
+      directory: '../packages/ui/src/components',
       titlePrefix: 'UI',
     },
   ],

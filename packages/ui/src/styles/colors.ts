@@ -1,4 +1,4 @@
-const colorMap = {
+export const colorMap = {
   light: {
     black: '#000000',
     white: '#ffffff',

@@ -1,0 +1,8 @@
+.root {
+  --border-size: 1px;
+  --border-color: var(--dotoriham-color-black);
+
+  height: var(--border-size);
+  width: 100%;
+  background-color: var(--border-color);
+}

@@ -3,7 +3,7 @@ import { GoogleIconIcon } from '@dotoriham/icons';
 
 export const GoogleAuthButton = () => {
   return (
-    <Button color="dark" variant="outline" size="lg" radius="md">
+    <Button color="dark" variant="outline" size="lg" radius="md" fullWidth>
       <GoogleIconIcon
         fontSize={26}
         style={{

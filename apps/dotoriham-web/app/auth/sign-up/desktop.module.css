@@ -1,6 +1,4 @@
-.root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.inner {
+  width: 321px;
+  margin: 0 auto;
 }

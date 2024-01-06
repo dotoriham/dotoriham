@@ -1,4 +1,4 @@
-import { Button } from '@dotoriham/ui';
+import { Button, Typography } from '@dotoriham/ui';
 import { GoogleIconIcon } from '@dotoriham/icons';
 
 export const GoogleAuthButton = () => {
@@ -10,7 +10,7 @@ export const GoogleAuthButton = () => {
           marginRight: '8px',
         }}
       />
-      구글 계정으로 원클릭 로그인
+      <Typography type="system_16_500">구글 계정으로 원클릭 로그인</Typography>
     </Button>
   );
 };

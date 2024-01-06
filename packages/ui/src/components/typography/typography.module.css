@@ -1,0 +1,5 @@
+.root {
+  --typography-color: var(--dotoriham-color-black);
+
+  color: var(--typography-color);
+}

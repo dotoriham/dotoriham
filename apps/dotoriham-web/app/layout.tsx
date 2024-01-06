@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { getColorScheme } from '@dotoriham/ui/src/utils/color-mode-attribute';
 import { DotorihamCoreProvider } from '@/providers/dotoriham-core-provider';
 
 export const metadata: Metadata = {

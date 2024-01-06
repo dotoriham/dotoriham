@@ -1,0 +1,4 @@
+.root {
+  --spacing-size: 0px;
+  padding-top: var(--spacing-size);
+}

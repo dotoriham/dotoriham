@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const transpilePackages = ['@dotoriham/ui'];
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  transpilePackages,
+};
+
+module.exports = nextConfig;

@@ -1,14 +1,20 @@
 import React from 'react';
-import { DotorihamThemeProvider } from '../packages/ui';
+import { DotorihamThemeProvider, useColorMode } from '../packages/ui';
 
 const decorators = [
-  (Story) => (
-    <div style={{ height: '100%', width: '100%' }}>
-      <DotorihamThemeProvider>
-        <Story />
-      </DotorihamThemeProvider>
-    </div>
-  ),
+  (Story) => {
+    useColorMode({
+      colorMode: 'auto',
+      getRootElement: () => document.documentElement,
+    });
+    return (
+      <div style={{ height: '100%', width: '100%' }}>
+        <DotorihamThemeProvider>
+          <Story />
+        </DotorihamThemeProvider>
+      </div>
+    );
+  },
 ];
 
 export default decorators;

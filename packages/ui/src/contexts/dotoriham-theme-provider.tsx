@@ -3,7 +3,6 @@
 import { ReactNode, createContext } from 'react';
 import '../styles/typography.module.css';
 import '../styles/global.css';
-import { ColorMode } from '../utils';
 
 const DotorihamThemeContext = createContext({});
 

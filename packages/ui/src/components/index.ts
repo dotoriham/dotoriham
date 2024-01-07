@@ -5,3 +5,4 @@ export * from './spacing';
 export * from './border';
 export * from './typography';
 export * from './flex';
+export * from './box';

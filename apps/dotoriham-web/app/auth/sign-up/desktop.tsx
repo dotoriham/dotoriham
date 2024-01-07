@@ -6,6 +6,7 @@ import {
   Spacing,
   Border,
   Flex,
+  Box,
   Typography,
 } from '@dotoriham/ui';
 
@@ -20,6 +21,7 @@ export const DesktopPage = () => {
         <GoogleAuthButton />
 
         <Spacing size={28} />
+
         <Flex align="center">
           <Border />
           <Typography type="system_16_400">or</Typography>

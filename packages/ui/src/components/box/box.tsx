@@ -1,8 +1,27 @@
-import { getClassNames } from '../../utils';
-import classes from './box.module.css';
+import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { DefaultComponentProps } from '../../utils/style-props';
+import { SystemProps, extractSystemStyles } from './box.utils';
+import { createPolymorphicComponent } from '../../utils';
 
-const cx = getClassNames(classes);
+export interface BoxProps extends SystemProps, DefaultComponentProps {
+  children?: ReactNode;
+}
 
-export const Box = () => {
-  return <div>Box</div>;
+const _Box = ({ children, as, style, className, ...rest }: BoxProps) => {
+  const Element = as || 'div';
+
+  const { systemStyles, ...props } = extractSystemStyles(rest);
+
+  const boxStyles = {
+    ...style,
+    ...systemStyles,
+  } as CSSProperties;
+
+  return (
+    <Element className={className} style={boxStyles} {...props}>
+      {children}
+    </Element>
+  );
 };
+
+export const Box = createPolymorphicComponent<'div', BoxProps>(_Box);

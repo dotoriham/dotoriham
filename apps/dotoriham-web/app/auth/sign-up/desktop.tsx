@@ -1,7 +1,13 @@
 import { SignUpTitle } from '@/app-modules/sign-up/components/sign-up-title';
 import { GoogleAuthButton } from '@/components/google-auth-button/google-auth-button';
 import classes from './desktop.module.css';
-import { getClassNames, Spacing, Border } from '@dotoriham/ui';
+import {
+  getClassNames,
+  Spacing,
+  Border,
+  Flex,
+  Typography,
+} from '@dotoriham/ui';
 
 const cx = getClassNames(classes);
 
@@ -14,9 +20,11 @@ export const DesktopPage = () => {
         <GoogleAuthButton />
 
         <Spacing size={28} />
-        <div>
+        <Flex align="center">
           <Border />
-        </div>
+          <Typography type="system_16_400">or</Typography>
+          <Border />
+        </Flex>
         <Spacing size={28} />
       </div>
     </main>

@@ -22,7 +22,7 @@ interface FlexProps
 
   wrap?: CSSProperties['flexWrap'];
 
-  direction: CSSProperties['flexDirection'];
+  direction?: CSSProperties['flexDirection'];
 }
 
 export const Flex = ({

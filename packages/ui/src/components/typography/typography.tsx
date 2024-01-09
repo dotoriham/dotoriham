@@ -4,6 +4,7 @@ import { getClassNames } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './typography.module.css';
 import { DotorihamColorKeys, getColorVariable } from '../../styles';
+import { Box } from '../box';
 
 const cx = getClassNames(classes);
 
@@ -21,22 +22,20 @@ export const Typography = ({
   children,
   style,
   color = 'black',
-  as,
   ...rest
 }: TypographyProps) => {
-  const Element = as || 'p';
-
   const typographyStyles = {
     '--typography-color': getColorVariable(color),
     ...style,
   } as CSSProperties;
 
   return (
-    <Element
+    <Box
+      as="p"
       style={typographyStyles}
       className={cx('root', type, className)}
       {...rest}>
       {children}
-    </Element>
+    </Box>
   );
 };

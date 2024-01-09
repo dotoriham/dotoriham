@@ -2,6 +2,7 @@ import { CSSProperties, HTMLAttributes } from 'react';
 import { DotorihamSize, getClassNames } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './input.module.css';
+import { Box } from '../box';
 
 const cx = getClassNames(classes);
 
@@ -29,7 +30,6 @@ export const Input = ({
   size,
   radius,
   className,
-  as,
   style,
   ...props
 }: InputProps) => {
@@ -37,10 +37,9 @@ export const Input = ({
     ...style,
   } as CSSProperties;
 
-  const Element = as || 'input';
-
   return (
-    <Element
+    <Box
+      as="input"
       style={inputStyles}
       className={cx('root', className)}
       type="text"

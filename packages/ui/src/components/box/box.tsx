@@ -7,7 +7,13 @@ export interface BoxProps extends SystemProps, DefaultComponentProps {
   children?: ReactNode;
 }
 
-const _Box = ({ children, as, style, className, ...rest }: BoxProps) => {
+const _Box = ({
+  children,
+  as,
+  style,
+  className,
+  ...rest
+}: BoxProps & { as: any }) => {
   const Element = as || 'div';
 
   const { systemStyles, ...props } = extractSystemStyles(rest);

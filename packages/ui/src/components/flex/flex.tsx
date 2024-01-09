@@ -2,6 +2,7 @@ import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
 import { getClassNames } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './flex.module.css';
+import { Box } from '../box';
 
 const cx = getClassNames(classes);
 
@@ -26,7 +27,6 @@ interface FlexProps
 }
 
 export const Flex = ({
-  as,
   children,
   className,
   gap,
@@ -39,8 +39,6 @@ export const Flex = ({
   style,
   ...rest
 }: FlexProps) => {
-  const Element = as || 'div';
-
   const flexStyles = {
     '--flex-direction': direction,
     '--flex-gap': gap,
@@ -53,8 +51,12 @@ export const Flex = ({
   } as CSSProperties;
 
   return (
-    <Element style={flexStyles} className={cx('root', className)} {...rest}>
+    <Box
+      as="div"
+      style={flexStyles}
+      className={cx('root', className)}
+      {...rest}>
       {children}
-    </Element>
+    </Box>
   );
 };

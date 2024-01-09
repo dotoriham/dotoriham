@@ -11,6 +11,7 @@ import { DotorihamColors } from '../../styles';
 import { computedButtonColor } from './button.utils';
 import { getRadius } from '../../utils/get-radius';
 import { DefaultComponentProps } from '../../utils/style-props';
+import { Box } from '../box';
 
 const cx = getClassNames(classes);
 
@@ -52,7 +53,6 @@ const _Button = ({
   variant = 'filled',
   radius,
   size = 'sm',
-  as,
   className,
   style,
   ...props
@@ -65,10 +65,9 @@ const _Button = ({
     ...style,
   } as CSSProperties;
 
-  const Element = as || 'button';
-
   return (
-    <Element
+    <Box
+      as="button"
       className={cx('root', className)}
       style={buttonStyles}
       {...getDataProps({
@@ -78,7 +77,7 @@ const _Button = ({
       })}
       {...props}>
       {children}
-    </Element>
+    </Box>
   );
 };
 

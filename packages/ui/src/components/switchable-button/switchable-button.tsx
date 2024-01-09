@@ -1,12 +1,38 @@
-import { getClassNames } from '../../utils';
+import { ReactNode } from 'react';
+import { createPolymorphicComponent, getClassNames } from '../../utils';
+import { Box, BoxProps } from '../box';
 import classes from './switchable-button.module.css';
 
 const cx = getClassNames(classes);
+
+interface SwitchableButtonProps extends BoxProps {
+  /**
+   * 활성화 상태일 때 보여질 컴포넌트
+   */
+  activeComponent: ReactNode;
+  /**
+   * 비활성화 상태일 때 보여질 컴포넌트
+   */
+  inactiveComponent: ReactNode;
+  /**
+   * 활성화 여부
+   */
+  isActive: boolean;
+}
 
 /**
  * @description 컴포넌트를 조건에 따라 스위칭할 수 있는 버튼
  * @example checkout 아이콘을 checked에 따라서 아이콘을 스위칭함
  */
-export const SwitchableButton = () => {
-  return <div></div>;
+const _SwitchableButton = ({
+  style,
+  className,
+  ...rest
+}: SwitchableButtonProps) => {
+  return <Box as="button" className={cx('root')} {...rest}></Box>;
 };
+
+export const SwitchableButton = createPolymorphicComponent<
+  'button',
+  SwitchableButtonProps
+>(_SwitchableButton);

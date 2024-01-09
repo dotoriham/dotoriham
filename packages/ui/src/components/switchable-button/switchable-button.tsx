@@ -26,10 +26,18 @@ interface SwitchableButtonProps extends BoxProps {
  */
 const _SwitchableButton = ({
   style,
+  activeComponent,
+  inactiveComponent,
+  isActive,
   className,
+  children,
   ...rest
 }: SwitchableButtonProps) => {
-  return <Box as="button" className={cx('root')} {...rest}></Box>;
+  return (
+    <Box as="button" className={cx('root')} {...rest}>
+      {isActive ? activeComponent : inactiveComponent}
+    </Box>
+  );
 };
 
 export const SwitchableButton = createPolymorphicComponent<

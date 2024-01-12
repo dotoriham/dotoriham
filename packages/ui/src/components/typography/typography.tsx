@@ -4,13 +4,11 @@ import { getClassNames } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './typography.module.css';
 import { DotorihamColorKeys, getColorVariable } from '../../styles';
-import { Box } from '../box';
+import { Box, BoxProps } from '../box';
 
 const cx = getClassNames(classes);
 
-interface TypographyProps
-  extends DefaultComponentProps,
-    HTMLAttributes<HTMLParagraphElement> {
+interface TypographyProps extends BoxProps {
   type: DotorihamTypography;
   children: ReactNode;
   color?: DotorihamColorKeys | (string & {});

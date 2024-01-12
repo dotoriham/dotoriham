@@ -9,7 +9,7 @@
     "react.js"
   ],
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@next/eslint-plugin-next": "13.3.5-canary.9",
     "@rushstack/eslint-patch": "^1.2.0",
     "@rushstack/eslint-plugin-packlets": "^0.6.1",
@@ -23,9 +23,11 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sort-keys": "^2.3.5"
+    "eslint-plugin-sort-keys": "^2.3.5",
+    "eslint-plugin-sort-keys-fix": "^1.1.2"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",

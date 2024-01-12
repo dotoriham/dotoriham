@@ -1,3 +1,3 @@
 module.exports = {
-  ...require("./configs/prettier-config/index.json"),
+  ...require('./configs/prettier-config/index.json'),
 };

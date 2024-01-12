@@ -15,7 +15,7 @@
     "@dotoriham/stylelint-config": "workspace:*",
     "eslint": "8.32.0",
     "eslint-config-dotoriham": "workspace:*",
-    "prettier": "^2.8.3",
+    "prettier": "^3.1.1",
     "tsconfig": "workspace:*",
     "typescript": "5.0.4"
   }

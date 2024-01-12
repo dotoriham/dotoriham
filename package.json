@@ -19,7 +19,7 @@
     "prettier:fix": "yarn workspaces foreach -pi run prettier:fix --cache",
     "build:icons": "yarn workspace @dotoriham/icons build"
   },
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
@@ -46,7 +46,7 @@
     "postcss-mixins": "^9.0.4",
     "postcss-nesting": "^12.0.2",
     "postcss-preset-env": "^9.3.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

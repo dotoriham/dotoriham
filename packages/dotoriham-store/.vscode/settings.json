@@ -1,7 +1,7 @@
 {
   "eslint.nodePath": "../../../.yarn/sdks",
   "stylelint.validate": ["css", "typescriptreact"],
-  "prettier.prettierPath": "../../../.yarn/sdks/prettier/index.js",
+  "prettier.prettierPath": "../../../.yarn/sdks/prettier/index.cjs",
   "prettier.ignorePath": "../../../.prettierignore",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true

@@ -1,5 +1,8 @@
 import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+
 import classes from './button.module.css';
+import { computedButtonColor } from './button.utils';
+import { DotorihamColors } from '../../styles';
 import {
   DotorihamSize,
   createPolymorphicComponent,
@@ -7,8 +10,6 @@ import {
   getDataProps,
   getSize,
 } from '../../utils';
-import { DotorihamColors } from '../../styles';
-import { computedButtonColor } from './button.utils';
 import { getRadius } from '../../utils/get-radius';
 import { DefaultComponentProps } from '../../utils/style-props';
 import { Box } from '../box';
@@ -71,9 +72,9 @@ const _Button = ({
       className={cx('root', className)}
       style={buttonStyles}
       {...getDataProps({
+        full: fullWidth,
         loading: true,
         variant,
-        full: fullWidth,
       })}
       {...props}>
       {children}

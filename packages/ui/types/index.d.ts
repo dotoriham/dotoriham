@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 declare module '*.module.css' {
   const value: Record<string, string>;
   export default value;

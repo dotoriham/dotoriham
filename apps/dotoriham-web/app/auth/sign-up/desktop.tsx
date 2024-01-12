@@ -24,7 +24,9 @@ export const DesktopPage = () => {
 
         <Flex align="center">
           <Border />
-          <Typography type="system_16_400">or</Typography>
+          <Typography type="system_16_400" color="dark5">
+            or
+          </Typography>
           <Border />
         </Flex>
         <Spacing size={28} />

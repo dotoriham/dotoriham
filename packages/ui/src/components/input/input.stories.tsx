@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { DotorihamThemeProvider } from '../../contexts';
 import { Input, InputVariant } from './input';
+import { DotorihamSize } from '../../utils';
 
 const meta: Meta<typeof Input> = {
   title: 'Input',
@@ -32,6 +33,24 @@ export const Variant: Story = {
             marginRight: '8px',
           }}
           placeholder={variant}
+        />
+      ))}
+    </>
+  ),
+};
+
+const sizes: DotorihamSize[] = ['xs', 'sm', 'md', 'lg', 'xl'];
+export const Size: Story = {
+  render: () => (
+    <>
+      {sizes.map((size) => (
+        <Input
+          key={size}
+          size={size}
+          style={{
+            marginRight: '8px',
+          }}
+          placeholder={size}
         />
       ))}
     </>

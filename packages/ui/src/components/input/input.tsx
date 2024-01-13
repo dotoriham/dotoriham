@@ -1,5 +1,10 @@
 import { CSSProperties, HTMLAttributes } from 'react';
-import { DotorihamSize, getClassNames, getDataProps } from '../../utils';
+import {
+  DotorihamSize,
+  getClassNames,
+  getDataProps,
+  getSize,
+} from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './input.module.css';
 import { Box } from '../box';
@@ -34,6 +39,9 @@ export const Input = ({
   ...props
 }: InputProps) => {
   const inputStyles = {
+    '--input-height': getSize('input-height', size),
+    '--input-padding-y': getSize('input-padding-y', size),
+    '--input-font-size': getSize('dotoriham-font-size', size),
     ...style,
   } as CSSProperties;
 

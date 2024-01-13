@@ -187,16 +187,16 @@ html {
     Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --dotoriham-heading-font-weight: 700;
   --dotoriham-radius-default: calc(0.25rem * var(--dotoriham-scale));
-  --dotoriham-primary-color0: var(--dotoriham-color-green-0);
-  --dotoriham-primary-color1: var(--dotoriham-color-green-1);
-  --dotoriham-primary-color2: var(--dotoriham-color-green-2);
-  --dotoriham-primary-color3: var(--dotoriham-color-green-3);
-  --dotoriham-primary-color4: var(--dotoriham-color-green-4);
-  --dotoriham-primary-color5: var(--dotoriham-color-green-5);
-  --dotoriham-primary-color6: var(--dotoriham-color-green-6);
-  --dotoriham-primary-color7: var(--dotoriham-color-green-7);
-  --dotoriham-primary-color8: var(--dotoriham-color-green-8);
-  --dotoriham-primary-color9: var(--dotoriham-color-green-9);
+  --dotoriham-primary-color0: var(--dotoriham-color-green0);
+  --dotoriham-primary-color1: var(--dotoriham-color-green1);
+  --dotoriham-primary-color2: var(--dotoriham-color-green2);
+  --dotoriham-primary-color3: var(--dotoriham-color-green3);
+  --dotoriham-primary-color4: var(--dotoriham-color-green4);
+  --dotoriham-primary-color5: var(--dotoriham-color-green5);
+  --dotoriham-primary-color6: var(--dotoriham-color-green6);
+  --dotoriham-primary-color7: var(--dotoriham-color-green7);
+  --dotoriham-primary-color8: var(--dotoriham-color-green8);
+  --dotoriham-primary-color9: var(--dotoriham-color-green9);
   --dotoriham-primary-color-filled: var(--dotoriham-color-green-filled);
   --dotoriham-primary-color-filled-hover: var(
     --dotoriham-color-green-filled-hover

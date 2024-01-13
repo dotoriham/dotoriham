@@ -15,6 +15,12 @@
   --input-padding-y-lg: 10px;
   --input-padding-y-xl: 13px;
 
+  --input-height: var(--input-height-sm);
+  --input-padding: calc(var(--input-height) / 3);
+  --input-padding-y: var(--input-padding-y-sm);
+  --input-font-size: var(--dotoriham-font-size-sm);
+  --input-color: var(--dotoriham-color-text);
+
   @mixin light {
     --_input-disabled-bg: var(--dotoriham-color-gray1);
     --_input-disabled-color: var(--dotoriham-color-gray6);
@@ -61,16 +67,18 @@
     }
   }
 
-  --input-height: var(--input-height-sm);
-  --input-padding-y: var(--input-padding-y-sm);
-
   height: var(--input-height);
   min-height: var(--_input-height);
   border: 1px solid var(--_input-bd);
   background-color: var(--_input-bg);
 
-  padding-top: var(--input-padding-y, 0px);
-  padding-bottom: var(--input-padding-y, 0px);
+  padding-top: var(--input-padding-y);
+  padding-bottom: var(--input-padding-y);
+  padding-left: var(--input-padding);
+  padding-right: var(--input-padding);
+
+  font-size: var(--input-font-size);
+  color: var(--input-color);
 
   &:focus,
   &:focus-within {

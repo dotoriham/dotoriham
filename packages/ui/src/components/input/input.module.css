@@ -22,25 +22,25 @@
   --input-color: var(--dotoriham-color-text);
 
   @mixin light {
-    --_input-disabled-bg: var(--dotoriham-color-gray1);
-    --_input-disabled-color: var(--dotoriham-color-gray6);
+    --input-disabled-bg: var(--dotoriham-color-gray1);
+    --input-disabled-color: var(--dotoriham-color-gray6);
 
     &[data-variant='default'] {
-      --_input-bd: var(--dotoriham-color-gray4);
-      --_input-bg: var(--dotoriham-color-white);
-      --_input-bd-focus: var(--dotoriham-primary-color-filled);
+      --input-bd: var(--dotoriham-color-gray4);
+      --input-bg: var(--dotoriham-color-white);
+      --input-bd-focus: var(--dotoriham-primary-color-filled);
     }
 
     &[data-variant='filled'] {
-      --_input-bd: transparent;
-      --_input-bg: var(--dotoriham-color-gray1);
-      --_input-bd-focus: var(--dotoriham-primary-color-filled);
+      --input-bd: transparent;
+      --input-bg: var(--dotoriham-color-gray1);
+      --input-bd-focus: var(--dotoriham-primary-color-filled);
     }
 
     &[data-variant='text'] {
-      --_input-bd: transparent;
-      --_input-bg: transparent;
-      --_input-bd-focus: transparent;
+      --input-bd: transparent;
+      --input-bg: transparent;
+      --input-bd-focus: transparent;
     }
   }
 
@@ -49,28 +49,34 @@
     --_input-disabled-color: var(--dotoriham-color-dark2);
 
     &[data-variant='default'] {
-      --_input-bd: var(--dotoriham-color-dark4);
-      --_input-bg: var(--dotoriham-color-dark6);
-      --_input-bd-focus: var(--dotoriham-primary-color-filled);
+      --input-bd: var(--dotoriham-color-dark4);
+      --input-bg: var(--dotoriham-color-dark6);
+      --input-bd-focus: var(--dotoriham-primary-color-filled);
     }
 
     &[data-variant='filled'] {
-      --_input-bd: transparent;
-      --_input-bg: var(--dotoriham-color-dark5);
-      --_input-bd-focus: var(--dotoriham-primary-color-filled);
+      --input-bd: transparent;
+      --input-bg: var(--dotoriham-color-dark5);
+      --input-bd-focus: var(--dotoriham-primary-color-filled);
     }
 
     &[data-variant='text'] {
-      --_input-bd: transparent;
-      --_input-bg: transparent;
-      --_input-bd-focus: transparent;
+      --input-bd: transparent;
+      --input-bg: transparent;
+      --input-bd-focus: transparent;
     }
   }
 
+  &:focus,
+  &:focus-within {
+    outline: none;
+    border: 1px solid var(--input-bd-focus);
+  }
+
   height: var(--input-height);
-  min-height: var(--_input-height);
-  border: 1px solid var(--_input-bd);
-  background-color: var(--_input-bg);
+  min-height: var(--input-height);
+  border: 1px solid var(--input-bd);
+  background-color: var(--input-bg);
 
   padding-top: var(--input-padding-y);
   padding-bottom: var(--input-padding-y);
@@ -79,10 +85,4 @@
 
   font-size: var(--input-font-size);
   color: var(--input-color);
-
-  &:focus,
-  &:focus-within {
-    outline: none;
-    --_input-bd: var(--_input-bd-focus);
-  }
 }

@@ -351,7 +351,7 @@ html {
   --dotoriham-color-lime8: #2f3b20;
   --dotoriham-color-lime9: #293319;
   --dotoriham-color-bright: var(--dotoriham-color-white);
-  --dotoriham-color-text: var(--dotoriham-color-dark0);
+  --dotoriham-color-text: var(--dotoriham-color-black);
   --dotoriham-color-primary: var(--dotoriham-color-green8);
   --dotoriham-color-body: var(--dotoriham-color-dark7);
   --dotoriham-color-error: var(--dotoriham-color-red8);

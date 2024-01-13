@@ -1,5 +1,5 @@
 import { CSSProperties, HTMLAttributes } from 'react';
-import { DotorihamSize, getClassNames } from '../../utils';
+import { DotorihamSize, getClassNames, getDataProps } from '../../utils';
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './input.module.css';
 import { Box } from '../box';
@@ -26,7 +26,7 @@ export interface InputProps
 }
 
 export const Input = ({
-  variant,
+  variant = 'default',
   size,
   radius,
   className,
@@ -44,6 +44,9 @@ export const Input = ({
       className={cx('root', className)}
       type="text"
       {...props}
+      {...getDataProps({
+        variant,
+      })}
     />
   );
 };

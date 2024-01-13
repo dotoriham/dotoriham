@@ -17,7 +17,7 @@ const meta: Meta<typeof Input> = {
 type Story = StoryObj<typeof Input>;
 
 export const Base: Story = {
-  render: () => <Input />,
+  render: () => <Input placeholder="placeholder" />,
 };
 
 export default meta;

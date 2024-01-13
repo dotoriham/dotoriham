@@ -3,13 +3,8 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "lib": ["DOM", "ES2015", "ES2017", "ES2020"],
-    "module": "esnext",
-    "target": "ESNext",
-
-    "declaration": true,
-    "declarationMap": true,
-    "composite": true
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext"
   }
 }

@@ -57,6 +57,23 @@ export const Size: Story = {
   ),
 };
 
+export const Radius: Story = {
+  render: () => (
+    <>
+      {sizes.map((size) => (
+        <Input
+          key={size}
+          radius={size}
+          style={{
+            margin: '8px',
+          }}
+          placeholder={size}
+        />
+      ))}
+    </>
+  ),
+};
+
 export const Disabled: Story = {
   render: () => (
     <>

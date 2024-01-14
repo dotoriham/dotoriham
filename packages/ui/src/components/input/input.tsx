@@ -8,6 +8,7 @@ import {
 import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './input.module.css';
 import { Box } from '../box';
+import { getRadius } from '../../utils/get-radius';
 
 const cx = getClassNames(classes);
 
@@ -25,13 +26,13 @@ export interface InputProps
    */
   size?: DotorihamSize;
   /**
-   * 인풋 둥글기 default: sm
-   */
-  radius?: DotorihamSize | number;
-  /**
    * 인풋 비활성화
    */
   disabled?: boolean;
+  /**
+   * 인풋 둥글기 default: sm
+   */
+  radius?: DotorihamSize | number;
 }
 
 export const Input = ({
@@ -47,6 +48,7 @@ export const Input = ({
     '--input-height': getSize('input-height', size),
     '--input-padding-y': getSize('input-padding-y', size),
     '--input-font-size': getSize('dotoriham-font-size', size),
+    '--input-border-radius': getRadius(radius),
     ...style,
   } as CSSProperties;
 

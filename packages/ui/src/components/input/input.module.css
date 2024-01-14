@@ -20,6 +20,7 @@
   --input-padding-y: var(--input-padding-y-sm);
   --input-font-size: var(--dotoriham-font-size-sm);
   --input-color: var(--dotoriham-color-text);
+  --input-border-radius: var(--dotoriham-radius-default);
 
   @mixin light {
     --input-disabled-bg: var(--dotoriham-color-gray1);
@@ -82,7 +83,7 @@
   padding-bottom: var(--input-padding-y);
   padding-left: var(--input-padding);
   padding-right: var(--input-padding);
-
+  border-radius: var(--input-border-radius);
   font-size: var(--input-font-size);
   color: var(--input-color);
 

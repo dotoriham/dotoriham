@@ -57,4 +57,22 @@ export const Size: Story = {
   ),
 };
 
+export const Disabled: Story = {
+  render: () => (
+    <>
+      {variants.map((variant) => (
+        <Input
+          key={variant}
+          variant={variant}
+          disabled
+          style={{
+            marginRight: '8px',
+          }}
+          placeholder={variant}
+        />
+      ))}
+    </>
+  ),
+};
+
 export default meta;

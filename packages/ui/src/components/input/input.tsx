@@ -28,6 +28,10 @@ export interface InputProps
    * 인풋 둥글기 default: sm
    */
   radius?: DotorihamSize | number;
+  /**
+   * 인풋 비활성화
+   */
+  disabled?: boolean;
 }
 
 export const Input = ({
@@ -36,6 +40,7 @@ export const Input = ({
   radius,
   className,
   style,
+  disabled,
   ...props
 }: InputProps) => {
   const inputStyles = {
@@ -48,6 +53,7 @@ export const Input = ({
   return (
     <Box
       as="input"
+      disabled={disabled}
       style={inputStyles}
       className={cx('root', className)}
       type="text"

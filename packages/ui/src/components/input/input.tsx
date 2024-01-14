@@ -1,22 +1,20 @@
 import { CSSProperties, HTMLAttributes } from 'react';
 import {
   DotorihamSize,
+  createPolymorphicComponent,
   getClassNames,
   getDataProps,
   getSize,
 } from '../../utils';
-import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './input.module.css';
-import { Box } from '../box';
+import { Box, BoxProps } from '../box';
 import { getRadius } from '../../utils/get-radius';
 
 const cx = getClassNames(classes);
 
 export type InputVariant = 'default' | 'filled' | 'text';
 
-export interface InputProps
-  extends DefaultComponentProps,
-    HTMLAttributes<HTMLInputElement> {
+export interface InputProps extends BoxProps {
   /**
    * 인풋 타입 default: default
    */
@@ -35,7 +33,7 @@ export interface InputProps
   radius?: DotorihamSize | number;
 }
 
-export const Input = ({
+const _Input = ({
   variant = 'default',
   size,
   radius,
@@ -66,3 +64,5 @@ export const Input = ({
     />
   );
 };
+
+export const Input = createPolymorphicComponent<'input', InputProps>(_Input);

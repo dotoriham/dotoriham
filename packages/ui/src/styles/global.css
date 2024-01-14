@@ -218,11 +218,11 @@ html {
   --dotoriham-spacing-md: calc(1rem * var(--dotoriham-scale));
   --dotoriham-spacing-lg: calc(1.25rem * var(--dotoriham-scale));
   --dotoriham-spacing-xl: calc(2rem * var(--dotoriham-scale));
-  --dotoriham-font-size-xs: calc(0.75rem * var(--dotoriham-scale));
-  --dotoriham-font-size-sm: calc(0.875rem * var(--dotoriham-scale));
-  --dotoriham-font-size-md: calc(1rem * var(--dotoriham-scale));
-  --dotoriham-font-size-lg: calc(1.125rem * var(--dotoriham-scale));
-  --dotoriham-font-size-xl: calc(1.25rem * var(--dotoriham-scale));
+  --dotoriham-font-size-xs: calc(0.625rem * var(--dotoriham-scale));
+  --dotoriham-font-size-sm: calc(0.75rem * var(--dotoriham-scale));
+  --dotoriham-font-size-md: calc(0.875rem * var(--dotoriham-scale));
+  --dotoriham-font-size-lg: calc(1rem * var(--dotoriham-scale));
+  --dotoriham-font-size-xl: calc(1.125rem * var(--dotoriham-scale));
   --dotoriham-line-height-xs: 1.4;
   --dotoriham-line-height-sm: 1.45;
   --dotoriham-line-height-md: 1.55;

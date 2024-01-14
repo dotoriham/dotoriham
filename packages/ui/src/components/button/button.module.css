@@ -26,6 +26,7 @@
   --button-height: var(--button-height-sm);
   --button-padding-x: var(--button-padding-x-sm);
   --button-color: var(--dotoriham-color-white);
+  --button-font-size: var(--dotoriham-font-size-sm);
 
   user-select: none;
   font-weight: 600;
@@ -41,7 +42,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--button-radius, var(--dotoriham-radius-default));
-  font-size: var(--button-fz, var(--dotoriham-font-size-sm));
+  font-size: var(--button-font-size);
   background: var(
     --_button-bg,
     var(--button-bg, var(--dotoriham-primary-color-filled))

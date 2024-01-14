@@ -79,6 +79,8 @@
   border: 1px solid var(--input-bd);
   background-color: var(--input-bg);
   width: 100%;
+  display: flex;
+  align-items: center;
   padding-top: var(--input-padding-y);
   padding-bottom: var(--input-padding-y);
   padding-left: var(--input-padding);
@@ -89,10 +91,25 @@
 
   transition: border-color 500ms ease;
 
-  &:disabled {
+  &[data-disabled='true'] {
     cursor: not-allowed;
     opacity: 0.5;
     background-color: var(--input-disabled-bg);
     color: var(--input-disabled-color);
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+  }
+
+  .left-component {
+    padding-right: var(--input-padding);
+  }
+
+  .right-component {
+    padding-left: var(--input-padding);
   }
 }

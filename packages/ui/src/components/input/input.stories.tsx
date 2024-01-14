@@ -83,11 +83,83 @@ export const Disabled: Story = {
           variant={variant}
           disabled
           style={{
-            marginRight: '8px',
+            margin: '8px',
           }}
           placeholder={variant}
         />
       ))}
+    </>
+  ),
+};
+
+export const WithLeftComponent: Story = {
+  render: () => (
+    <>
+      <Input
+        leftComponent={<div>left</div>}
+        style={{
+          margin: '8px',
+        }}
+        placeholder={'placeholder'}
+      />
+
+      <Input
+        leftComponent={
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}>
+            <div
+              style={{
+                marginRight: '8px',
+              }}>
+              left
+            </div>
+            <div>left</div>
+          </div>
+        }
+        style={{
+          margin: '8px',
+        }}
+        placeholder={'placeholder'}
+      />
+    </>
+  ),
+};
+
+export const WithRightComponent: Story = {
+  render: () => (
+    <>
+      <Input
+        rightComponent={<div>right</div>}
+        style={{
+          margin: '8px',
+        }}
+        placeholder={'placeholder'}
+      />
+
+      <Input
+        rightComponent={
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}>
+            <div
+              style={{
+                marginRight: '8px',
+              }}>
+              right
+            </div>
+            <div>right</div>
+          </div>
+        }
+        style={{
+          margin: '8px',
+        }}
+        placeholder={'placeholder'}
+      />
     </>
   ),
 };

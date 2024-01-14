@@ -107,9 +107,15 @@
 
   .left-component {
     padding-right: var(--input-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .right-component {
     padding-left: var(--input-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,14 +1,12 @@
 'use client';
-import { MobilePage } from './mobile';
-import { DesktopPage } from './desktop';
-import { DevicePageAdaptive } from '@/components';
+
+import { SignInTopSection } from '../../../components/sign-in/components/sign-in-top-section/sign-in-top-section';
 
 function Page() {
   return (
-    <DevicePageAdaptive
-      renderDesktop={<DesktopPage />}
-      renderMobile={<MobilePage />}
-    />
+    <div>
+      <SignInTopSection />
+    </div>
   );
 }
 

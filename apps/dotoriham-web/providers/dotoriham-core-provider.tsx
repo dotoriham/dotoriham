@@ -2,11 +2,12 @@ import { PropsWithChildren } from 'react';
 
 import { ClientSideProvider } from './client-side-provider';
 import { DeviceDetectProvider } from './device-detect-provider';
-import { getUserAgent } from '../utils/getUserAgent';
+import { getDevice } from '../utils/getUserAgent';
+import { redirectDevicePath } from '../utils/redirect-device-path';
 
 export const DotorihamCoreProvider = ({ children }: PropsWithChildren) => {
-  const ua = getUserAgent();
-  const device = ua.device?.type === 'mobile' ? 'mobile' : 'desktop';
+  const device = getDevice();
+  redirectDevicePath();
 
   return (
     <DeviceDetectProvider device={device}>

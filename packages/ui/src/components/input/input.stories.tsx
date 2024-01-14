@@ -30,7 +30,7 @@ export const Variant: Story = {
           key={variant}
           variant={variant}
           style={{
-            marginRight: '8px',
+            margin: '8px',
           }}
           placeholder={variant}
         />
@@ -48,7 +48,7 @@ export const Size: Story = {
           key={size}
           size={size}
           style={{
-            marginRight: '8px',
+            margin: '8px',
           }}
           placeholder={size}
         />

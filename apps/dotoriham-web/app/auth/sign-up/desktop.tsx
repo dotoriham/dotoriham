@@ -3,15 +3,13 @@ import {
   Spacing,
   Border,
   Flex,
-  Box,
   Typography,
 } from '@dotoriham/ui';
 
-
-import { SignUpFormSection } from '@/app-modules/sign-up/components/sign-up-form-section';
-import { SignUpTitle } from '@/app-modules/sign-up/components/sign-up-title';
-import { GoogleAuthButton } from '@/components/google-auth-button/google-auth-button';
 import classes from './desktop.module.css';
+import { SignUpFormSection } from '../../../app-modules/sign-up/components/sign-up-form-section';
+import { SignUpTitle } from '../../../app-modules/sign-up/components/sign-up-title';
+import { GoogleAuthButton } from '../../../components/google-auth-button';
 
 const cx = getClassNames(classes);
 

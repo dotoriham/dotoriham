@@ -3,7 +3,7 @@ import { Input } from '@dotoriham/ui';
 export const SignUpFormSection = () => {
   return (
     <form>
-      <Input />
+      <Input size="lg" />
     </form>
   );
 };

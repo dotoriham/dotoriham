@@ -1,5 +1,4 @@
 const defaultConfig = require('./default.config.cjs');
-
 const addNoScalingStroke = require('../plugins/add-no-scaling-stroke.cjs');
 
 module.exports = {
@@ -14,7 +13,7 @@ module.exports = {
         active: true,
         name: 'convertColors',
         params: {
-          // currentColor: true,
+          currentColor: true,
         },
       },
       addNoScalingStroke,

@@ -12,7 +12,7 @@ module.exports = {
         active: true,
         name: 'convertColors',
         params: {
-          // currentColor: true,
+          currentColor: true,
         },
       },
       {
@@ -20,9 +20,9 @@ module.exports = {
         name: 'addAttributesToSVGElement',
         params: {
           attributes: [
-            // {
-            //   fill: 'currentColor',
-            // },
+            {
+              fill: 'currentColor',
+            },
             {
               xmlns: 'http://www.w3.org/2000/svg',
             },

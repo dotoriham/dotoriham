@@ -306,16 +306,16 @@ html {
   --dotoriham-color-dark7: #495057;
   --dotoriham-color-dark8: #343a40;
   --dotoriham-color-dark9: #212529;
-  --dotoriham-color-gray0: #000;
-  --dotoriham-color-gray1: #000;
-  --dotoriham-color-gray2: #000;
-  --dotoriham-color-gray3: #fff;
-  --dotoriham-color-gray4: #fff;
-  --dotoriham-color-gray5: #fff;
-  --dotoriham-color-gray6: #fff;
-  --dotoriham-color-gray7: #fff;
-  --dotoriham-color-gray8: #fff;
-  --dotoriham-color-gray9: #fff;
+  --dotoriham-color-gray0: #343a40;
+  --dotoriham-color-gray1: #495057;
+  --dotoriham-color-gray2: #868e96;
+  --dotoriham-color-gray3: #adb5bd;
+  --dotoriham-color-gray4: #ced4da;
+  --dotoriham-color-gray5: #dee2e6;
+  --dotoriham-color-gray6: #e9ecef;
+  --dotoriham-color-gray7: #f1f3f5;
+  --dotoriham-color-gray8: #f8f9fa
+  --dotoriham-color-gray9: #ffffff;
   --dotoriham-color-red0: #ff6b6b;
   --dotoriham-color-red1: #fa5252;
   --dotoriham-color-red2: #f03e3e;

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { EyeActiveIcon, EyeInactiveIcon } from '@dotoriham/icons';
-import { Input, SwitchableButton } from '@dotoriham/ui';
+import { Input, SwitchableButton, color } from '@dotoriham/ui';
 
 export const SignUpFormSection = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -44,12 +44,8 @@ const EyeToggleButton = ({
     <SwitchableButton
       isActive={isActive}
       onClick={onClick}
-      inactiveComponent={
-        <EyeInactiveIcon fontSize={20} color={`var(--dotoriham-color-gray6)`} />
-      }
-      activeComponent={
-        <EyeActiveIcon fontSize={20} color={`var(--dotoriham-color-black)`} />
-      }
+      inactiveComponent={<EyeInactiveIcon fontSize={20} color={color.gray6} />}
+      activeComponent={<EyeActiveIcon fontSize={20} color={color.black} />}
     />
   );
 };

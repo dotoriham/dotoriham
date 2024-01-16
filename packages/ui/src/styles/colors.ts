@@ -121,3 +121,19 @@ export const getColorVariable = (
 
   return colorKey;
 };
+
+const makeColorObject = () => {
+  const colorObject = {} as Record<DotorihamColorKeys, string>;
+  const colorArray = Object.keys(colorMap.light) as DotorihamColorKeys[];
+  colorArray.forEach((colorKey) => {
+    if (colorKey in colorObject) {
+      return;
+    }
+
+    colorObject[colorKey] = getColorVariable(colorKey);
+  });
+
+  return colorObject;
+};
+
+export const color = makeColorObject();

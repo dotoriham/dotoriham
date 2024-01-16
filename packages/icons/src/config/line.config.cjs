@@ -1,8 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultConfig = require('./default.config.cjs');
 
 module.exports = {
   ...defaultConfig,
-  outDir: './components/icon',
+  outDir: './src/components/line',
   svgoConfig: {
     /**
      * @see https://github.com/svg/svgo

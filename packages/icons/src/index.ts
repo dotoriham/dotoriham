@@ -1,1 +1,2 @@
-export * from './components';
+export * from './components/graphic';
+export * from './components/line';

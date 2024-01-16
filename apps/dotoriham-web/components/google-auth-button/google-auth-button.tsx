@@ -1,5 +1,5 @@
-import { Button, Typography } from '@dotoriham/ui';
 import { GoogleIconIcon } from '@dotoriham/icons';
+import { Button, Typography } from '@dotoriham/ui';
 
 export const GoogleAuthButton = () => {
   return (

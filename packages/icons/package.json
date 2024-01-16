@@ -10,7 +10,9 @@
     "prettier": "prettier --config ../../configs/prettier-config/index.json --ignore-path ../../.prettierignore --check './**/*.{js,jsx,ts,tsx,md}'",
     "prettier:fix": "yarn prettier --write",
     "gen": "svgr --index-template src/templates/indexTemplate.cjs  --config-file src/config/basic.config.cjs",
-    "build": "yarn gen --out-dir ./src/components ./src/svgs"
+    "gen:graphic": "yarn gen --config-file ./src/config/graphic.config.cjs --out-dir ./src/components/graphic ./src/svgs/graphic",
+    "gen:line": "yarn gen --out-dir ./src/components/line ./src/svgs/line",
+    "build": "yarn gen:graphic & yarn gen:line &"
   },
   "dependencies": {
     "@svgr/plugin-jsx": "^6.3.1",

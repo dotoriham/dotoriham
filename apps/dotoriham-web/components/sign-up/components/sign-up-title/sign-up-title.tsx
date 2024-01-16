@@ -1,5 +1,6 @@
-import { getClassNames } from '@dotoriham/ui';
 import { SymbolCharacterIcon } from '@dotoriham/icons';
+import { getClassNames } from '@dotoriham/ui';
+
 import classes from './sign-up-title.module.css';
 
 const cx = getClassNames(classes);

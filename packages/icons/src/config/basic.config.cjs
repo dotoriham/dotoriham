@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const defaultConfig = require('./default.config.cjs');
 const addNoScalingStroke = require('../plugins/add-no-scaling-stroke.cjs');
 

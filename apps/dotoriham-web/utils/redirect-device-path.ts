@@ -7,8 +7,13 @@ export const redirectDevicePath = () => {
   const headersList = headers();
   const device = getDevice();
 
-  const header_url = headersList.get('x-url') || '';
-  const url = new URL(header_url);
+  const headerUrl = headersList.get('x-url') ?? null;
+
+  if (headerUrl == null) {
+    return;
+  }
+
+  const url = new URL(headerUrl);
   const fullUrl = `${url.pathname}${url.search}`;
 
   if (device === 'mobile' && fullUrl.includes('/m/') === false) {

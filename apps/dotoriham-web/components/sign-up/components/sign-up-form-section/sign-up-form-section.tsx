@@ -3,7 +3,13 @@
 import { useState } from 'react';
 
 import { EyeActiveIcon, EyeInactiveIcon } from '@dotoriham/icons';
-import { Input, SwitchableButton, color } from '@dotoriham/ui';
+import {
+  Button,
+  Input,
+  SwitchableButton,
+  Typography,
+  color,
+} from '@dotoriham/ui';
 
 export const SignUpFormSection = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -29,6 +35,12 @@ export const SignUpFormSection = () => {
           />
         }
       />
+
+      <Button type="submit" fullWidth size="lg">
+        <Typography type="system_16_500" color="#fff">
+          회원가입
+        </Typography>
+      </Button>
     </form>
   );
 };

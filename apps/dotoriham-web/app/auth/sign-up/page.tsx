@@ -38,7 +38,7 @@ const 구분선 = () => {
       <Border />
       <Typography
         type="system_16_400"
-        color="dark5"
+        color="black"
         w={75}
         h={25}
         display="flex"

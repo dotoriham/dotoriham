@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import { DotorihamColorKeys, getColorVariable } from '../../styles';
+import { DotorihamColorKeys, getAdaptiveColorVariable } from '../../styles';
 import { getClassNames } from '../../utils';
 import classes from './border.module.css';
 
@@ -20,7 +20,7 @@ const getBorderSize = (size: number | `${number}px`) => {
 export const Border = ({ color = 'black', size = 1 }: BorderProps) => {
   const borderStyles = {
     '--border-size': getBorderSize(size),
-    '--border-color': getColorVariable(color),
+    '--border-color': getAdaptiveColorVariable(color),
   } as CSSProperties;
 
   return <div style={borderStyles} className={cx('root')} />;

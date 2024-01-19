@@ -112,11 +112,11 @@ export const colorMap = {
 export type DotorihamColors = 'dark' | 'gray' | 'green' | 'lime' | 'red';
 export type DotorihamColorKeys = keyof (typeof colorMap)['light'];
 
-export const getColorVariable = (
+export const getAdaptiveColorVariable = (
   colorKey: DotorihamColorKeys | (string & {}),
 ) => {
   if (colorKey in colorMap.light) {
-    return `var(--dotoriham-color-${colorKey})`;
+    return `var(--dotoriham-adaptive-color-${colorKey})`;
   }
 
   return colorKey;
@@ -130,7 +130,7 @@ const makeColorObject = () => {
       return;
     }
 
-    colorObject[colorKey] = getColorVariable(colorKey);
+    colorObject[colorKey] = getAdaptiveColorVariable(colorKey);
   });
 
   return colorObject;

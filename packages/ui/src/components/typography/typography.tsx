@@ -1,9 +1,8 @@
-import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import { DotorihamTypography } from '../../styles/typography';
 import { getClassNames } from '../../utils';
-import { DefaultComponentProps } from '../../utils/style-props';
 import classes from './typography.module.css';
-import { DotorihamColorKeys, getColorVariable } from '../../styles';
+import { DotorihamColorKeys, getAdaptiveColorVariable } from '../../styles';
 import { Box, BoxProps } from '../box';
 
 const cx = getClassNames(classes);
@@ -23,7 +22,7 @@ export const Typography = ({
   ...rest
 }: TypographyProps) => {
   const typographyStyles = {
-    '--typography-color': getColorVariable(color),
+    '--typography-color': getAdaptiveColorVariable(color),
     ...style,
   } as CSSProperties;
 

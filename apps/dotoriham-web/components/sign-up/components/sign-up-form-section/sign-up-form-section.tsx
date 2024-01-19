@@ -9,6 +9,7 @@ import {
   SwitchableButton,
   Typography,
   color,
+  fixedColor,
 } from '@dotoriham/ui';
 
 export const SignUpFormSection = () => {
@@ -37,7 +38,7 @@ export const SignUpFormSection = () => {
       />
 
       <Button type="submit" fullWidth size="lg">
-        <Typography type="system_16_500" color="#fff">
+        <Typography type="system_16_500" color={fixedColor.white}>
           회원가입
         </Typography>
       </Button>

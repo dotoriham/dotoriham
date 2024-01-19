@@ -136,4 +136,14 @@ const makeColorObject = () => {
   return colorObject;
 };
 
+/**
+ * variable color
+ * ex) var(--dotoriham-color-black), var(--dotoriham-color-white)
+ */
 export const color = makeColorObject();
+
+/**
+ * fixed color
+ * ex) #000000, #ffffff
+ */
+export const fixedColor = colorMap.light;

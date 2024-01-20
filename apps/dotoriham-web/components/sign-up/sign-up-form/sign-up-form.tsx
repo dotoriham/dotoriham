@@ -12,7 +12,9 @@ import {
   fixedColor,
 } from '@dotoriham/ui';
 
-export const SignUpFormSection = () => {
+import { SignUpAgreement } from '../sign-up-agreement';
+
+export const SignUpForm = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
     setIsPasswordVisible((prev) => !prev);
@@ -36,6 +38,8 @@ export const SignUpFormSection = () => {
           />
         }
       />
+
+      <SignUpAgreement />
 
       <Button type="submit" fullWidth size="lg">
         <Typography type="system_16_500" color={fixedColor.white}>

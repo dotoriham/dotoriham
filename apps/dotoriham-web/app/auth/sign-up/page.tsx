@@ -8,8 +8,8 @@ import {
 
 import classes from './sign-up.module.css';
 import { GoogleAuthButton } from '../../../components/google-auth-button';
-import { SignUpFormSection } from '../../../components/sign-up/components/sign-up-form-section';
-import { SignUpTitle } from '../../../components/sign-up/components/sign-up-title';
+import { SignUpForm } from '../../../components/sign-up/sign-up-form';
+import { SignUpTitle } from '../../../components/sign-up/sign-up-title';
 
 const cx = getClassNames(classes);
 function Page() {
@@ -24,7 +24,7 @@ function Page() {
         <구분선 />
         <Spacing size={28} />
 
-        <SignUpFormSection />
+        <SignUpForm />
       </div>
     </main>
   );

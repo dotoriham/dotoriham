@@ -3183,6 +3183,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dotoriham/ui@workspace:packages/ui"
   dependencies:
+    "@dotoriham/icons": "workspace:*"
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/store": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"

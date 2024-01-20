@@ -14,6 +14,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@dotoriham/icons": "workspace:*",
     "@dotoriham/store": "workspace:*",
     "eslint-config-dotoriham": "workspace:*",
     "typescript-plugin-css-modules": "^5.0.2"

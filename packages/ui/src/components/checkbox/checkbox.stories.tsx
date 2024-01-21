@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Checkbox } from './checkbox';
 
@@ -11,7 +11,11 @@ const meta: Meta<typeof Checkbox> = {
 type Story = StoryObj<typeof Checkbox>;
 
 export const Base: Story = {
-  render: () => <Checkbox checked />,
+  render: () => {
+    const [checked, setChecked] = useState(false);
+    const onToggle = () => setChecked((prev) => !prev);
+    return <Checkbox checked={checked} onClick={onToggle} />;
+  },
 };
 
 export default meta;

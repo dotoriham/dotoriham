@@ -3,6 +3,6 @@ module.exports = {
   icon: true,
   ignoreExisting: true,
   index: true,
-  jsxRuntime: 'automatic',
+  jsxRuntime: 'classic',
   typescript: true,
 };

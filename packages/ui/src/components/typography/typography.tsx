@@ -1,19 +1,19 @@
 import { CSSProperties, ReactNode } from 'react';
 import { DotorihamTypography } from '../../styles/typography';
-import { getClassNames } from '../../utils';
+import { createPolymorphicComponent, getClassNames } from '../../utils';
 import classes from './typography.module.css';
 import { DotorihamColorKeys, getAdaptiveColorVariable } from '../../styles';
 import { Box, BoxProps } from '../box';
 
 const cx = getClassNames(classes);
 
-interface TypographyProps extends BoxProps {
+export interface TypographyProps extends BoxProps {
   type: DotorihamTypography;
   children: ReactNode;
   color?: DotorihamColorKeys | (string & {});
 }
 
-export const Typography = ({
+const _Typography = ({
   type,
   className,
   children,
@@ -36,3 +36,7 @@ export const Typography = ({
     </Box>
   );
 };
+
+export const Typography = createPolymorphicComponent<'p', TypographyProps>(
+  _Typography,
+);

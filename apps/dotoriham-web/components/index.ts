@@ -1,1 +1,1 @@
-export * from './device-page-adaptive/device-page-adaptive';
+export * from './@shared/device-page-adaptive/device-page-adaptive';

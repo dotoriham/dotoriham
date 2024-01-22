@@ -7,7 +7,7 @@ import {
 } from '@dotoriham/ui';
 
 import classes from './sign-up.module.css';
-import { GoogleAuthButton } from '../../../components/google-auth-button';
+import { GoogleAuthButton } from '../../../components/@shared/google-auth-button';
 import { SignUpForm } from '../../../components/sign-up/sign-up-form';
 import { SignUpTitle } from '../../../components/sign-up/sign-up-title';
 

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
-import { Checkbox, Flex, FlexProps } from '@dotoriham/ui';
+import { ArrowIcon } from '@dotoriham/icons';
+import { Checkbox, Flex, FlexProps, color } from '@dotoriham/ui';
 
 interface AgreementListRowProps extends FlexProps {
   withArrow?: boolean;
@@ -21,7 +22,7 @@ export const AgreementListRow = ({
         <Checkbox checked={checked} />
         {children}
       </Flex>
-      {withArrow && <div>Arrow</div>}
+      {withArrow && <ArrowIcon fontSize={20} color={color.gray6} />}
     </Flex>
   );
 };

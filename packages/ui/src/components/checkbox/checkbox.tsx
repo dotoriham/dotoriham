@@ -2,7 +2,7 @@ import { SwitchableButton } from '../switchable-button';
 import { CheckboxIcon, CheckboxSelectedIcon } from '@dotoriham/icons';
 
 interface CheckboxProps {
-  checked: boolean;
+  checked?: boolean;
   /**
    * @default 24
    */
@@ -10,7 +10,11 @@ interface CheckboxProps {
   onClick?: () => void;
 }
 
-export const Checkbox = ({ checked, onClick, size = 24 }: CheckboxProps) => {
+export const Checkbox = ({
+  checked = false,
+  onClick,
+  size = 24,
+}: CheckboxProps) => {
   return (
     <SwitchableButton
       isActive={checked}

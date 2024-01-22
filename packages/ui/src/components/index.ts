@@ -7,3 +7,4 @@ export * from './typography';
 export * from './flex';
 export * from './box';
 export * from './switchable-button';
+export * from './checkbox';

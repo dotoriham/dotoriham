@@ -6,6 +6,7 @@ import { EyeActiveIcon, EyeInactiveIcon } from '@dotoriham/icons';
 import {
   Button,
   Input,
+  Spacing,
   SwitchableButton,
   Typography,
   color,
@@ -39,7 +40,9 @@ export const SignUpForm = () => {
         }
       />
 
+      <Spacing size={8} />
       <SignUpAgreement />
+      <Spacing size={24} />
 
       <Button type="submit" fullWidth size="lg">
         <Typography type="system_16_500" color={fixedColor.white}>

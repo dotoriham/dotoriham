@@ -14,6 +14,7 @@ import {
 } from '@dotoriham/ui';
 
 import { SignUpAgreement } from '../sign-up-agreement';
+import { SignUpLinkedButton } from '../sign-up-linked-button';
 
 export const SignUpForm = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -49,6 +50,9 @@ export const SignUpForm = () => {
           회원가입
         </Typography>
       </Button>
+
+      <Spacing size={24} />
+      <SignUpLinkedButton />
     </form>
   );
 };

@@ -114,6 +114,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/icons"\
     },\
     {\
+      "name": "@dotoriham/moal",\
+      "reference": "workspace:packages/modal"\
+    },\
+    {\
       "name": "@dotoriham/overlay",\
       "reference": "workspace:packages/overlay"\
     },\
@@ -146,6 +150,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/hooks", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks", "workspace:packages/hooks"]],\
     ["@dotoriham/icons", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons", "workspace:packages/icons"]],\
     ["@dotoriham/image", ["workspace:packages/dotoriham-image"]],\
+    ["@dotoriham/moal", ["workspace:packages/modal"]],\
     ["@dotoriham/overlay", ["workspace:packages/overlay"]],\
     ["@dotoriham/package-template", ["workspace:packages/package-template"]],\
     ["@dotoriham/pagination", ["workspace:packages/dotoriham-pagination"]],\
@@ -6377,6 +6382,28 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.1.1"],\
           ["tsconfig", "workspace:configs/tsconfig"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@dotoriham/moal", [\
+      ["workspace:packages/modal", {\
+        "packageLocation": "./packages/modal/",\
+        "packageDependencies": [\
+          ["@dotoriham/moal", "workspace:packages/modal"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["@storybook/react", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:7.0.5"],\
+          ["@types/react", "npm:18.0.27"],\
+          ["@types/react-dom", "npm:18.0.10"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["prettier", "npm:3.1.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"],\
+          ["typescript-plugin-css-modules", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:5.0.2"]\
         ],\
         "linkType": "SOFT"\
       }]\

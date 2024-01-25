@@ -6733,7 +6733,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
           ["prettier", "npm:3.1.1"],\
           ["tsconfig", "workspace:configs/tsconfig"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"],\
+          ["vitest", "virtual:425c97049c019ff8aab7394e7365056778058c0c344e7879f8c3779944006c938071319fb0985cbcecf65ab03093de3c410f5d47ef95c5d0601971c73cd4071e#npm:1.1.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -31652,6 +31653,58 @@ const RAW_RUNTIME_STATE =
           ["vitest", "npm:1.1.3"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:425c97049c019ff8aab7394e7365056778058c0c344e7879f8c3779944006c938071319fb0985cbcecf65ab03093de3c410f5d47ef95c5d0601971c73cd4071e#npm:1.1.3", {\
+        "packageLocation": "./.yarn/__virtual__/vitest-virtual-9103b97401/0/cache/vitest-npm-1.1.3-4ff1a7681b-d49d3aa9f6.zip/node_modules/vitest/",\
+        "packageDependencies": [\
+          ["vitest", "virtual:425c97049c019ff8aab7394e7365056778058c0c344e7879f8c3779944006c938071319fb0985cbcecf65ab03093de3c410f5d47ef95c5d0601971c73cd4071e#npm:1.1.3"],\
+          ["@edge-runtime/vm", null],\
+          ["@types/edge-runtime__vm", null],\
+          ["@types/happy-dom", null],\
+          ["@types/jsdom", null],\
+          ["@types/node", null],\
+          ["@types/vitest__browser", null],\
+          ["@types/vitest__ui", null],\
+          ["@vitest/browser", null],\
+          ["@vitest/expect", "npm:1.1.3"],\
+          ["@vitest/runner", "npm:1.1.3"],\
+          ["@vitest/snapshot", "npm:1.1.3"],\
+          ["@vitest/spy", "npm:1.1.3"],\
+          ["@vitest/ui", null],\
+          ["@vitest/utils", "npm:1.1.3"],\
+          ["acorn-walk", "npm:8.3.2"],\
+          ["cac", "npm:6.7.14"],\
+          ["chai", "npm:4.4.0"],\
+          ["debug", "virtual:1ca322a4d66c7a41fb1e112226317c5a21fb69ea7d45c9d09b748ed5b9f833c84750b4efbc0ff288a6bf112667942c8baf99cbcdf6d047bbf8cc131896c14fd5#npm:4.3.4"],\
+          ["execa", "npm:8.0.1"],\
+          ["happy-dom", null],\
+          ["jsdom", null],\
+          ["local-pkg", "npm:0.5.0"],\
+          ["magic-string", "npm:0.30.5"],\
+          ["pathe", "npm:1.1.2"],\
+          ["picocolors", "npm:1.0.0"],\
+          ["std-env", "npm:3.7.0"],\
+          ["strip-literal", "npm:1.3.0"],\
+          ["tinybench", "npm:2.5.1"],\
+          ["tinypool", "npm:0.8.1"],\
+          ["vite", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:5.0.11"],\
+          ["vite-node", "npm:1.1.3"],\
+          ["why-is-node-running", "npm:2.2.2"]\
+        ],\
+        "packagePeers": [\
+          "@edge-runtime/vm",\
+          "@types/edge-runtime__vm",\
+          "@types/happy-dom",\
+          "@types/jsdom",\
+          "@types/node",\
+          "@types/vitest__browser",\
+          "@types/vitest__ui",\
+          "@vitest/browser",\
+          "@vitest/ui",\
+          "happy-dom",\
+          "jsdom"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#npm:1.1.3", {\
         "packageLocation": "./.yarn/__virtual__/vitest-virtual-0bb4f84dae/0/cache/vitest-npm-1.1.3-4ff1a7681b-d49d3aa9f6.zip/node_modules/vitest/",\

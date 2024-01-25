@@ -1,1 +1,1 @@
-export * from './template';
+export { default as EventManager } from './event-manger';

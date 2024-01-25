@@ -3,8 +3,6 @@ import path from 'path';
 import type { StorybookConfig } from '@storybook/react-webpack5';
 const config: StorybookConfig = {
   stories: [
-    // '../stories/**/*.mdx',
-    // '../stories/**/*.stories.@(js|jsx|ts|tsx)',
     {
       directory: '../packages/ui/src/styles',
       titlePrefix: 'Styles',
@@ -12,6 +10,10 @@ const config: StorybookConfig = {
     {
       directory: '../packages/ui/src/components',
       titlePrefix: 'UI',
+    },
+    {
+      directory: '../packages/modal/src/components',
+      titlePrefix: 'Modal',
     },
   ],
   addons: [

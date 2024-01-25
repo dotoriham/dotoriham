@@ -3,7 +3,7 @@ import {
   ColorMode,
   setColorModeAttribute,
 } from '../utils/color-mode-attribute';
-import { useIsomorphicEffect } from './useIsomorphicEffect';
+import { useIsomorphicEffect } from '@dotoriham/hooks';
 
 interface ColorModeOptions {
   colorMode?: ColorMode;

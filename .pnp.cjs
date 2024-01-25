@@ -6413,6 +6413,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/modal/",\
         "packageDependencies": [\
           ["@dotoriham/modal", "workspace:packages/modal"],\
+          ["@dotoriham/animate", "workspace:packages/animate"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["@storybook/react", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:7.0.5"],\

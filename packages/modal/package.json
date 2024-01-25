@@ -11,6 +11,7 @@
     "prettier:fix": "yarn prettier --write"
   },
   "devDependencies": {
+    "@dotoriham/animate": "workspace:*",
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
     "@storybook/react": "^7.0.5",

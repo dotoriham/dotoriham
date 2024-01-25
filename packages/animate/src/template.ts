@@ -1,1 +1,1 @@
-export const template = () => console.log('template');
+export const test = () => console.log('Asd');

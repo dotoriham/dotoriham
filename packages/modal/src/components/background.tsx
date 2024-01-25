@@ -1,3 +1,5 @@
+import { motion } from '@dotoriham/animate';
+
 interface BackgroundProps {
   isOpen: boolean;
   onClick: () => void;
@@ -9,18 +11,20 @@ export const Background = ({ isOpen, onClick }: BackgroundProps) => {
   }
 
   return (
-    <div
+    <motion.div
+      onClick={onClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.6 }}
+      exit={{ opacity: 0 }}
       style={{
         backgroundColor: 'black',
-        bottom: 0,
+        height: '100%',
         left: 0,
-        opacity: isOpen ? 0.5 : 0,
-        position: 'absolute',
-        right: 0,
+        position: 'fixed',
         top: 0,
-        transition: 'opacity 0.2s ease-in-out',
+        width: '100%',
+        zIndex: 10,
       }}
-      onClick={onClick}
     />
   );
 };

@@ -2757,7 +2757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dotoriham/animate@workspace:packages/animate":
+"@dotoriham/animate@workspace:*, @dotoriham/animate@workspace:packages/animate":
   version: 0.0.0-use.local
   resolution: "@dotoriham/animate@workspace:packages/animate"
   dependencies:
@@ -2924,6 +2924,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dotoriham/modal@workspace:packages/modal"
   dependencies:
+    "@dotoriham/animate": "workspace:*"
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
     "@storybook/react": "npm:^7.0.5"

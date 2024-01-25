@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
-import { Background } from './background';
+import { Dimmed } from './dimmed';
+import { ModalContainer } from './modal-container';
 
 interface ModalProps {
   isOpen: boolean;
@@ -11,8 +12,8 @@ interface ModalProps {
 export const Modal = ({ isOpen, children, onClose }: ModalProps) => {
   return (
     <>
-      {children}
-      <Background isOpen={isOpen} onClick={onClose} />
+      <ModalContainer isOpen={isOpen}>{children}</ModalContainer>
+      <Dimmed isOpen={isOpen} onClick={onClose} />
     </>
   );
 };

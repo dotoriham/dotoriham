@@ -1,11 +1,11 @@
 import { motion, AnimatePresence } from '@dotoriham/animate';
 
-interface BackgroundProps {
+interface DimmedProps {
   isOpen: boolean;
   onClick: () => void;
 }
 
-export const Background = ({ isOpen, onClick }: BackgroundProps) => {
+export const Dimmed = ({ isOpen, onClick }: DimmedProps) => {
   return (
     <AnimatePresence>
       {isOpen && (

@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import { Background } from './background';
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -7,5 +9,10 @@ interface ModalProps {
 }
 
 export const Modal = ({ isOpen, children, onClose }: ModalProps) => {
-  return <div>{children}</div>;
+  return (
+    <>
+      {children}
+      <Background isOpen={isOpen} onClick={onClose} />
+    </>
+  );
 };

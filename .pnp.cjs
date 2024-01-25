@@ -42,6 +42,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:configs/tsconfig"\
     },\
     {\
+      "name": "@dotoriham/animate",\
+      "reference": "workspace:packages/animate"\
+    },\
+    {\
       "name": "@dotoriham/bottomsheet",\
       "reference": "workspace:packages/dotoriham-bottomsheet"\
     },\
@@ -114,7 +118,7 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/icons"\
     },\
     {\
-      "name": "@dotoriham/moal",\
+      "name": "@dotoriham/modal",\
       "reference": "workspace:packages/modal"\
     },\
     {\
@@ -141,6 +145,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@dotoriham/animate", ["workspace:packages/animate"]],\
     ["@dotoriham/bottomsheet", ["workspace:packages/dotoriham-bottomsheet"]],\
     ["@dotoriham/dragdrop", ["workspace:packages/dotoriham-dragdrop"]],\
     ["@dotoriham/dropdown", ["workspace:packages/dotoriham-dropdown"]],\
@@ -150,7 +155,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/hooks", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks", "workspace:packages/hooks"]],\
     ["@dotoriham/icons", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons", "workspace:packages/icons"]],\
     ["@dotoriham/image", ["workspace:packages/dotoriham-image"]],\
-    ["@dotoriham/moal", ["workspace:packages/modal"]],\
+    ["@dotoriham/modal", ["workspace:packages/modal"]],\
     ["@dotoriham/overlay", ["workspace:packages/overlay"]],\
     ["@dotoriham/package-template", ["workspace:packages/package-template"]],\
     ["@dotoriham/pagination", ["workspace:packages/dotoriham-pagination"]],\
@@ -6176,6 +6181,23 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@dotoriham/animate", [\
+      ["workspace:packages/animate", {\
+        "packageLocation": "./packages/animate/",\
+        "packageDependencies": [\
+          ["@dotoriham/animate", "workspace:packages/animate"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["framer-motion", "virtual:4fd952ad764e49bbf8a8260fd680b542fef60fc878f570576751189241297ed38d8fa66f280a12216b238b3a66ef2c6c608246bf25edd5112c4de257d8e4d576#npm:11.0.3"],\
+          ["prettier", "npm:3.1.1"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@dotoriham/bottomsheet", [\
       ["workspace:packages/dotoriham-bottomsheet", {\
         "packageLocation": "./packages/dotoriham-bottomsheet/",\
@@ -6386,11 +6408,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["@dotoriham/moal", [\
+    ["@dotoriham/modal", [\
       ["workspace:packages/modal", {\
         "packageLocation": "./packages/modal/",\
         "packageDependencies": [\
-          ["@dotoriham/moal", "workspace:packages/modal"],\
+          ["@dotoriham/modal", "workspace:packages/modal"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["@storybook/react", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:7.0.5"],\
@@ -6855,6 +6877,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@emotion/is-prop-valid", [\
+      ["npm:0.8.8", {\
+        "packageLocation": "./.yarn/cache/@emotion-is-prop-valid-npm-0.8.8-261a0f2426-e85bdeb9d9.zip/node_modules/@emotion/is-prop-valid/",\
+        "packageDependencies": [\
+          ["@emotion/is-prop-valid", "npm:0.8.8"],\
+          ["@emotion/memoize", "npm:0.7.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.2.0", {\
         "packageLocation": "./.yarn/cache/@emotion-is-prop-valid-npm-1.2.0-332d343e3d-1827efd49a.zip/node_modules/@emotion/is-prop-valid/",\
         "packageDependencies": [\
@@ -6865,6 +6895,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@emotion/memoize", [\
+      ["npm:0.7.4", {\
+        "packageLocation": "./.yarn/cache/@emotion-memoize-npm-0.7.4-5648cf11b8-4e3920d4ec.zip/node_modules/@emotion/memoize/",\
+        "packageDependencies": [\
+          ["@emotion/memoize", "npm:0.7.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:0.8.0", {\
         "packageLocation": "./.yarn/cache/@emotion-memoize-npm-0.8.0-c5dd451828-c87bb110b8.zip/node_modules/@emotion/memoize/",\
         "packageDependencies": [\
@@ -19304,6 +19341,34 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["fragment-cache", "npm:0.2.1"],\
           ["map-cache", "npm:0.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["framer-motion", [\
+      ["npm:11.0.3", {\
+        "packageLocation": "./.yarn/cache/framer-motion-npm-11.0.3-b536c483a1-f1aaf7da81.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "npm:11.0.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4fd952ad764e49bbf8a8260fd680b542fef60fc878f570576751189241297ed38d8fa66f280a12216b238b3a66ef2c6c608246bf25edd5112c4de257d8e4d576#npm:11.0.3", {\
+        "packageLocation": "./.yarn/__virtual__/framer-motion-virtual-47de5cf962/0/cache/framer-motion-npm-11.0.3-b536c483a1-f1aaf7da81.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "virtual:4fd952ad764e49bbf8a8260fd680b542fef60fc878f570576751189241297ed38d8fa66f280a12216b238b3a66ef2c6c608246bf25edd5112c4de257d8e4d576#npm:11.0.3"],\
+          ["@emotion/is-prop-valid", "npm:0.8.8"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["react", null],\
+          ["react-dom", null],\
+          ["tslib", "npm:2.4.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

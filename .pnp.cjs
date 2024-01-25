@@ -118,6 +118,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/icons"\
     },\
     {\
+      "name": "@dotoriham/overlay",\
+      "reference": "workspace:packages/overlay"\
+    },\
+    {\
       "name": "@dotoriham/package-template",\
       "reference": "workspace:packages/package-template"\
     },\
@@ -151,6 +155,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/hooks", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks", "workspace:packages/hooks"]],\
     ["@dotoriham/icons", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons", "workspace:packages/icons"]],\
     ["@dotoriham/image", ["workspace:packages/dotoriham-image"]],\
+    ["@dotoriham/overlay", ["workspace:packages/overlay"]],\
     ["@dotoriham/package-template", ["workspace:packages/package-template"]],\
     ["@dotoriham/pagination", ["workspace:packages/dotoriham-pagination"]],\
     ["@dotoriham/picker", ["workspace:packages/dotoriham-picker"]],\
@@ -6840,6 +6845,24 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.32.0"],\
           ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
           ["prettier", "npm:3.1.1"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@dotoriham/overlay", [\
+      ["workspace:packages/overlay", {\
+        "packageLocation": "./packages/overlay/",\
+        "packageDependencies": [\
+          ["@dotoriham/overlay", "workspace:packages/overlay"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["@types/react", "npm:18.0.27"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["prettier", "npm:3.1.1"],\
+          ["react", "npm:18.2.0"],\
           ["tsconfig", "workspace:configs/tsconfig"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\

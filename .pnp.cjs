@@ -110,6 +110,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/dotoriham-utils"\
     },\
     {\
+      "name": "@dotoriham/event-manager",\
+      "reference": "workspace:packages/event-manager"\
+    },\
+    {\
       "name": "@dotoriham/hooks",\
       "reference": "workspace:packages/hooks"\
     },\
@@ -134,10 +138,6 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/ui"\
     },\
     {\
-      "name": "@dotoriham/use-overlay",\
-      "reference": "workspace:packages/use-overlay"\
-    },\
-    {\
       "name": "@dotoriham/virtual-scroll",\
       "reference": "workspace:packages/virtual-scroll"\
     }\
@@ -151,6 +151,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/dragdrop", ["workspace:packages/dotoriham-dragdrop"]],\
     ["@dotoriham/dropdown", ["workspace:packages/dotoriham-dropdown"]],\
     ["@dotoriham/error-boundary", ["workspace:packages/dotoriham-errorboundary"]],\
+    ["@dotoriham/event-manager", ["workspace:packages/event-manager"]],\
     ["@dotoriham/form", ["workspace:packages/dotoriham-form"]],\
     ["@dotoriham/hooks", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks", "workspace:packages/hooks"]],\
     ["@dotoriham/icons", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons", "workspace:packages/icons"]],\
@@ -170,7 +171,6 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/toast", ["workspace:packages/dotoriham-toast"]],\
     ["@dotoriham/tooltip", ["workspace:packages/dotoriham-tooltip"]],\
     ["@dotoriham/ui", ["virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/ui", "workspace:packages/ui"]],\
-    ["@dotoriham/use-overlay", ["virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/use-overlay", "workspace:packages/use-overlay"]],\
     ["@dotoriham/utils", ["workspace:packages/dotoriham-utils"]],\
     ["@dotoriham/virtual-scroll", ["virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/virtual-scroll", "workspace:packages/virtual-scroll"]],\
     ["dotoriham", ["workspace:."]],\
@@ -6722,6 +6722,22 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
+    ["@dotoriham/event-manager", [\
+      ["workspace:packages/event-manager", {\
+        "packageLocation": "./packages/event-manager/",\
+        "packageDependencies": [\
+          ["@dotoriham/event-manager", "workspace:packages/event-manager"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["prettier", "npm:3.1.1"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@dotoriham/form", [\
       ["workspace:packages/dotoriham-form", {\
         "packageLocation": "./packages/dotoriham-form/",\
@@ -7188,50 +7204,6 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#npm:5.0.11"],\
           ["vitest", "virtual:8fe5c377c196b15e47b40d98b51c8fccd1ae425434ea54f2502700954b16647c8f1aff75b65b3beabf455bd1671fb4bbb0d23de24b83e652aeaeb7deb7e33031#npm:1.1.3"],\
           ["vitest-dom", "virtual:8fe5c377c196b15e47b40d98b51c8fccd1ae425434ea54f2502700954b16647c8f1aff75b65b3beabf455bd1671fb4bbb0d23de24b83e652aeaeb7deb7e33031#npm:0.1.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
-    ["@dotoriham/use-overlay", [\
-      ["virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/use-overlay", {\
-        "packageLocation": "./.yarn/__virtual__/@dotoriham-use-overlay-virtual-430b561ed3/1/packages/use-overlay/",\
-        "packageDependencies": [\
-          ["@dotoriham/use-overlay", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/use-overlay"],\
-          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
-          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-          ["@types/react", "npm:18.2.24"],\
-          ["@types/react-dom", "npm:18.2.8"],\
-          ["eslint", "npm:8.32.0"],\
-          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
-          ["prettier", "npm:3.1.1"],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#npm:18.2.0"],\
-          ["tsconfig", "workspace:configs/tsconfig"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
-        ],\
-        "packagePeers": [\
-          "@types/react-dom",\
-          "@types/react",\
-          "react-dom",\
-          "react"\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["workspace:packages/use-overlay", {\
-        "packageLocation": "./packages/use-overlay/",\
-        "packageDependencies": [\
-          ["@dotoriham/use-overlay", "workspace:packages/use-overlay"],\
-          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
-          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-          ["@types/react", "npm:18.0.27"],\
-          ["@types/react-dom", "npm:18.0.10"],\
-          ["eslint", "npm:8.32.0"],\
-          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
-          ["prettier", "npm:3.1.1"],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
-          ["tsconfig", "workspace:configs/tsconfig"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -19788,7 +19760,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["example-next-app-router", "workspace:apps/example-next-app-router"],\
           ["@dotoriham/query", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/query"],\
-          ["@dotoriham/use-overlay", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/use-overlay"],\
           ["@dotoriham/virtual-scroll", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/virtual-scroll"],\
           ["@types/node", "npm:20.8.0"],\
           ["@types/react", "npm:18.2.24"],\

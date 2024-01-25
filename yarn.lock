@@ -2771,27 +2771,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/device-detect@workspace:packages/device-detect":
-  version: 0.0.0-use.local
-  resolution: "@dotoriham/device-detect@workspace:packages/device-detect"
-  dependencies:
-    "@dotoriham/prettier-config": "workspace:*"
-    "@dotoriham/stylelint-config": "workspace:*"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    eslint: "npm:8.32.0"
-    eslint-config-dotoriham: "workspace:*"
-    prettier: "npm:^3.1.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    tsconfig: "workspace:*"
-    typescript: "npm:5.0.4"
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
 "@dotoriham/dragdrop@workspace:packages/dotoriham-dragdrop":
   version: 0.0.0-use.local
   resolution: "@dotoriham/dragdrop@workspace:packages/dotoriham-dragdrop"

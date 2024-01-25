@@ -42,10 +42,6 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:configs/tsconfig"\
     },\
     {\
-      "name": "@dotoriham/device-detect",\
-      "reference": "workspace:packages/device-detect"\
-    },\
-    {\
       "name": "@dotoriham/bottomsheet",\
       "reference": "workspace:packages/dotoriham-bottomsheet"\
     },\
@@ -142,7 +138,6 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@dotoriham/bottomsheet", ["workspace:packages/dotoriham-bottomsheet"]],\
-    ["@dotoriham/device-detect", ["workspace:packages/device-detect"]],\
     ["@dotoriham/dragdrop", ["workspace:packages/dotoriham-dragdrop"]],\
     ["@dotoriham/dropdown", ["workspace:packages/dotoriham-dropdown"]],\
     ["@dotoriham/error-boundary", ["workspace:packages/dotoriham-errorboundary"]],\
@@ -6186,26 +6181,6 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.32.0"],\
           ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
           ["prettier", "npm:3.1.1"],\
-          ["tsconfig", "workspace:configs/tsconfig"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
-    ["@dotoriham/device-detect", [\
-      ["workspace:packages/device-detect", {\
-        "packageLocation": "./packages/device-detect/",\
-        "packageDependencies": [\
-          ["@dotoriham/device-detect", "workspace:packages/device-detect"],\
-          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
-          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-          ["@types/react", "npm:18.0.27"],\
-          ["@types/react-dom", "npm:18.0.10"],\
-          ["eslint", "npm:8.32.0"],\
-          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
-          ["prettier", "npm:3.1.1"],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
           ["tsconfig", "workspace:configs/tsconfig"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\

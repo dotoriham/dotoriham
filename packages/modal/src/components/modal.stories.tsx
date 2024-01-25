@@ -25,7 +25,21 @@ const BaseComponent = () => {
     <>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        Modal
+        <div
+          style={{
+            display: 'flex',
+            height: '100%',
+            width: '100%',
+          }}>
+          <div
+            style={{
+              background: 'white',
+              height: '300px',
+              width: '500px',
+            }}>
+            안녕하세요
+          </div>
+        </div>
       </Modal>
     </>
   );

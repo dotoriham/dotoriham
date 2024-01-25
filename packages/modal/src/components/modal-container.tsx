@@ -31,21 +31,15 @@ export const ModalContainer = ({ children, isOpen }: ModalContainerProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="modal"
           variants={slideUpToCenter}
           initial="hidden"
           animate="visible"
+          style={{
+            position: 'absolute',
+            zIndex: 50, // TODO z-index를 상수로 관리 + 해당 코드를 module css로 분리
+          }}
           exit="exit">
-          <div
-            style={{
-              bottom: 0,
-              left: 0,
-              position: 'absolute',
-              right: 0,
-              top: 0,
-            }}>
-            {children}
-          </div>
+          {children}
         </motion.div>
       )}
     </AnimatePresence>

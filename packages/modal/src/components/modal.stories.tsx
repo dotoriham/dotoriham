@@ -27,18 +27,12 @@ const BaseComponent = () => {
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <div
           style={{
-            display: 'flex',
-            height: '100%',
-            width: '100%',
-          }}>
-          <div
-            style={{
-              background: 'white',
-              height: '300px',
-              width: '500px',
-            }}>
-            안녕하세요
-          </div>
+            background: 'white',
+            height: '300px',
+            width: '500px',
+          }}
+          onClick={() => console.log('hi')}>
+          안녕하세요
         </div>
       </Modal>
     </>

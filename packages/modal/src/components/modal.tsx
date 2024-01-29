@@ -12,7 +12,9 @@ interface ModalProps {
 export const Modal = ({ isOpen, children, onClose }: ModalProps) => {
   return (
     <>
-      <ModalContainer isOpen={isOpen}>{children}</ModalContainer>
+      <ModalContainer isOpen={isOpen} onClose={onClose}>
+        {children}
+      </ModalContainer>
       <Dimmed isOpen={isOpen} onClick={onClose} />
     </>
   );

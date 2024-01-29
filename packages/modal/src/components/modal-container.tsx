@@ -7,9 +7,14 @@ import classes from './modal.module.css';
 interface ModalContainerProps {
   children: ReactNode;
   isOpen: boolean;
+  onClose: () => void;
 }
 
-export const ModalContainer = ({ children, isOpen }: ModalContainerProps) => {
+export const ModalContainer = ({
+  children,
+  isOpen,
+  onClose,
+}: ModalContainerProps) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -29,14 +34,20 @@ export const ModalContainer = ({ children, isOpen }: ModalContainerProps) => {
                 duration: 0.5,
                 type: 'spring',
               },
-              y: '40vh',
+              y: '0vh',
             },
           }}
           initial="hidden"
           animate="visible"
           className={classes.root}
+          onClick={onClose}
           exit="exit">
-          {children}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+            }}>
+            {children}
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

@@ -1,18 +1,12 @@
-import { ReactNode } from 'react';
-
 import { Dimmed } from './dimmed';
-import { ModalContainer } from './modal-container';
+import { ModalContainer, ModalContainerProps } from './modal-container';
 
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  children: ReactNode;
-}
+type ModalProps = ModalContainerProps;
 
-export const Modal = ({ isOpen, children, onClose }: ModalProps) => {
+export const Modal = ({ isOpen, children, onClose, ...rest }: ModalProps) => {
   return (
     <>
-      <ModalContainer isOpen={isOpen} onClose={onClose}>
+      <ModalContainer isOpen={isOpen} onClose={onClose} {...rest}>
         {children}
       </ModalContainer>
       <Dimmed isOpen={isOpen} onClick={onClose} />

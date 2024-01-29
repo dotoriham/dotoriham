@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Modal } from './modal';
+import { ModalVariantType } from './modal-utils';
 
 const meta: Meta<typeof Modal> = {
   component: Modal,
@@ -18,13 +19,29 @@ const meta: Meta<typeof Modal> = {
 
 type Story = StoryObj<typeof Modal>;
 
-const BaseComponent = () => {
+const BaseComponent = ({
+  buttonText,
+  variant,
+}: {
+  buttonText: string;
+  variant?: ModalVariantType;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+      <button
+        style={{
+          border: '1px solid blue',
+          borderRadius: '5px',
+          display: 'block',
+          marginBottom: '20px',
+          padding: '10px 20px',
+        }}
+        onClick={() => setIsOpen(true)}>
+        {buttonText}
+      </button>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} variant={variant}>
         <div
           style={{
             background: 'white',
@@ -40,7 +57,16 @@ const BaseComponent = () => {
 };
 
 export const Base: Story = {
-  render: () => <BaseComponent />,
+  render: () => <BaseComponent buttonText="모달 열기" />,
+};
+
+export const Animation: Story = {
+  render: () => (
+    <>
+      <BaseComponent buttonText="popInFromBottom" variant="popInFromBottom" />
+      <BaseComponent buttonText="fadeIn" variant="fadeIn" />
+    </>
+  ),
 };
 
 export default meta;

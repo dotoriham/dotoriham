@@ -1,4 +1,4 @@
-import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import { DefaultComponentProps } from '../../utils/style-props';
 import { SystemProps, extractSystemStyles } from './box.utils';
 import { createPolymorphicComponent } from '../../utils';

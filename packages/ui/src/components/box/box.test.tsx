@@ -4,11 +4,11 @@ import { Box } from './box';
 
 describe('Box', () => {
   it('should render', () => {
-    render(<Box />);
+    render(<Box>hihi</Box>);
   });
 
   it("Box의 className이 'box'인지 확인", () => {
-    const { container } = render(<Box className="box" />);
+    const { container } = render(<Box className="box">hihi</Box>);
     expect(container.firstChild).toHaveClass('box');
     screen.debug();
   });

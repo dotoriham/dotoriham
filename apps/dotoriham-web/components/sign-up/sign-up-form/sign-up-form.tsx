@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
+import { useInput, useToggle, useToggles } from '@dotoriham/hooks';
 import { EyeActiveIcon, EyeInactiveIcon } from '@dotoriham/icons';
 import {
   Button,
@@ -16,11 +15,17 @@ import {
 import { SignUpAgreement } from '../sign-up-agreement';
 import { SignUpLinkedButton } from '../sign-up-linked-button';
 
+export const 동의사항 = {
+  개인정보수집: false,
+  리마인드알림: false,
+  이용약관: false,
+} as const;
+
 export const SignUpForm = () => {
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const togglePasswordVisibility = () => {
-    setIsPasswordVisible((prev) => !prev);
-  };
+  const [email, handleChangeEmail] = useInput('');
+  const [password, handleChangePassword] = useInput('');
+  const [passwordVisible, handleTogglePasswordVisible] = useToggle(false);
+  const [agreementForm, handleChangeAgreementForm] = useToggles(동의사항);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,21 +33,34 @@ export const SignUpForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Input size="lg" mb={20} placeholder="이메일" />
       <Input
+        size="lg"
+        mb={20}
+        placeholder="이메일"
+        value={email}
+        type="email"
+        onChange={handleChangeEmail}
+      />
+      <Input
+        value={password}
+        onChange={handleChangePassword}
+        type={passwordVisible ? 'text' : 'password'}
         size="lg"
         mb={20}
         placeholder="비밀번호"
         rightComponent={
           <EyeToggleButton
-            isActive={isPasswordVisible}
-            onClick={togglePasswordVisibility}
+            isActive={passwordVisible}
+            onClick={handleTogglePasswordVisible}
           />
         }
       />
 
       <Spacing size={8} />
-      <SignUpAgreement />
+      <SignUpAgreement
+        agreementForm={agreementForm}
+        onChangeAgreementForm={handleChangeAgreementForm}
+      />
       <Spacing size={24} />
 
       <Button type="submit" fullWidth size="lg">

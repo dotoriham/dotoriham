@@ -1,8 +1,17 @@
 import { Border, Typography } from '@dotoriham/ui';
 
 import { AgreementListRow } from '../agreement-list-row';
+import { 동의사항 } from '../sign-up-form';
 
-export const SignUpAgreement = () => {
+interface Props {
+  agreementForm: typeof 동의사항;
+  onChangeAgreementForm: (key: keyof typeof 동의사항, value?: boolean) => void;
+}
+
+export const SignUpAgreement = ({
+  agreementForm,
+  onChangeAgreementForm,
+}: Props) => {
   return (
     <>
       <AgreementListRow mb={6}>

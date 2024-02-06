@@ -19,16 +19,37 @@ export const 동의사항 = {
   개인정보수집: false,
   리마인드알림: false,
   이용약관: false,
-} as const;
+};
+
+type AgreementForm = {
+  [key in keyof typeof 동의사항]: boolean;
+};
 
 export const SignUpForm = () => {
   const [email, handleChangeEmail] = useInput('');
   const [password, handleChangePassword] = useInput('');
   const [passwordVisible, handleTogglePasswordVisible] = useToggle(false);
-  const [agreementForm, handleChangeAgreementForm] = useToggles(동의사항);
+  const [agreementForm, handleChangeAgreementForm, setChangeAgreementForm] =
+    useToggles<AgreementForm>(동의사항);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+  };
+
+  const isAllAgreed = Object.values(agreementForm).every(
+    (value) => value === true,
+  );
+
+  const handleAllAgree = () => {
+    if (isAllAgreed) {
+      setChangeAgreementForm(동의사항);
+    } else {
+      setChangeAgreementForm({
+        개인정보수집: true,
+        리마인드알림: true,
+        이용약관: true,
+      });
+    }
   };
 
   return (
@@ -59,6 +80,8 @@ export const SignUpForm = () => {
       <Spacing size={8} />
       <SignUpAgreement
         agreementForm={agreementForm}
+        isAllAgreed={isAllAgreed}
+        onAllAgree={handleAllAgree}
         onChangeAgreementForm={handleChangeAgreementForm}
       />
       <Spacing size={24} />

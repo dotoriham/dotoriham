@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   // TODO: cookie로 color scheme을 가져오는 것을 구현해야 함
   return (
-    <html lang="en" data-dotoriham-color-scheme="dark">
+    <html lang="en" data-dotoriham-color-scheme="light">
       <body suppressHydrationWarning={true}>
         <DotorihamCoreProvider>{children}</DotorihamCoreProvider>
       </body>

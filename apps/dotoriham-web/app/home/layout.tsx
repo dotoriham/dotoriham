@@ -1,24 +1,21 @@
-import { Sidebar } from '../../app-modules/@shared/sidebar/sidebar';
+import { BaseDesktopLayout } from '../../components/layout/base-desktop-layout';
+import { Sidebar } from '../../components/sidebar/sidebar';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <BaseDesktopLayout>
       <header
         style={{
           backgroundColor: 'lightblue',
           height: '48px',
-          margin: '0 auto',
           padding: '10px',
-          width: '1440px',
         }}>
         헤더영역
       </header>
 
       <main
         style={{
-          margin: '0 auto',
           minHeight: 'calc(100vh - 48px - 56px)',
-          width: '1440px',
         }}>
         <div
           style={{
@@ -40,12 +37,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         style={{
           backgroundColor: 'lightgreen',
           height: '56px',
-          margin: '0 auto',
           padding: '10px',
-          width: '1440px',
         }}>
         푸터영역
       </footer>
-    </>
+    </BaseDesktopLayout>
   );
 }

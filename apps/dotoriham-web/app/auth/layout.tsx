@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react';
 import { getClassNames } from '@dotoriham/ui';
 
 import classes from './layout.module.css';
-import { Header } from '../../components/@shared/header/header';
+import { Header } from '../../app-modules/@shared/header/header';
 
 const cx = getClassNames(classes);
 

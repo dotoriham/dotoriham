@@ -5,5 +5,5 @@ import classes from './header.module.css';
 const cx = getClassNames(classes);
 
 export const Header = () => {
-  return <header className={cx('root')}></header>;
+  return <header className={cx('root')}>헤더</header>;
 };

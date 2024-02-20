@@ -1,1 +1,1 @@
-export { DesktopHeader } from './desktop-header';
+export * from './desktop-header';

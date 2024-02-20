@@ -1,18 +1,13 @@
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren } from 'react';
 
-import { Footer } from '../components/footer';
-import { Header } from '../components/header';
+import { DesktopPageLayoutProvider } from './desktop-page-layout-provider';
+import { useDeviceDetect } from './device-detect-provider';
+import { MobilePageLayoutProvider } from './mobile-page-layout-provider';
 
 export const PageLayoutProvider = ({ children }: PropsWithChildren) => {
-  const [] = useState(0);
+  const device = useDeviceDetect();
+  const Provider =
+    device === 'desktop' ? DesktopPageLayoutProvider : MobilePageLayoutProvider;
 
-  // TODO 여기서 userAgent 기반으로 모바일 레이아웃인지 데스크탑 레이아웃인지 분기처리 하기
-
-  return (
-    <>
-      <Header />
-      {children}
-      <Footer />
-    </>
-  );
+  return <Provider>{children}</Provider>;
 };

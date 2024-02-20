@@ -1,1 +1,1 @@
-export { Footer } from './footer';
+export { DesktopFooter } from './desktop-footer';

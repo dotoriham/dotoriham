@@ -1,7 +1,7 @@
-import { CSSProperties, HTMLAttributes, ReactNode } from 'react';
-import { getClassNames } from '../../utils';
-import { DefaultComponentProps } from '../../utils/style-props';
+import { CSSProperties, ReactNode } from 'react';
+
 import classes from './flex.module.css';
+import { getClassNames } from '../../utils';
 import { Box, BoxProps } from '../box';
 
 const cx = getClassNames(classes);
@@ -38,12 +38,12 @@ export const Flex = ({
   ...rest
 }: FlexProps) => {
   const flexStyles = {
+    '--flex-align': align,
+    '--flex-column-gap': columnGap,
     '--flex-direction': direction,
     '--flex-gap': gap,
-    '--flex-row-gap': rowGap,
-    '--flex-column-gap': columnGap,
-    '--flex-align': align,
     '--flex-justify': justify,
+    '--flex-row-gap': rowGap,
     '--flex-wrap': wrap,
     ...style,
   } as CSSProperties;

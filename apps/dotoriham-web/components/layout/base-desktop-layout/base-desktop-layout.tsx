@@ -25,10 +25,10 @@ export const BaseDesktopLayout = ({
   footerOptions,
 }: DesktopLayoutProps) => {
   return (
-    <div className={cx('root')}>
+    <>
       {header === true && <DesktopHeader {...headerOptions} />}
-      {children}
+      <main className={cx('root')}>{children}</main>
       {footer === true && <DesktopFooter {...footerOptions} />}
-    </div>
+    </>
   );
 };

@@ -167,6 +167,8 @@ html {
 :root {
   color-scheme: var(--dotoriham-color-scheme);
 
+  --dotoriham-desktop-max-width: 1440px;
+
   --dotoriham-color-white: #fff;
   --dotoriham-color-black: #000;
   --dotoriham-color-dark0: #c9c9c9;

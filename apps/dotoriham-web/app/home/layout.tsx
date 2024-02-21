@@ -6,21 +6,19 @@ import { Sidebar } from '../../components/sidebar/sidebar';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <BaseDesktopLayout header={true} footer={true}>
-      <main>
+      <div
+        style={{
+          display: 'flex',
+        }}>
+        <Sidebar />
         <div
           style={{
-            display: 'flex',
+            backgroundColor: 'lightyellow',
+            flex: '1 0 auto',
           }}>
-          <Sidebar />
-          <div
-            style={{
-              backgroundColor: 'lightyellow',
-              flex: '1 0 auto',
-            }}>
-            {children}
-          </div>
+          {children}
         </div>
-      </main>
+      </div>
     </BaseDesktopLayout>
   );
 }

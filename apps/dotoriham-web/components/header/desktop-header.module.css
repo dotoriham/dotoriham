@@ -2,4 +2,22 @@
   margin: 0 32px;
   display: flex;
   align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid var(--dotoriham-adaptive-color-gray5);
+  height: 48px;
+  background-color: var(--dotoriham-adaptive-color-white);
+}
+
+.inner {
+  max-width: var(--dotoriham-desktop-max-width);
+  margin: 0 auto;
+  height: 100%;
 }

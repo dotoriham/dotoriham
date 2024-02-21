@@ -4,11 +4,11 @@ import classes from './desktop-header.module.css';
 
 const cx = getClassNames(classes);
 
-export interface HeaderProps {
+export interface DesktopHeaderProps {
   showSearchBar?: boolean;
 }
 
-export const DesktopHeader = ({ showSearchBar }: HeaderProps) => {
+export const DesktopHeader = ({ showSearchBar }: DesktopHeaderProps) => {
   return (
     <header className={cx('root')}>
       헤더

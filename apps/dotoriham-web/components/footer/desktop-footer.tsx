@@ -1,5 +1,5 @@
-export interface FooterProps {}
+export interface DesktopFooterProps {}
 
-export const DesktopFooter = () => {
+export const DesktopFooter = ({}: DesktopFooterProps) => {
   return <footer>footer</footer>;
 };

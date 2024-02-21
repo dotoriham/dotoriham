@@ -64,5 +64,5 @@ export const useDesktopLayout = (props?: DesktopPageLayoutContext) => {
     if (props != null) {
       setContext(props);
     }
-  }, [props]);
+  }, [props, setContext]);
 };

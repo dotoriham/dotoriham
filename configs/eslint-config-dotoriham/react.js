@@ -10,7 +10,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'prettier/@typescript-eslint',
   ],
   // 'react/no-unknown-property': ['error', { ignore: ['css'] }],
   rules: {

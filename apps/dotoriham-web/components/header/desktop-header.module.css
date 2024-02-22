@@ -13,7 +13,7 @@
   top: 0;
   border-bottom: 1px solid var(--dotoriham-adaptive-color-gray5);
   height: 48px;
-  background-color: var(--dotoriham-adaptive-color-white);
+  background-color: var(--dotoriham-color-body);
 }
 
 .inner {

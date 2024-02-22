@@ -1,3 +1,4 @@
+import { DotorihamLogoIcon } from '@dotoriham/icons';
 import { Flex, getClassNames } from '@dotoriham/ui';
 
 import classes from './desktop-header.module.css';
@@ -11,7 +12,7 @@ export const DesktopHeader = ({}: DesktopHeaderProps) => {
     <header className={cx('root')}>
       <div className={cx('container')}>
         <Flex align="center" justify="space-between" className={cx('inner')}>
-          <div>로고</div>
+          <DotorihamLogoIcon width={88} height={20} />
 
           <Flex>
             <div>검색바</div>

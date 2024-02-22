@@ -1,4 +1,6 @@
 import { CSSProperties } from 'react';
+
+import classes from './input.module.css';
 import {
   DotorihamSize,
   createPolymorphicComponent,
@@ -6,9 +8,8 @@ import {
   getDataProps,
   getSize,
 } from '../../utils';
-import classes from './input.module.css';
-import { Box, BoxProps } from '../box';
 import { getRadius } from '../../utils/get-radius';
+import { Box, BoxProps } from '../box';
 import { extractSystemStyles } from '../box/box.utils';
 
 const cx = getClassNames(classes);
@@ -56,10 +57,10 @@ const _Input = ({
   const { systemStyles, ...props } = extractSystemStyles(rest);
 
   const inputStyles = {
+    '--input-border-radius': getRadius(radius),
+    '--input-font-size': getSize('dotoriham-font-size', size),
     '--input-height': getSize('input-height', size),
     '--input-padding-y': getSize('input-padding-y', size),
-    '--input-font-size': getSize('dotoriham-font-size', size),
-    '--input-border-radius': getRadius(radius),
     ...systemStyles,
     ...style,
   } as CSSProperties;
@@ -69,8 +70,8 @@ const _Input = ({
       className={cx('root', className)}
       style={inputStyles}
       {...getDataProps({
-        variant,
         disabled,
+        variant,
       })}>
       {leftComponent && (
         <Box className={cx('left-component')}>{leftComponent}</Box>

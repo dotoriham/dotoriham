@@ -1,7 +1,7 @@
 import { CSSProperties, ReactNode } from 'react';
 
 import classes from './flex.module.css';
-import { getClassNames } from '../../utils';
+import { createPolymorphicComponent, getClassNames } from '../../utils';
 import { Box, BoxProps } from '../box';
 
 const cx = getClassNames(classes);
@@ -24,7 +24,7 @@ export interface FlexProps extends BoxProps {
   direction?: CSSProperties['flexDirection'];
 }
 
-export const Flex = ({
+const _Flex = ({
   children,
   className,
   gap,
@@ -58,3 +58,5 @@ export const Flex = ({
     </Box>
   );
 };
+
+export const Flex = createPolymorphicComponent<'div', FlexProps>(_Flex);

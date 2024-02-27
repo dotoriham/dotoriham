@@ -1,7 +1,8 @@
-import { DotorihamLogoIcon } from '@dotoriham/icons';
-import { Flex, getClassNames } from '@dotoriham/ui';
+import { BellIcon, DotorihamLogoIcon } from '@dotoriham/icons';
+import { Flex, color, getClassNames } from '@dotoriham/ui';
 
 import classes from './desktop-header.module.css';
+import { HeaderProfile } from './header-profile';
 import { SearchBar } from '../search-bar';
 
 const cx = getClassNames(classes);
@@ -18,9 +19,15 @@ export const DesktopHeader = ({}: DesktopHeaderProps) => {
           <Flex>
             <SearchBar />
 
-            <Flex>
-              <div>알림아이콘</div>
-              <div>프로필아이콘</div>
+            <Flex ml={28}>
+              <BellIcon
+                fontSize={24}
+                color={color.gray6}
+                style={{
+                  marginRight: 24,
+                }}
+              />
+              <HeaderProfile />
             </Flex>
           </Flex>
         </Flex>

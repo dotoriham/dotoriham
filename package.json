@@ -17,7 +17,8 @@
     "eslint:fix": "yarn workspaces foreach -pi run eslint:fix --cache",
     "prettier": "yarn workspaces foreach -pi run prettier",
     "prettier:fix": "yarn workspaces foreach -pi run prettier:fix --cache",
-    "icons:build": "yarn workspace @dotoriham/icons build"
+    "icons:build": "yarn workspace @dotoriham/icons build",
+    "ui:make": "yarn workspace @dotoriham/ui make"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {

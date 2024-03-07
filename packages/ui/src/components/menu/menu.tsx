@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { MenuDivider } from './menu-divider';
-import { MenuDropDown } from './menu-drop-down';
+import { MenuDropdown } from './menu-dropdown';
 import { MenuItem } from './menu-item';
 import { MenuLabel } from './menu-label';
 import { MenuTarget } from './menu-target';
@@ -45,7 +45,7 @@ export const Menu = ({ children }: MenuProps) => {
 };
 
 Menu.Target = MenuTarget;
-Menu.DropDown = MenuDropDown;
+Menu.Dropdown = MenuDropdown;
 Menu.Label = MenuLabel;
 Menu.Item = MenuItem;
 Menu.Divider = MenuDivider;

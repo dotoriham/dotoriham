@@ -23,3 +23,13 @@ const Label = () => {
 const Item = () => {
   return <div>Item</div>;
 };
+
+const Divider = () => {
+  return <div>Divider</div>;
+};
+
+Menu.Target = Target;
+Menu.DropDown = DropDown;
+Menu.Label = Label;
+Menu.Item = Item;
+Menu.Divider = Divider;

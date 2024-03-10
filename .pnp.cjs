@@ -162,7 +162,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/picker", ["workspace:packages/dotoriham-picker"]],\
     ["@dotoriham/pinchzoom", ["workspace:packages/dotoriham-pinchzoom"]],\
     ["@dotoriham/prettier-config", ["workspace:configs/prettier-config"]],\
-    ["@dotoriham/react-utils", ["workspace:packages/react-utils"]],\
+    ["@dotoriham/react-utils", ["virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils", "workspace:packages/react-utils"]],\
     ["@dotoriham/store", ["virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/dotoriham-store", "workspace:packages/dotoriham-store"]],\
     ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
     ["@dotoriham/stylelint-config", ["workspace:configs/stylelint-config"]],\
@@ -6697,6 +6697,26 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@dotoriham/react-utils", [\
+      ["virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils", {\
+        "packageLocation": "./.yarn/__virtual__/@dotoriham-react-utils-virtual-dc79fbaadf/1/packages/react-utils/",\
+        "packageDependencies": [\
+          ["@dotoriham/react-utils", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["@types/react", "npm:18.0.27"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["prettier", "npm:3.1.1"],\
+          ["react", "npm:18.2.0"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:packages/react-utils", {\
         "packageLocation": "./packages/react-utils/",\
         "packageDependencies": [\
@@ -6862,6 +6882,7 @@ const RAW_RUNTIME_STATE =
           ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/react-utils", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils"],\
           ["@dotoriham/store", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/dotoriham-store"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["@storybook/react", "virtual:0149526fcd62dbc3523288a5c8de12082690eccb099f7b7f9c7b81c8e8387c12d3817a1a2f38322b8d2d185a36745b817fee605786d7feecf30e4c6bea8db31c#npm:7.0.5"],\
@@ -6898,6 +6919,7 @@ const RAW_RUNTIME_STATE =
           ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/react-utils", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils"],\
           ["@dotoriham/store", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/dotoriham-store"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["@storybook/react", "virtual:0149526fcd62dbc3523288a5c8de12082690eccb099f7b7f9c7b81c8e8387c12d3817a1a2f38322b8d2d185a36745b817fee605786d7feecf30e4c6bea8db31c#npm:7.0.5"],\

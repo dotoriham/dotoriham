@@ -3135,7 +3135,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/react-utils@workspace:packages/react-utils":
+"@dotoriham/react-utils@workspace:*, @dotoriham/react-utils@workspace:packages/react-utils":
   version: 0.0.0-use.local
   resolution: "@dotoriham/react-utils@workspace:packages/react-utils"
   dependencies:
@@ -3268,6 +3268,7 @@ __metadata:
     "@dotoriham/hooks": "workspace:*"
     "@dotoriham/icons": "workspace:*"
     "@dotoriham/prettier-config": "workspace:*"
+    "@dotoriham/react-utils": "workspace:*"
     "@dotoriham/store": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
     "@storybook/react": "npm:^7.0.5"

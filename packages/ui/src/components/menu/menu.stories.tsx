@@ -21,7 +21,18 @@ export const Base: Story = {
         </Menu.Target>
 
         <Menu.Dropdown>
-          <Menu.Label></Menu.Label>
+          <Menu.Label>label</Menu.Label>
+
+          <Menu.Item>item1</Menu.Item>
+          <Menu.Item>item2</Menu.Item>
+          <Menu.Item>item3</Menu.Item>
+          <Menu.Item>item4</Menu.Item>
+
+          <Menu.Divider />
+
+          <Menu.Label>label2</Menu.Label>
+          <Menu.Item>item1</Menu.Item>
+          <Menu.Item>item2</Menu.Item>
         </Menu.Dropdown>
       </Menu>
     </div>

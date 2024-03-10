@@ -3135,24 +3135,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/query@workspace:*, @dotoriham/query@workspace:packages/query":
+"@dotoriham/react-utils@workspace:packages/react-utils":
   version: 0.0.0-use.local
-  resolution: "@dotoriham/query@workspace:packages/query"
+  resolution: "@dotoriham/react-utils@workspace:packages/react-utils"
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/stylelint-config": "workspace:*"
     "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
     eslint: "npm:8.32.0"
     eslint-config-dotoriham: "workspace:*"
     prettier: "npm:^3.1.1"
     react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
     tsconfig: "workspace:*"
     typescript: "npm:5.0.4"
   peerDependencies:
     react: ^18
-    react-dom: ^18
   languageName: unknown
   linkType: soft
 
@@ -11760,7 +11757,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "example-next-app-router@workspace:apps/example-next-app-router"
   dependencies:
-    "@dotoriham/query": "workspace:*"
     "@dotoriham/virtual-scroll": "workspace:*"
     "@types/node": "npm:latest"
     "@types/react": "npm:latest"

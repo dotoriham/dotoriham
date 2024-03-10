@@ -1,11 +1,5 @@
-import { QueryClientProvider } from '@dotoriham/query';
-
 function Page() {
-  return (
-    <QueryClientProvider client="">
-      <Content />
-    </QueryClientProvider>
-  );
+  return <Content />;
 }
 
 export default Page;

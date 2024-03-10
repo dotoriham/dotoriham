@@ -130,8 +130,8 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/package-template"\
     },\
     {\
-      "name": "@dotoriham/query",\
-      "reference": "workspace:packages/query"\
+      "name": "@dotoriham/react-utils",\
+      "reference": "workspace:packages/react-utils"\
     },\
     {\
       "name": "@dotoriham/ui",\
@@ -162,7 +162,7 @@ const RAW_RUNTIME_STATE =
     ["@dotoriham/picker", ["workspace:packages/dotoriham-picker"]],\
     ["@dotoriham/pinchzoom", ["workspace:packages/dotoriham-pinchzoom"]],\
     ["@dotoriham/prettier-config", ["workspace:configs/prettier-config"]],\
-    ["@dotoriham/query", ["virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/query", "workspace:packages/query"]],\
+    ["@dotoriham/react-utils", ["workspace:packages/react-utils"]],\
     ["@dotoriham/store", ["virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/dotoriham-store", "workspace:packages/dotoriham-store"]],\
     ["@dotoriham/storybook-config", ["workspace:configs/storybook-config"]],\
     ["@dotoriham/stylelint-config", ["workspace:configs/stylelint-config"]],\
@@ -6696,44 +6696,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["@dotoriham/query", [\
-      ["virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/query", {\
-        "packageLocation": "./.yarn/__virtual__/@dotoriham-query-virtual-9b45f9cf25/1/packages/query/",\
+    ["@dotoriham/react-utils", [\
+      ["workspace:packages/react-utils", {\
+        "packageLocation": "./packages/react-utils/",\
         "packageDependencies": [\
-          ["@dotoriham/query", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/query"],\
-          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
-          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
-          ["@types/react", "npm:18.2.24"],\
-          ["@types/react-dom", "npm:18.2.8"],\
-          ["eslint", "npm:8.32.0"],\
-          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
-          ["prettier", "npm:3.1.1"],\
-          ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#npm:18.2.0"],\
-          ["tsconfig", "workspace:configs/tsconfig"],\
-          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
-        ],\
-        "packagePeers": [\
-          "@types/react-dom",\
-          "@types/react",\
-          "react-dom",\
-          "react"\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["workspace:packages/query", {\
-        "packageLocation": "./packages/query/",\
-        "packageDependencies": [\
-          ["@dotoriham/query", "workspace:packages/query"],\
+          ["@dotoriham/react-utils", "workspace:packages/react-utils"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["@types/react", "npm:18.0.27"],\
-          ["@types/react-dom", "npm:18.0.10"],\
           ["eslint", "npm:8.32.0"],\
           ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
           ["prettier", "npm:3.1.1"],\
           ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
           ["tsconfig", "workspace:configs/tsconfig"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
         ],\
@@ -19042,7 +19016,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./apps/example-next-app-router/",\
         "packageDependencies": [\
           ["example-next-app-router", "workspace:apps/example-next-app-router"],\
-          ["@dotoriham/query", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/query"],\
           ["@dotoriham/virtual-scroll", "virtual:5bb968a267455d38069c77d354417498bfb40ef776303672112dd417f755c8cc4417f20b9b3e426f190354ea3d69ad63857d6780f963cc885d8b89d7950389d9#workspace:packages/virtual-scroll"],\
           ["@types/node", "npm:20.8.0"],\
           ["@types/react", "npm:18.2.24"],\

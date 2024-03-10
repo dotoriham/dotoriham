@@ -21,7 +21,7 @@ export const Base: Story = {
         </Menu.Target>
 
         <Menu.Dropdown>
-
+          <Menu.Label></Menu.Label>
         </Menu.Dropdown>
       </Menu>
     </div>

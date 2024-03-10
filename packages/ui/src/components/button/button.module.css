@@ -73,4 +73,8 @@
       var(--dotoriham-primary-color-filled-hover)
     );
   }
+
+  &:active {
+    transform: translateY(1px);
+  }
 }

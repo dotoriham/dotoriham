@@ -9,3 +9,4 @@ export * from './switchable-button';
 export * from './checkbox';
 export * from './menu';
 export * from './popover';
+export * from './select';

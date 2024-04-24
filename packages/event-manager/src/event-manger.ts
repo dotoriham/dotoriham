@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import {
   type Callback,
-  type CallbackParametar,
+  type CallbackParameter,
   type TimeoutId,
 } from './event-manager.types';
 
@@ -20,7 +20,7 @@ class EventManager<T> {
     return this;
   }
 
-  emit(event: T, ...args: CallbackParametar) {
+  emit(event: T, ...args: CallbackParameter) {
     this.list.has(event) &&
       this.list.get(event)!.forEach((callback) => {
         const timer: TimeoutId = setTimeout(() => {

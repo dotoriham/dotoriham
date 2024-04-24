@@ -3,6 +3,6 @@ export type TimeoutId = ReturnType<typeof setTimeout>;
 
 export type Callback = (...args: any[]) => void;
 
-export type CallbackParametar = Parameters<Callback>;
+export type CallbackParameter = Parameters<Callback>;
 
 export type EventKey = string | number;

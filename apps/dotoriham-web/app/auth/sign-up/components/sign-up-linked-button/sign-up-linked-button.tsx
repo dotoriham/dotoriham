@@ -1,7 +1,7 @@
 import { Flex, Typography, fixedColor } from '@dotoriham/ui';
 import Link from 'next/link';
 
-import { ROUTES } from '../../../constants/routes';
+import { ROUTES } from '../../../../../constants/routes';
 
 export const SignUpLinkedButton = () => {
   return (

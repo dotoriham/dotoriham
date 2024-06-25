@@ -7,9 +7,9 @@ import {
 } from '@dotoriham/ui';
 
 import classes from './sign-up.module.css';
-import { GoogleAuthButton } from '../../../app-modules/@shared/google-auth-button';
-import { SignUpForm } from '../../../app-modules/sign-up/sign-up-form';
-import { SignUpTitle } from '../../../app-modules/sign-up/sign-up-title';
+import { GoogleAuthButton } from '../../../features/@shared/google-auth-button';
+import { SignUpForm } from './components/sign-up-form';
+import { SignUpTitle } from './components/sign-up-title';
 
 const cx = getClassNames(classes);
 function Page() {

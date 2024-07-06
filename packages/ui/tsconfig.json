@@ -8,6 +8,7 @@
     "types",
     "types/**/*.d.ts",
     "index.d.ts",
+    "../*.ts",
     "../../packages/**/*.ts",
     "../../packages/**/*.tsx"
   ],

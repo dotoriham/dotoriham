@@ -1,6 +1,6 @@
 import { ReactNode, createContext, useContext } from 'react';
 
-export function CreateSafeContext<ContextValue>(errorMessage?: string) {
+export function createSafeContext<ContextValue>(errorMessage?: string) {
   const Context = createContext<ContextValue | null>(null);
 
   const useSafeContext = () => {

@@ -1,3 +1,14 @@
-.root {}
+.root {
+}
 
-
+.popover-dropdown {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  min-width: 160px;
+  max-width: 240px;
+}

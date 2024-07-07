@@ -3265,6 +3265,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dotoriham/ui@workspace:packages/ui"
   dependencies:
+    "@dotoriham/animate": "workspace:*"
     "@dotoriham/hooks": "workspace:*"
     "@dotoriham/icons": "workspace:*"
     "@dotoriham/prettier-config": "workspace:*"

@@ -9,5 +9,14 @@ export interface PopoverTargetProps {
 export const PopoverTarget = ({ children }: PopoverTargetProps) => {
   const ctx = usePopoverContext();
 
-  return <div onClick={() => ctx.open()}>{children}</div>;
+  return (
+    <div
+      ref={ctx.targetRef}
+      style={{
+        display: 'inline-block',
+      }}
+      onClick={() => (!ctx.controlled ? ctx.toggle() : undefined)}>
+      {children}
+    </div>
+  );
 };

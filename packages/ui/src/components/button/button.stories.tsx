@@ -1,12 +1,13 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Button, ButtonVariant } from './button';
 import { DotorihamColors } from '../../styles';
 import { DotorihamSize } from '../../utils';
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
   component: Button,
   decorators: [(Story) => <Story />],
+  title: 'Button',
 };
 
 type Story = StoryObj<typeof Button>;
@@ -37,8 +38,8 @@ const colors: DotorihamColors[] = ['dark', 'gray', 'green', 'lime', 'red'];
 export const Color: Story = {
   render: () => (
     <>
-      {variants.map((variant) => (
-        <div style={{ marginBottom: '8px' }}>
+      {variants.map((variant, index) => (
+        <div style={{ marginBottom: '8px' }} key={index}>
           {colors.map((color) => (
             <Button
               key={color}

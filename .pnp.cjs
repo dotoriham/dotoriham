@@ -6879,6 +6879,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@dotoriham-ui-virtual-8f334bb834/1/packages/ui/",\
         "packageDependencies": [\
           ["@dotoriham/ui", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/ui"],\
+          ["@dotoriham/animate", "workspace:packages/animate"],\
           ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
@@ -6916,6 +6917,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/ui/",\
         "packageDependencies": [\
           ["@dotoriham/ui", "workspace:packages/ui"],\
+          ["@dotoriham/animate", "workspace:packages/animate"],\
           ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\

@@ -1,7 +1,7 @@
 'use client';
 
 import { BaseDesktopLayout } from '../../components/layout/base-desktop-layout';
-import { Sidebar } from '../../components/sidebar/sidebar';
+import { Sidebar } from '../../features/sidebar/components';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

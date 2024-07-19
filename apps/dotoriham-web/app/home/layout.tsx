@@ -1,24 +1,14 @@
 'use client';
 
-import { BaseDesktopLayout } from '../../components/layout/base-desktop-layout';
+import { Flex } from '@dotoriham/ui';
+
 import { Sidebar } from '../../features/sidebar/components';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <BaseDesktopLayout header={true} footer={true}>
-      <div
-        style={{
-          display: 'flex',
-        }}>
-        <Sidebar />
-        <div
-          style={{
-            backgroundColor: 'lightyellow',
-            flex: '1 0 auto',
-          }}>
-          {children}
-        </div>
-      </div>
-    </BaseDesktopLayout>
+    <Flex h="100vh" w="100%">
+      <Sidebar />
+      {children}
+    </Flex>
   );
 }

@@ -8,8 +8,8 @@ const cx = getClassNames(classes);
 
 export const Sidebar = () => {
   const {
-    createCabinet,
-    createFolder,
+    // createCabinet,
+    // createFolder,
     folderList,
     onCollapseFolder,
     onDragEndFolder,
@@ -43,7 +43,7 @@ export const Sidebar = () => {
               /> */}
               <div
                 className={cx('folder-title')}
-                onClick={() => console.log('폴더 클릭')}>
+                onClick={() => onExpand(item.id)}>
                 {item.data.title}
               </div>
             </div>
@@ -64,7 +64,7 @@ export const Sidebar = () => {
   };
 
   return (
-    <div className={cx('folder-list-wrapper')}>
+    <div className={cx('sidebar')}>
       <Tree
         tree={folderList}
         renderItem={renderFolderItem}

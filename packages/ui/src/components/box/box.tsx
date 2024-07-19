@@ -1,7 +1,8 @@
 import { CSSProperties, ReactNode } from 'react';
-import { DefaultComponentProps } from '../../utils/style-props';
+
 import { SystemProps, extractSystemStyles } from './box.utils';
 import { createPolymorphicComponent } from '../../utils';
+import { DefaultComponentProps } from '../../utils/style-props';
 
 export interface BoxProps extends SystemProps, DefaultComponentProps {
   children?: ReactNode;

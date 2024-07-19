@@ -2,6 +2,7 @@ import Tree, { RenderItemParams } from '@atlaskit/tree';
 import { getClassNames } from '@dotoriham/ui';
 
 import classes from './index.module.css';
+import { SidebarProfileSection } from './sidebar-profile-section';
 import { useSidebarResizableWidth } from '../hooks/use-sidebar-resizable-width';
 import { useFolderListService } from '../services/use-folder-list-service';
 
@@ -20,54 +21,9 @@ export const Sidebar = () => {
 
   const { control, target } = useSidebarResizableWidth();
 
-  const renderFolderItem = ({
-    item,
-    onExpand,
-    onCollapse,
-    provided,
-  }: RenderItemParams) => {
-    return (
-      <>
-        <div
-          className={cx('render-folder-item-root')}
-          ref={provided.innerRef}
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}>
-          <div
-            className={cx('render-folder-item-block')}
-            onMouseDown={() =>
-              item.isExpanded && item.children.length > 0 && onCollapse(item.id)
-            }>
-            <div className={cx('folder-left-box')}>
-              {/* <FolderItemIcon
-                item={item}
-                onCollapse={onCollapse}
-                onExpand={onExpand}
-              /> */}
-              <div
-                className={cx('folder-title')}
-                onClick={() => onExpand(item.id)}>
-                {item.data.title}
-              </div>
-            </div>
-            {/* {isDrag && (
-              <FolderRightBox onMouseDown={(e) => e.stopPropagation()}>
-                <FolderETCButton onClick={() => createFolder(item.id)}>
-                  <PlusIcon />
-                </FolderETCButton>
-                <FolderETCButton onClick={(e) => onToggleMenu(e, item.id)}>
-                  <More16Icon />
-                </FolderETCButton>
-              </FolderRightBox>
-            )} */}
-          </div>
-        </div>
-      </>
-    );
-  };
-
   return (
     <div ref={target} className={cx('sidebar')}>
+      <SidebarProfileSection />
       <Tree
         tree={folderList}
         renderItem={renderFolderItem}
@@ -83,5 +39,51 @@ export const Sidebar = () => {
 
       <div ref={control} className={cx('resize-bar')} />
     </div>
+  );
+};
+
+const renderFolderItem = ({
+  item,
+  onExpand,
+  onCollapse,
+  provided,
+}: RenderItemParams) => {
+  return (
+    <>
+      <div
+        className={cx('render-folder-item-root')}
+        ref={provided.innerRef}
+        {...provided.draggableProps}
+        {...provided.dragHandleProps}>
+        <div
+          className={cx('render-folder-item-block')}
+          onMouseDown={() =>
+            item.isExpanded && item.children.length > 0 && onCollapse(item.id)
+          }>
+          <div className={cx('folder-left-box')}>
+            {/* <FolderItemIcon
+              item={item}
+              onCollapse={onCollapse}
+              onExpand={onExpand}
+            /> */}
+            <div
+              className={cx('folder-title')}
+              onClick={() => onExpand(item.id)}>
+              {item.data.title}
+            </div>
+          </div>
+          {/* {isDrag && (
+            <FolderRightBox onMouseDown={(e) => e.stopPropagation()}>
+              <FolderETCButton onClick={() => createFolder(item.id)}>
+                <PlusIcon />
+              </FolderETCButton>
+              <FolderETCButton onClick={(e) => onToggleMenu(e, item.id)}>
+                <More16Icon />
+              </FolderETCButton>
+            </FolderRightBox>
+          )} */}
+        </div>
+      </div>
+    </>
   );
 };

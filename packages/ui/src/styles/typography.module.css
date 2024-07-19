@@ -1,17 +1,16 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css');
+
 /** ssurround */
-.ssurround_20_700 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.5;
+.ssurround_20 {
   font-family: Cafe24Ssurround;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 /** system */
 .system_16_400 {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: -0.1px;
+  line-height: 23px;
 }
 
 .system_16_500 {
@@ -22,24 +21,81 @@
 
 .system_14_400 {
   font-size: 14px;
-  font-weight: 500;
   line-height: 21px;
 }
 
 .system_14_500 {
   font-size: 14px;
-  font-weight: 500;
   line-height: 21px;
 }
 
 .system_12_400 {
   font-size: 12px;
-  font-weight: 400;
   line-height: 17px;
 }
 
 .system_12_500 {
   font-size: 12px;
-  font-weight: 500;
   line-height: 17px;
+}
+
+/** pretandard **/
+.pretandard_32 {
+  font-family: Pretendard;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.pretandard_28 {
+  font-family: Pretendard;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.pretandard_24 {
+  font-family: Pretendard;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.pretandard_20 {
+  font-family: Pretendard;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.pretandard_16 {
+  font-family: Pretendard;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pretandard_14 {
+  font-family: Pretendard;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.pretandard_13 {
+  font-family: Pretendard;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.pretandard_12 {
+  font-family: Pretendard;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.pretandard_11 {
+  font-family: Pretendard;
+  font-size: 11px;
+  line-height: 17px;
+}
+
+.pretandard_10 {
+  font-family: Pretendard;
+  font-size: 10px;
+  line-height: 14px;
 }

@@ -1,5 +1,5 @@
-import { getColorMode } from '../utils';
 import { colorMap } from './colors';
+import { getColorMode } from '../utils';
 
 export default {
   title: 'Colors',
@@ -10,21 +10,22 @@ const Light = () => {
 
   return (
     <>
-      {colors.map(([color, value]) => (
+      {colors.map(([color, value], index) => (
         <div
+          key={index}
           style={{
             marginRight: '20px',
           }}>
           <div
             style={{
+              alignItems: 'center',
               backgroundColor: value,
-              height: '30px',
-              width: '300px',
               color: 'green',
               display: 'flex',
-              alignItems: 'center',
+              height: '30px',
               justifyContent: 'center',
               marginBottom: '8px',
+              width: '300px',
             }}>
             {color}_{value}
           </div>
@@ -39,21 +40,22 @@ const Dark = () => {
 
   return (
     <>
-      {colors.map(([color, value]) => (
+      {colors.map(([color, value], index) => (
         <div
+          key={index}
           style={{
             marginRight: '20px',
           }}>
           <div
             style={{
+              alignItems: 'center',
               backgroundColor: value,
-              height: '30px',
-              width: '300px',
               color: 'green',
               display: 'flex',
-              alignItems: 'center',
+              height: '30px',
               justifyContent: 'center',
               marginBottom: '8px',
+              width: '300px',
             }}>
             {color}_{value}
           </div>
@@ -71,21 +73,22 @@ const Auto = () => {
 
   return (
     <>
-      {colors.map(([color, value]) => (
+      {colors.map(([color, value], index) => (
         <div
+          key={index}
           style={{
             marginRight: '20px',
           }}>
           <div
             style={{
+              alignItems: 'center',
               backgroundColor: value,
-              height: '30px',
-              width: '300px',
               color: 'green',
               display: 'flex',
-              alignItems: 'center',
+              height: '30px',
               justifyContent: 'center',
               marginBottom: '8px',
+              width: '300px',
             }}>
             {color}_{value}
           </div>

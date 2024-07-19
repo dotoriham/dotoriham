@@ -11,10 +11,6 @@ export interface FlexProps extends BoxProps {
 
   gap?: CSSProperties['gap'];
 
-  rowGap?: CSSProperties['rowGap'];
-
-  columnGap?: CSSProperties['columnGap'];
-
   align?: CSSProperties['alignItems'];
 
   justify?: CSSProperties['justifyContent'];
@@ -28,8 +24,6 @@ const _Flex = ({
   children,
   className,
   gap,
-  rowGap,
-  columnGap,
   align,
   justify,
   wrap,
@@ -39,11 +33,9 @@ const _Flex = ({
 }: FlexProps) => {
   const flexStyles = {
     '--flex-align': align,
-    '--flex-column-gap': columnGap,
     '--flex-direction': direction,
-    '--flex-gap': gap,
+    '--flex-gap': `${gap}px`,
     '--flex-justify': justify,
-    '--flex-row-gap': rowGap,
     '--flex-wrap': wrap,
     ...style,
   } as CSSProperties;

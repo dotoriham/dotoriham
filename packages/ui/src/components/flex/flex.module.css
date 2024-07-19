@@ -3,8 +3,6 @@
   flex-direction: var(--flex-direction);
   flex-wrap: var(--flex-wrap);
   gap: var(--flex-gap);
-  row-gap: var(--flex-row-gap);
-  column-gap: var(--flex-column-gap);
   align-items: var(--flex-align);
   justify-content: var(--flex-justify);
 }

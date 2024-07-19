@@ -50,4 +50,22 @@
       }
     }
   }
+
+  .resize-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: col-resize;
+    width: 4px;
+    right: -3px;
+    user-select: none;
+    opacity: 0;
+    background-color: var(--dotoriham-adaptive-color-green4);
+    transition: opacity 0.2s ease-in-out;
+    transition-delay: 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

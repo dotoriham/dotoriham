@@ -2,6 +2,7 @@ import Tree, { RenderItemParams } from '@atlaskit/tree';
 import { getClassNames } from '@dotoriham/ui';
 
 import classes from './index.module.css';
+import { useSidebarResizableWidth } from '../hooks/use-sidebar-resizable-width';
 import { useFolderListService } from '../services/use-folder-list-service';
 
 const cx = getClassNames(classes);
@@ -16,6 +17,8 @@ export const Sidebar = () => {
     onDragStartFolder,
     onExpandFolder,
   } = useFolderListService();
+
+  const { control, target } = useSidebarResizableWidth();
 
   const renderFolderItem = ({
     item,
@@ -64,7 +67,7 @@ export const Sidebar = () => {
   };
 
   return (
-    <div className={cx('sidebar')}>
+    <div ref={target} className={cx('sidebar')}>
       <Tree
         tree={folderList}
         renderItem={renderFolderItem}
@@ -77,6 +80,8 @@ export const Sidebar = () => {
         isDragEnabled={true}
         isNestingEnabled
       />
+
+      <div ref={control} className={cx('resize-bar')} />
     </div>
   );
 };

@@ -10,9 +10,6 @@ temp_workspace
 WORKSPACE_HASH
 
 # workspace file module
-# @musinsa-snap-shared-ts-file-*
-# api-client-file-*
-
 .eslintcache
 dist
 tsconfig.tsbuildinfo

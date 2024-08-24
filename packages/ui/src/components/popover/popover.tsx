@@ -1,9 +1,7 @@
 import { ReactNode } from 'react';
 
-import { useClickOutside } from '@dotoriham/hooks';
-
+import { PopoverContent } from './popover-content';
 import { PopoverProvider } from './popover-context';
-import { PopoverDropdown } from './popover-dropdown';
 import { PopoverTarget } from './popover-target';
 import { PopoverPosition, PopoverWidth } from './popover.types';
 import { usePopover } from './use-popover';
@@ -28,35 +26,23 @@ export interface PopoverProps {
 }
 
 export const Popover = ({ children, opened }: PopoverProps) => {
-  const { open, close, isOpen, toggle, left, targetRef, top, dropdownRef } =
-    usePopover();
-
-  useClickOutside({
-    elements: [targetRef.current, dropdownRef.current],
-    handler: () => {
-      if (isOpen) {
-        close();
-      }
-    },
-  });
+  const { open, close, isOpen, toggle, targetRef, contentRef } = usePopover();
 
   return (
     <PopoverProvider
       value={{
         close,
+        contentRef,
         controlled: opened !== undefined,
-        dropdownRef,
         isOpen,
-        left,
         open,
         targetRef,
         toggle,
-        top,
       }}>
       {children}
     </PopoverProvider>
   );
 };
 
-Popover.Dropdown = PopoverDropdown;
 Popover.Target = PopoverTarget;
+Popover.Content = PopoverContent;

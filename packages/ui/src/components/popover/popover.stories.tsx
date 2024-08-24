@@ -18,9 +18,9 @@ export const Base: Story = {
         <Button>버튼</Button>
       </Popover.Target>
 
-      <Popover.Dropdown>
-        <div>드롭다운</div>
-      </Popover.Dropdown>
+      <Popover.Content>
+        <>컨텐츠</>
+      </Popover.Content>
     </Popover>
   ),
 };

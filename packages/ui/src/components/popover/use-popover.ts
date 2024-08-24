@@ -6,16 +6,14 @@ export const usePopover = () => {
   const [isOpen, toggle] = useToggle();
 
   const targetRef = useRef<HTMLDivElement>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   return {
     close: () => toggle(false),
-    dropdownRef,
+    contentRef,
     isOpen,
-    left: targetRef.current?.offsetLeft || 0,
     open: () => toggle(true),
     targetRef,
     toggle,
-    top: targetRef.current?.offsetTop || 0,
   };
 };

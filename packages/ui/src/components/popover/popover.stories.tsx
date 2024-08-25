@@ -1,3 +1,4 @@
+import { useToggle } from '@dotoriham/hooks';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Popover } from './popover';
@@ -11,9 +12,26 @@ const meta: Meta<typeof Popover> = {
 
 type Story = StoryObj<typeof Popover>;
 
+const BaseComponent = () => {
+  const [isOpen, toggle] = useToggle();
+
+  return (
+    <>
+      <Button onClick={() => toggle()}>버튼</Button>
+      <Popover isOpen={isOpen} onClose={() => toggle(false)}>
+        asdasd
+      </Popover>
+    </>
+  );
+};
+
 export const Base: Story = {
+  render: () => <BaseComponent />,
+};
+
+export const CompoundPattern: Story = {
   render: () => (
-    <Popover>
+    <Popover.Root>
       <Popover.Target>
         <Button>버튼</Button>
       </Popover.Target>
@@ -21,7 +39,7 @@ export const Base: Story = {
       <Popover.Content>
         <>컨텐츠</>
       </Popover.Content>
-    </Popover>
+    </Popover.Root>
   ),
 };
 

@@ -5,3 +5,4 @@ export * from './use-input';
 export * from './use-inputs';
 export * from './use-toggles';
 export * from './use-click-outside';
+export * from './use-uncontrolled';

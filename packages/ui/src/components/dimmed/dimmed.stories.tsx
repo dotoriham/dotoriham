@@ -13,12 +13,12 @@ const meta: Meta<typeof Dimmed> = {
 type Story = StoryObj<typeof Dimmed>;
 
 const BaseComponent = (props: DimmedProps) => {
-  const [open, toggle] = useToggle();
+  const [isOpen, toggle] = useToggle();
 
   return (
     <>
       <Button onClick={() => toggle()}>Open Dimmed</Button>
-      <Dimmed {...props} open={open} onClick={() => toggle(false)} />
+      <Dimmed {...props} isOpen={isOpen} onClick={() => toggle(false)} />
     </>
   );
 };

@@ -1,19 +1,31 @@
 import { useRef } from 'react';
 
-import { useToggle } from '@dotoriham/hooks';
+import { useUncontrolled } from '@dotoriham/hooks';
 
-export const usePopoverController = () => {
-  const [isOpen, toggle] = useToggle();
+interface UsePopoverControllerProps {
+  isOpen?: boolean;
+  defaultIsOpen?: boolean;
+  onClose?: () => void;
+}
+
+export const usePopoverController = ({
+  defaultIsOpen,
+  isOpen: _isOpen,
+  onClose: _onClose,
+}: UsePopoverControllerProps) => {
+  const [isOpen, onChange] = useUncontrolled({
+    defaultValue: defaultIsOpen,
+    onChange: _onClose,
+    value: _isOpen,
+  });
 
   const targetRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   return {
-    close: () => toggle(false),
     contentRef,
     isOpen,
-    open: () => toggle(true),
+    onChange,
     targetRef,
-    toggle,
   };
 };

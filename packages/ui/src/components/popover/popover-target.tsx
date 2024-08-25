@@ -15,7 +15,7 @@ export const PopoverTarget = ({ children }: PopoverTargetProps) => {
       style={{
         display: 'inline-block',
       }}
-      onClick={() => (!ctx.controlled ? ctx.toggle() : undefined)}>
+      onClick={() => ctx.onChange(!ctx.isOpen)}>
       {children}
     </div>
   );

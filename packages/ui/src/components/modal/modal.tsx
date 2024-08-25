@@ -3,18 +3,16 @@ import { ReactNode } from 'react';
 import { AnimatePresence, motion } from '@dotoriham/animate';
 
 import classes from './modal.module.css';
-import {
-  ModalTransition,
-  modalTransitionMap,
-  modalTransitions,
-} from './modal.transition';
+import { ModalTransition, modalTransitionMap } from './modal.transition';
+import { Dimmed } from '../dimmed';
+import { Popover } from '../popover';
 
 export interface ModalProps {
   header?: ReactNode | string;
 
-  open?: boolean;
+  isOpen: boolean;
 
-  onClose?: () => void;
+  onClose: () => void;
 
   children: ReactNode;
 
@@ -24,28 +22,33 @@ export interface ModalProps {
 export const Modal = ({
   header,
   onClose,
-  open,
+  isOpen,
   children,
   transitionVariant = 'popInFromBottom',
 }: ModalProps) => {
   return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          variants={modalTransitionMap[transitionVariant]}
-          initial="hidden"
-          animate="visible"
-          className={classes.root}
-          onClick={onClose}
-          exit="exit">
-          <div
-            onClick={(e) => {
-              e.stopPropagation();
-            }}>
-            {children}
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <>
+      <Popover>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              variants={modalTransitionMap[transitionVariant]}
+              initial="hidden"
+              animate="visible"
+              className={classes.root}
+              onClick={onClose}
+              exit="exit">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                }}>
+                {children}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Popover>
+      <Dimmed isOpen={isOpen} onClick={onClose} />
+    </>
   );
 };

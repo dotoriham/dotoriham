@@ -13,12 +13,12 @@ const meta: Meta<typeof Modal> = {
 type Story = StoryObj<typeof Modal>;
 
 const BaseComponent = () => {
-  const [open, toggle] = useToggle();
+  const [isOpen, toggle] = useToggle();
 
   return (
     <>
       <Button onClick={() => toggle()}>Open Modal</Button>
-      <Modal open={open} onClose={() => toggle(false)}>
+      <Modal isOpen={isOpen} onClose={() => toggle(false)}>
         ads
       </Modal>
     </>

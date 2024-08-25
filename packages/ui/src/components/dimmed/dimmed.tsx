@@ -1,15 +1,15 @@
 import { motion, AnimatePresence } from '@dotoriham/animate';
 
 export interface DimmedProps {
-  open: boolean;
+  isOpen: boolean;
   onClick: () => void;
   opacity?: number;
 }
 
-export const Dimmed = ({ open, onClick, opacity = 0.6 }: DimmedProps) => {
+export const Dimmed = ({ isOpen, onClick, opacity = 0.6 }: DimmedProps) => {
   return (
     <AnimatePresence>
-      {open && (
+      {isOpen && (
         <motion.div
           onClick={onClick}
           initial={{ opacity: 0 }}

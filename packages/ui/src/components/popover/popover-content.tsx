@@ -13,10 +13,12 @@ export const PopoverContent = ({ children }: PopoverContentProps) => {
   const ctx = usePopoverContext();
 
   return (
-    <Portal>
-      <AnimatePresence>
-        {ctx.isOpen && <div ref={ctx.contentRef}>{children}</div>}
-      </AnimatePresence>
-    </Portal>
+    <AnimatePresence>
+      {ctx.isOpen && (
+        <Portal>
+          <div ref={ctx.contentRef}>{children}</div>
+        </Portal>
+      )}
+    </AnimatePresence>
   );
 };

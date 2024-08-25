@@ -14,7 +14,7 @@
     "@dotoriham/animate": "workspace:*",
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
-    "@storybook/react": "^7.0.5",
+    "@storybook/react": "^8.2.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "8.32.0",

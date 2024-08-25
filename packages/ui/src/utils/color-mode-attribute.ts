@@ -4,8 +4,8 @@ export function getColorScheme(colorMode: ColorMode = 'auto') {
   return colorMode !== 'auto'
     ? colorMode
     : window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
+      ? 'dark'
+      : 'light';
 }
 
 export function setColorModeAttribute(
@@ -13,8 +13,5 @@ export function setColorModeAttribute(
   getRootElement: () => HTMLElement | undefined,
 ) {
   const computedColorMode = getColorScheme(colorMode);
-  getRootElement()?.setAttribute(
-    'data-dotoriham-color-scheme',
-    computedColorMode,
-  );
+  getRootElement()?.setAttribute('data-theme', computedColorMode);
 }

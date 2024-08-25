@@ -1,11 +1,11 @@
 @define-mixin light {
-  :root[data-dotoriham-color-scheme='light'] & {
+  :root[data-theme='light'] & {
     @mixin-content;
   }
 }
 
 @define-mixin dark {
-  :root[data-dotoriham-color-scheme='dark'] & {
+  :root[data-theme='dark'] & {
     @mixin-content;
   }
 }

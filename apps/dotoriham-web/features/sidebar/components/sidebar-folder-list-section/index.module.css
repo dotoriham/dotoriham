@@ -1,0 +1,45 @@
+.block {
+  width: 166px;
+
+  .render-folder-item-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-width: 105px;
+    max-width: 166px;
+    height: 28px;
+    font-size: 12px;
+    padding: 5px 2px;
+    border-radius: 4px;
+    &::hover {
+      background-color: #f3f2ef;
+      .folder-right-box {
+        display: flex;
+      }
+    }
+
+    .folder-right-box {
+      display: none;
+      align-items: center;
+    }
+
+    .folder-left-box {
+      display: flex;
+      align-items: center;
+      min-width: 65px;
+    }
+
+    .folder-title {
+      cursor: pointer;
+      height: 28px;
+      line-height: 25px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      &::hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 import { useToggle } from '@dotoriham/hooks';
 
-export const usePopover = () => {
+export const usePopoverController = () => {
   const [isOpen, toggle] = useToggle();
 
   const targetRef = useRef<HTMLDivElement>(null);

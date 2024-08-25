@@ -4,7 +4,7 @@ import { PopoverContent } from './popover-content';
 import { PopoverProvider } from './popover-context';
 import { PopoverTarget } from './popover-target';
 import { PopoverPosition, PopoverWidth } from './popover.types';
-import { usePopover } from './use-popover';
+import { usePopoverController } from './use-popover-controller';
 
 export interface PopoverProps {
   /**
@@ -26,7 +26,8 @@ export interface PopoverProps {
 }
 
 export const Popover = ({ children, opened }: PopoverProps) => {
-  const { open, close, isOpen, toggle, targetRef, contentRef } = usePopover();
+  const { open, close, isOpen, toggle, targetRef, contentRef } =
+    usePopoverController();
 
   return (
     <PopoverProvider

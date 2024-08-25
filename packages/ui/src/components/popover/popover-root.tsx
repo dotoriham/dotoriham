@@ -8,15 +8,19 @@ export interface PopoverRootProps {
 
   isOpen?: boolean;
 
+  defaultIsOpen?: boolean;
+
   onClose?: () => void;
 }
 
 export const PopoverRoot = ({
   children,
+  defaultIsOpen,
   isOpen: _isOpen,
   onClose: _onClose,
 }: PopoverRootProps) => {
   const { isOpen, onChange, targetRef, contentRef } = usePopoverController({
+    defaultIsOpen,
     isOpen: _isOpen,
     onClose: _onClose,
   });

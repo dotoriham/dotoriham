@@ -4,13 +4,23 @@ import { PopoverContent } from './popover-content';
 import { PopoverRoot, PopoverRootProps } from './popover-root';
 import { PopoverTarget } from './popover-target';
 
-export interface PopoverProps extends PopoverRootProps {
+export interface PopoverProps
+  extends Omit<PopoverRootProps, 'isOpen' | 'onClose'> {
   children: ReactNode;
+
+  isOpen: boolean;
+
+  onClose: () => void;
 }
 
-export const Popover = ({ children, ...popoverRootProps }: PopoverProps) => {
+export const Popover = ({
+  isOpen,
+  onClose,
+  children,
+  ...popoverRootProps
+}: PopoverProps) => {
   return (
-    <PopoverRoot {...popoverRootProps}>
+    <PopoverRoot {...popoverRootProps} isOpen={isOpen} onClose={onClose}>
       <PopoverContent>{children}</PopoverContent>
     </PopoverRoot>
   );

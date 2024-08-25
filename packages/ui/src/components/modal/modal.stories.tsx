@@ -28,14 +28,6 @@ export const Base: Story = {
   render: () => <BaseComponent />,
 };
 
-const UsePopoverComponent = () => {
-  return <Modal />;
-};
-
-export const usePopover: Story = {
-  render: () => <UsePopoverComponent />,
-};
-
 const CompoundComponent = () => {
   return <Modal />;
 };

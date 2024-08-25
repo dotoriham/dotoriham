@@ -2,6 +2,6 @@
 to: "src/components/<%= componentName %>/index.ts"
 ---
 
-export * from './<%= componentName %>';
+export { <%= PascalCaseComponentName %> } from './<%= componentName %>';
 
 

@@ -12,3 +12,4 @@ export * from './popover';
 export * from './select';
 export * from './modal';
 export * from './dimmed';
+export * from './bottomsheet';

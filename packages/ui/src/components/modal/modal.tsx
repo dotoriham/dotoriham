@@ -4,6 +4,7 @@ import { ModalContent } from './modal-content';
 import { ModalRoot, ModalRootProps } from './modal-root';
 import { ModalTitle } from './modal-title';
 import { Dimmed } from '../dimmed';
+import { Portal } from '../portal/portal';
 
 export interface ModalProps extends ModalRootProps {
   title?: ReactNode | string;
@@ -28,7 +29,10 @@ export const Modal = ({
         {typeof title === 'string' ? <ModalTitle>{title}</ModalTitle> : title}
         {children}
       </ModalContent>
-      <Dimmed isOpen={isOpen} onClick={onClose} />
+
+      <Portal>
+        <Dimmed isOpen={isOpen} onClick={onClose} />
+      </Portal>
     </ModalRoot>
   );
 };

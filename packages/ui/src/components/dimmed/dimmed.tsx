@@ -1,5 +1,7 @@
 import { motion, AnimatePresence } from '@dotoriham/animate';
 
+import { zIndex } from '../../styles/z-index';
+
 export interface DimmedProps {
   isOpen: boolean;
   onClick: () => void;
@@ -17,12 +19,9 @@ export const Dimmed = ({ isOpen, onClick, opacity = 0.6 }: DimmedProps) => {
           exit={{ opacity: 0 }}
           style={{
             backgroundColor: 'black',
-            height: '100%',
-            left: 0,
+            inset: 0,
             position: 'fixed',
-            top: 0,
-            width: '100%',
-            zIndex: 10,
+            zIndex: zIndex.dimmed,
           }}
         />
       )}

@@ -20,20 +20,26 @@ export const modalTransitionMap: Record<ModalTransition, Variants> = {
   },
   popInFromBottom: {
     exit: {
-      opacity: 0,
+      transition: {
+        duration: 0.3,
+      },
+      x: '-50%',
       y: '100vh',
     },
     hidden: {
       opacity: 0,
+      x: '-50%',
       y: '100vh',
     },
     visible: {
       opacity: 1,
+
       transition: {
-        duration: 0.5,
+        duration: 0.4,
         type: 'spring',
       },
-      y: '0vh',
+      x: '-50%',
+      y: '-50%',
     },
   },
 };

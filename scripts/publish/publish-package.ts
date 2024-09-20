@@ -16,13 +16,9 @@ export async function publishPackage({
   tag,
 }: PublishPackage) {
   try {
-    await execa(
-      'yarn',
-      ['npm', 'publish', '--access', 'public', '--tag', tag],
-      {
-        cwd: packagePath,
-      },
-    );
+    await execa('npm', ['publish', '--access', 'public', '--tag', tag], {
+      cwd: packagePath,
+    });
     logger.success(`Package ${chalk.cyan(name)} has been published`);
   } catch (error: unknown) {
     logger.error(`Failed to publish package ${chalk.red(name)}`);

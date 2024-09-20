@@ -5,6 +5,9 @@ import chalk from 'chalk';
 import fs from 'fs-extra';
 import path from 'node:path';
 import { generateDts } from './generate.dts';
+import { createPackageConfig } from 'scripts/rollup/create-package-config';
+import { compile } from './complie';
+import { getBuildTime } from './get-build-time';
 
 const logger = createLogger('build-package');
 
@@ -26,26 +29,26 @@ export async function buildPackage(inputPackageName: string) {
     logger.log(`Generating ${formattedPackageName} *.d.ts files...`);
     await generateDts(packagePath);
 
-    // const config = createPackageConfig(packagePath);
-    // logger.log(`Compiling ${formattedPackageName} package with rollup...`);
+    const config = createPackageConfig(packagePath);
+    logger.log(`Compiling ${formattedPackageName} package with rollup...`);
 
-    // await compile(config);
+    await compile(config);
 
-    // if (await fs.pathExists(path.join(packagePath, 'esm/index.css'))) {
-    //   await fs.copyFile(
-    //     path.join(packagePath, 'esm/index.css'),
-    //     path.join(packagePath, 'styles.css'),
-    //   );
+    if (await fs.pathExists(path.join(packagePath, 'esm/index.css'))) {
+      await fs.copyFile(
+        path.join(packagePath, 'esm/index.css'),
+        path.join(packagePath, 'styles.css'),
+      );
 
-    //   await fs.remove(path.join(packagePath, 'esm/index.css'));
-    //   await fs.remove(path.join(packagePath, 'cjs/index.css'));
-    // }
+      await fs.remove(path.join(packagePath, 'esm/index.css'));
+      await fs.remove(path.join(packagePath, 'cjs/index.css'));
+    }
 
-    // logger.success(
-    //   `Package ${formattedPackageName} has been built in ${chalk.green(
-    //     getBuildTime(startTime),
-    //   )}`,
-    // );
+    logger.success(
+      `Package ${formattedPackageName} has been built in ${chalk.green(
+        getBuildTime(startTime),
+      )}`,
+    );
   } catch (err: unknown) {
     logger.error(`Failed to compile package: ${formattedPackageName}`);
     logger.error(err);

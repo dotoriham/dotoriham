@@ -1,6 +1,33 @@
 {
+  "include": [
+    "./scripts",
+    "./@types",
+    "./packages/@docs/*/src",
+    "./packages/@dotoriham/*/src",
+    "./packages/@dotorihamx/*/src",
+    "./apps/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./packages/@docs/*/esm/**/*",
+    "./packages/@docs/*/cjs/**/*",
+    "./packages/@docs/*/lib/**/*",
+    "./packages/@dotoriham/*/lib/**/*",
+    "./packages/@dotoriham/*/esm/**/*",
+    "./packages/@dotoriham/*/cjs/**/*"
+  ],
   "compilerOptions": {
-    "baseUrl": ".", // This must be specified if "paths" is.
+    "baseUrl": ".",
+    "target": "ES2015",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "allowJs": true,
+    "strict": true,
     "esModuleInterop": true,
     "paths": {
       "@dotoriham/*": ["src/packages-*/src"]

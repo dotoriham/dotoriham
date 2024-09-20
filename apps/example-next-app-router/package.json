@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dotoriham/hooks": "latest",
     "@dotoriham/virtual-scroll": "workspace:*",
     "next": "latest",
     "react": "latest",

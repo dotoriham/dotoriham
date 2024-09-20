@@ -1,5 +1,6 @@
 'use client';
 
+import { useToggle } from '@dotoriham/hooks';
 import { useRouter } from 'next/navigation';
 import { PropsWithChildren, ReactNode } from 'react';
 
@@ -29,6 +30,7 @@ const Button = ({ children, ...rest }: ButtonProps) => {
 
 export default function Home() {
   const router = useRouter();
+  const [isToggle, onToggle] = useToggle(false);
 
   return (
     <main>
@@ -39,6 +41,8 @@ export default function Home() {
         virtual-scroll
       </Button>
       <Button onClick={() => router.push('/query')}>query</Button>
+      <Button onClick={() => onToggle()}>토글</Button>
+      <span>{`${isToggle}`}</span>
     </main>
   );
 }

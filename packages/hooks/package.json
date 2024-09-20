@@ -1,8 +1,23 @@
 {
   "name": "@dotoriham/hooks",
-  "version": "0.0.0",
-  "main": "./src/index.ts",
+  "version": "0.0.21112",
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    }
+  },
   "license": "MIT",
+  "sideEffects": false,
   "scripts": {
     "type-check": "tsc -p tsconfig.json --noEmit",
     "eslint": "eslint -c .eslintrc.js  --ignore-path  ../../.eslintignore --ext .js,.jsx,.ts,.tsx . --cache",

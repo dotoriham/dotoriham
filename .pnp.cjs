@@ -198,6 +198,8 @@ const RAW_RUNTIME_STATE =
           ["@types/prop-types", "npm:15.7.5"],\
           ["@types/react", "npm:18.0.27"],\
           ["@types/react-dom", "npm:18.0.10"],\
+          ["@types/signale", "npm:1.4.7"],\
+          ["@types/yargs", "npm:17.0.33"],\
           ["autoprefixer", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:10.4.16"],\
           ["eslint", "npm:8.40.0"],\
           ["eslint-plugin-import", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:2.27.5"],\
@@ -210,12 +212,14 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
+          ["signale", "npm:1.4.0"],\
           ["storybook", "npm:7.0.11"],\
           ["ts-node", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:10.9.2"],\
           ["tsx", "npm:4.19.1"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"],\
           ["typescript-plugin-css-modules", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:5.0.2"],\
-          ["vite", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:4.3.5"]\
+          ["vite", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:4.3.5"],\
+          ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -12119,6 +12123,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/signale", [\
+      ["npm:1.4.7", {\
+        "packageLocation": "./.yarn/cache/@types-signale-npm-1.4.7-d46a065d69-8ebba570b3.zip/node_modules/@types/signale/",\
+        "packageDependencies": [\
+          ["@types/signale", "npm:1.4.7"],\
+          ["@types/node", "npm:18.11.18"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/unist", [\
       ["npm:2.0.6", {\
         "packageLocation": "./.yarn/cache/@types-unist-npm-2.0.6-82641b4aa5-25cb860ff1.zip/node_modules/@types/unist/",\
@@ -12164,6 +12178,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-yargs-npm-17.0.24-b034cf1d8b-03d9a985cb.zip/node_modules/@types/yargs/",\
         "packageDependencies": [\
           ["@types/yargs", "npm:17.0.24"],\
+          ["@types/yargs-parser", "npm:21.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:17.0.33", {\
+        "packageLocation": "./.yarn/cache/@types-yargs-npm-17.0.33-1d6cca6a2e-16f6681bf4.zip/node_modules/@types/yargs/",\
+        "packageDependencies": [\
+          ["@types/yargs", "npm:17.0.33"],\
           ["@types/yargs-parser", "npm:21.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -15366,6 +15388,16 @@ const RAW_RUNTIME_STATE =
           ["wrap-ansi", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.0.1", {\
+        "packageLocation": "./.yarn/cache/cliui-npm-8.0.1-3b029092cf-eaa5561aeb.zip/node_modules/cliui/",\
+        "packageDependencies": [\
+          ["cliui", "npm:8.0.1"],\
+          ["string-width", "npm:4.2.3"],\
+          ["strip-ansi", "npm:6.0.1"],\
+          ["wrap-ansi", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["clone", [\
@@ -16763,6 +16795,8 @@ const RAW_RUNTIME_STATE =
           ["@types/prop-types", "npm:15.7.5"],\
           ["@types/react", "npm:18.0.27"],\
           ["@types/react-dom", "npm:18.0.10"],\
+          ["@types/signale", "npm:1.4.7"],\
+          ["@types/yargs", "npm:17.0.33"],\
           ["autoprefixer", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:10.4.16"],\
           ["eslint", "npm:8.40.0"],\
           ["eslint-plugin-import", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:2.27.5"],\
@@ -16775,12 +16809,14 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:18.2.0"],\
+          ["signale", "npm:1.4.0"],\
           ["storybook", "npm:7.0.11"],\
           ["ts-node", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:10.9.2"],\
           ["tsx", "npm:4.19.1"],\
           ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"],\
           ["typescript-plugin-css-modules", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:5.0.2"],\
-          ["vite", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:4.3.5"]\
+          ["vite", "virtual:85d4986a14c8e994c677440abd0337ace811cec23d9fb0b78e99492c4caea96a7736f22b83617937f65d8aa28dc9c72529ca91a0e532478be2681b9c9809e03a#npm:4.3.5"],\
+          ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -19817,6 +19853,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/fflate-npm-0.8.1-dec3af34fe-bb66551c98.zip/node_modules/fflate/",\
         "packageDependencies": [\
           ["fflate", "npm:0.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["figures", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/figures-npm-2.0.0-f2db814eec-0e5bba8d2b.zip/node_modules/figures/",\
+        "packageDependencies": [\
+          ["figures", "npm:2.0.0"],\
+          ["escape-string-regexp", "npm:1.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -24889,6 +24935,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["pkg-conf", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/pkg-conf-npm-2.1.0-c6489a73d3-b507751572.zip/node_modules/pkg-conf/",\
+        "packageDependencies": [\
+          ["pkg-conf", "npm:2.1.0"],\
+          ["find-up", "npm:2.1.0"],\
+          ["load-json-file", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["pkg-dir", [\
       ["npm:3.0.0", {\
         "packageLocation": "./.yarn/cache/pkg-dir-npm-3.0.0-16d8d93783-70c9476ffe.zip/node_modules/pkg-dir/",\
@@ -28489,6 +28546,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["signale", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/cache/signale-npm-1.4.0-f7f88b1eb2-0659f7168c.zip/node_modules/signale/",\
+        "packageDependencies": [\
+          ["signale", "npm:1.4.0"],\
+          ["chalk", "npm:2.4.2"],\
+          ["figures", "npm:2.0.0"],\
+          ["pkg-conf", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["simple-update-notifier", [\
       ["npm:1.1.0", {\
         "packageLocation": "./.yarn/cache/simple-update-notifier-npm-1.1.0-92878518a3-0f9be259b3.zip/node_modules/simple-update-notifier/",\
@@ -31993,6 +32062,20 @@ const RAW_RUNTIME_STATE =
           ["string-width", "npm:4.2.3"],\
           ["y18n", "npm:5.0.8"],\
           ["yargs-parser", "npm:20.2.9"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:17.7.2", {\
+        "packageLocation": "./.yarn/cache/yargs-npm-17.7.2-80b62638e1-abb3e37678.zip/node_modules/yargs/",\
+        "packageDependencies": [\
+          ["yargs", "npm:17.7.2"],\
+          ["cliui", "npm:8.0.1"],\
+          ["escalade", "npm:3.1.1"],\
+          ["get-caller-file", "npm:2.0.5"],\
+          ["require-directory", "npm:2.1.1"],\
+          ["string-width", "npm:4.2.3"],\
+          ["y18n", "npm:5.0.8"],\
+          ["yargs-parser", "npm:21.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\

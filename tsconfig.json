@@ -1,8 +1,9 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".", // This must be specified if "paths" is.
-		"paths": {
-			"@dotoriham/*": ["src/packages-*/src"]
-		}
-	}
+  "compilerOptions": {
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "esModuleInterop": true,
+    "paths": {
+      "@dotoriham/*": ["src/packages-*/src"]
+    }
+  }
 }

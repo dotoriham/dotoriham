@@ -18,7 +18,8 @@
     "prettier": "yarn workspaces foreach -pi run prettier",
     "prettier:fix": "yarn workspaces foreach -pi run prettier:fix --cache",
     "icons:build": "yarn workspace @dotoriham/icons build",
-    "ui:make": "yarn workspace @dotoriham/ui make"
+    "ui:make": "yarn workspace @dotoriham/ui make",
+    "build": "tsx scripts/build"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
@@ -52,6 +53,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "5.0.4",
     "typescript-plugin-css-modules": "^5.0.2"
   },

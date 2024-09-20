@@ -1,7 +1,21 @@
 {
-  "extends": "../../configs/tsconfig/react-library.json",
-  "include": ["src"],
+  "include": ["./src", "../../../@types"],
+  "exclude": ["./lib", "./esm", "./cjs"],
+  "compilerOptions": {
+    "rootDir": "src",
 
-  "compilerOptions": {},
-  "exclude": ["dist", "build", "node_modules"]
+    "declaration": true,
+    "declarationDir": "lib",
+    "target": "ES2015",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "composite": true
+  }
 }

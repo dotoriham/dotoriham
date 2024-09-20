@@ -1,8 +1,8 @@
-export * from './use-toggle';
-export * from './use-isomorphic-effect';
-export * from './use-mounted';
-export * from './use-input';
-export * from './use-inputs';
-export * from './use-toggles';
-export * from './use-click-outside';
-export * from './use-uncontrolled';
+export { useToggle } from './use-toggle/use-toggle';
+export { useIsomorphicEffect } from './use-isomorphic-effect/use-isomorphic-effect';
+export { useMounted } from './use-mounted/use-mounted';
+export { useInput } from './use-input/use-input';
+export { useInputs } from './use-inputs/use-inputs';
+export { useToggles } from './use-toggles/use-toggles';
+export { useClickOutside } from './use-click-outside/use-click-outside';
+export { useUncontrolled } from './use-uncontrolled/use-uncontrolled';

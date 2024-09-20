@@ -22,3 +22,11 @@ build.tar.gz
 static_resource
 .DS_Store
 storybook-static
+
+# build
+lib/
+cjs/
+esm/
+
+# typescript
+*.tsbuildinfo

@@ -75,12 +75,14 @@
     "rollup-plugin-esbuild": "^6.1.1",
     "rollup-plugin-postcss": "^4.0.2",
     "signale": "^1.4.0",
+    "simple-git": "^3.27.0",
     "storybook": "^8.3.2",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
     "type-fest": "^4.26.1",
     "typescript": "5.0.4",
     "typescript-plugin-css-modules": "^5.0.2",
+    "version-next": "^1.0.2",
     "yargs": "^17.7.2"
   },
   "dependencies": {

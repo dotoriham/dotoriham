@@ -6,10 +6,10 @@ import {
   getClassNames,
 } from '@dotoriham/ui';
 
-import classes from './sign-up.module.css';
-import { GoogleAuthButton } from '../../../features/@shared/google-auth-button';
 import { SignUpForm } from './components/sign-up-form';
 import { SignUpTitle } from './components/sign-up-title';
+import classes from './sign-up.module.css';
+import { GoogleAuthButton } from '../../../features/@shared/google-auth-button';
 
 const cx = getClassNames(classes);
 function Page() {

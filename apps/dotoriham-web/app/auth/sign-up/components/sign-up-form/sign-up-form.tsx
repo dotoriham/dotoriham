@@ -8,7 +8,7 @@ import {
   Spacing,
   SwitchableButton,
   Typography,
-  color,
+  colors,
   fixedColor,
 } from '@dotoriham/ui';
 
@@ -109,8 +109,8 @@ const EyeToggleButton = ({
     <SwitchableButton
       isActive={isActive}
       onClick={onClick}
-      inactiveComponent={<EyeInactiveIcon fontSize={20} color={color.gray6} />}
-      activeComponent={<EyeActiveIcon fontSize={20} color={color.black} />}
+      inactiveComponent={<EyeInactiveIcon fontSize={20} color={colors.gray6} />}
+      activeComponent={<EyeActiveIcon fontSize={20} color={colors.black} />}
     />
   );
 };

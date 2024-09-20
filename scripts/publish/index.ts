@@ -48,8 +48,8 @@ async function publish() {
   const packageName = getPackageName(argv._[1]);
   const packagePath = await locatePackage(packageName);
 
-  if (packageName.includes('@dotoriham/')) {
-    logger.error('Cannot publish @dotoriham/* packages separately');
+  if (!packageName.includes('@dotoriham/')) {
+    logger.error('Only packages from @dotoriham scope can be published');
     process.exit(1);
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "@dotoriham/animate",
-  "version": "0.1.2",
+  "version": "0.1.10",
   "main": "./cjs/index.cjs",
   "module": "./esm/index.mjs",
   "types": "./lib/index.d.ts",

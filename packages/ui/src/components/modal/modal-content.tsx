@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { motion } from '@dotoriham/animate';
+import { Animate } from '@dotoriham/animate';
 
 import { useModalContext } from './modal-context';
 import classes from './modal.module.css';
@@ -20,7 +20,7 @@ export const ModalContent = ({ children }: ModalContentProps) => {
 
   return (
     <Popover.Content>
-      <motion.div
+      <Animate
         variants={modalTransitionMap[ctx.transitionVariant]}
         initial="hidden"
         animate="visible"
@@ -36,7 +36,7 @@ export const ModalContent = ({ children }: ModalContentProps) => {
           }}>
           {children}
         </div>
-      </motion.div>
+      </Animate>
     </Popover.Content>
   );
 };

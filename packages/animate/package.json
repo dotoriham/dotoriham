@@ -17,6 +17,7 @@
     }
   },
   "license": "MIT",
+  "sideEffects": false,
   "scripts": {
     "type-check": "tsc -p tsconfig.json --noEmit",
     "eslint": "eslint -c .eslintrc.js  --ignore-path  ../../.eslintignore --ext .js,.jsx,.ts,.tsx . --cache",

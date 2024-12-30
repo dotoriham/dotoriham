@@ -1,5 +1,6 @@
-import { SwitchableButton } from '../switchable-button';
 import { CheckboxIcon, CheckboxSelectedIcon } from '@dotoriham/icons';
+
+import { SwitchableButton } from '../switchable-button';
 
 interface CheckboxProps {
   checked?: boolean;

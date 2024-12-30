@@ -20,9 +20,9 @@
     "icons:build": "yarn workspace @dotoriham/icons build",
     "ui:make": "yarn workspace @dotoriham/ui make",
     "build": "tsx scripts/build",
-    "publish:package": "tsx scripts/publish",
-    "publish:package:alpha": "tsx scripts/publish --stage alpha --tag next",
-    "publish:package:beta": "tsx scripts/publish --stage beta --tag next"
+    "publish": "tsx scripts/publish",
+    "publish:alpha": "tsx scripts/publish --stage alpha --tag next",
+    "publish:beta": "tsx scripts/publish --stage beta --tag next"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {

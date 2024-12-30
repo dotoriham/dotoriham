@@ -17,10 +17,10 @@
   "dependencies": {
     "@dotoriham/animate": "^0.1.14",
     "@dotoriham/icons": "workspace:*",
-    "@dotoriham/react-utils": "workspace:*",
-    "eslint-config-dotoriham": "workspace:*"
+    "@dotoriham/react-utils": "workspace:^"
   },
   "devDependencies": {
+    "eslint-config-dotoriham": "workspace:*",
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
     "@storybook/react": "^7.0.5",

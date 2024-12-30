@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
+
+import classes from './switchable-button.module.css';
 import { createPolymorphicComponent, getClassNames } from '../../utils';
 import { Box, BoxProps } from '../box';
-import classes from './switchable-button.module.css';
 
 const cx = getClassNames(classes);
 
@@ -25,12 +26,9 @@ interface SwitchableButtonProps extends BoxProps {
  * @example checkout 아이콘을 checked에 따라서 아이콘을 스위칭함
  */
 const _SwitchableButton = ({
-  style,
   activeComponent,
   inactiveComponent,
   isActive,
-  className,
-  children,
   ...rest
 }: SwitchableButtonProps) => {
   return (

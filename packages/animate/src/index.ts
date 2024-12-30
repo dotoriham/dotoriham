@@ -1,3 +1,2 @@
-import 'framer-motion';
-
-export * from 'framer-motion';
+export * from './types';
+export * from './components';

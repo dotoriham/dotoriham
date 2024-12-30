@@ -3,7 +3,6 @@
   "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
     "rootDir": "src",
-
     "declaration": true,
     "declarationDir": "lib",
     "target": "ES2015",

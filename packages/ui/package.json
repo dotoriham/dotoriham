@@ -15,7 +15,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@dotoriham/animate": "workspace:*",
+    "@dotoriham/animate": "^0.1.0",
     "@dotoriham/icons": "workspace:*",
     "@dotoriham/react-utils": "workspace:*",
     "eslint-config-dotoriham": "workspace:*"

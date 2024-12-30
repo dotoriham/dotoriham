@@ -2937,7 +2937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dotoriham/animate@workspace:*, @dotoriham/animate@workspace:packages/animate":
+"@dotoriham/animate@npm:^0.1.0, @dotoriham/animate@workspace:*, @dotoriham/animate@workspace:packages/animate":
   version: 0.0.0-use.local
   resolution: "@dotoriham/animate@workspace:packages/animate"
   dependencies:
@@ -3324,7 +3324,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dotoriham/ui@workspace:packages/ui"
   dependencies:
-    "@dotoriham/animate": "workspace:*"
+    "@dotoriham/animate": "npm:^0.1.0"
     "@dotoriham/icons": "workspace:*"
     "@dotoriham/prettier-config": "workspace:*"
     "@dotoriham/react-utils": "workspace:*"

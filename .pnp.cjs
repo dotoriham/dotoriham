@@ -6365,7 +6365,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@dotoriham/ui", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/ui"],\
           ["@dotoriham/animate", "workspace:packages/animate"],\
-          ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/react-utils", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils"],\
@@ -6403,7 +6402,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@dotoriham/ui", "workspace:packages/ui"],\
           ["@dotoriham/animate", "workspace:packages/animate"],\
-          ["@dotoriham/hooks", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/hooks"],\
           ["@dotoriham/icons", "virtual:68620cb359f8694f4ffd9b74b36aac477c0c872c939ac1df924ab29e6497cc7ccbe2732b028b37d4fe88bcc9f8b7695b4868b98437fdc87fcec8528778cf4629#workspace:packages/icons"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/react-utils", "virtual:8f334bb8340a9549352308860cc185362a911efcecb7ee42c0cbb675bbb4d8e33c1caa2e759045dea6b5fc149064f5a98558eb94ad370107a8f8891b63720856#workspace:packages/react-utils"],\

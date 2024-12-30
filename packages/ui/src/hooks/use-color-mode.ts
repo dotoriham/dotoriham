@@ -1,9 +1,10 @@
 'use client';
+
+import { useIsomorphicEffect } from './use-isomorphic-effect';
 import {
   ColorMode,
   setColorModeAttribute,
 } from '../utils/color-mode-attribute';
-import { useIsomorphicEffect } from '@dotoriham/hooks';
 
 interface ColorModeOptions {
   colorMode?: ColorMode;

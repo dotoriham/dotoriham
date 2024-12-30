@@ -1,7 +1,8 @@
 import { ReactNode, useRef, useState } from 'react';
 
-import { useIsomorphicEffect } from '@dotoriham/hooks';
 import { createPortal } from 'react-dom';
+
+import { useIsomorphicEffect } from '../../hooks';
 
 export interface PortalProps {
   children: ReactNode;

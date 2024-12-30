@@ -1,7 +1,7 @@
-import { useToggle } from '@dotoriham/hooks';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Dimmed, DimmedProps } from './dimmed';
+import { useToggle } from '../../hooks';
 import { Button } from '../button';
 
 const meta: Meta<typeof Dimmed> = {

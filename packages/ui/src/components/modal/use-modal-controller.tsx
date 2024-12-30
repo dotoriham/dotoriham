@@ -1,4 +1,4 @@
-import { useUncontrolled } from '@dotoriham/hooks';
+import { useUncontrolled } from '../../hooks';
 
 interface UseModalControllerProps {
   isOpen?: boolean;

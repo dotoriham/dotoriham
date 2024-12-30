@@ -1,7 +1,7 @@
-import { useToggle } from '@dotoriham/hooks';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Popover } from './popover';
+import { useToggle } from '../../hooks';
 import { Button } from '../button';
 
 const meta: Meta<typeof Popover> = {

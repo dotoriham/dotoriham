@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@dotoriham/animate": "workspace:*",
-    "@dotoriham/hooks": "workspace:*",
     "@dotoriham/icons": "workspace:*",
     "@dotoriham/react-utils": "workspace:*",
     "@dotoriham/store": "workspace:*",

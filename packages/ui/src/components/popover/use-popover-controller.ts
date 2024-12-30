@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import { useUncontrolled } from '@dotoriham/hooks';
+import { useUncontrolled } from '../../hooks';
 
 interface UsePopoverControllerProps {
   isOpen?: boolean;

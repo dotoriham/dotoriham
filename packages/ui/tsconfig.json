@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "../../configs/tsconfig/react-library.json",
-    "../../configs/tsconfig/css-module.json"
-  ],
+  "extends": ["../../configs/tsconfig/react-library.json"],
   "include": [
     "src",
     "types",
@@ -12,5 +9,8 @@
     "../../packages/**/*.ts",
     "../../packages/**/*.tsx"
   ],
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
   "exclude": ["dist", "build", "node_modules"]
 }

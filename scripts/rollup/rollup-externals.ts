@@ -10,6 +10,7 @@ export const ROLLUP_EXTERNALS = [
   'klona/full',
   'highlight.js/lib/languages/typescript',
   'react-is',
+  'framer-motion',
   'react/jsx-runtime',
   ...getPackagesList().map((pkg) => pkg.packageJson.name!),
   ...Object.keys({

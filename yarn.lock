@@ -600,21 +600,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.16.7, @babel/helper-module-imports@npm:^7.21.4":
-  version: 7.21.4
-  resolution: "@babel/helper-module-imports@npm:7.21.4"
-  dependencies:
-    "@babel/types": "npm:^7.21.4"
-  checksum: cb276e37180f541f379b36f6aa9f1bd2d2ae50ebc967bb342d2f42acf7fb4f97c474c4e82262b26f3a89c2f11c3efad54dfca152d5b86db9d3e4810fdb92121b
-  languageName: node
-  linkType: hard
-
 "@babel/helper-module-imports@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/helper-module-imports@npm:7.18.6"
   dependencies:
     "@babel/types": "npm:^7.18.6"
   checksum: 75b0d510271c2d220c426ec1174666febbe8ce520e66f99f87e8944acddaf5d1e88167fe500a1c8e46a770a5cb916e566d3b514ec0af6cbdac93089ed8200716
+  languageName: node
+  linkType: hard
+
+"@babel/helper-module-imports@npm:^7.21.4":
+  version: 7.21.4
+  resolution: "@babel/helper-module-imports@npm:7.21.4"
+  dependencies:
+    "@babel/types": "npm:^7.21.4"
+  checksum: cb276e37180f541f379b36f6aa9f1bd2d2ae50ebc967bb342d2f42acf7fb4f97c474c4e82262b26f3a89c2f11c3efad54dfca152d5b86db9d3e4810fdb92121b
   languageName: node
   linkType: hard
 
@@ -2241,15 +2241,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.18.3":
-  version: 7.21.0
-  resolution: "@babel/runtime@npm:7.21.0"
-  dependencies:
-    regenerator-runtime: "npm:^0.13.11"
-  checksum: 35acd166298d57d14444396c33b3f0b76dbb82fd7440f38aa1605beb2ec9743a693b21730b4de4b85eaf36b0fc94c94bb0ebcd80e05409c36b24da27d458ba41
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.9.2":
   version: 7.23.8
   resolution: "@babel/runtime@npm:7.23.8"
@@ -3254,30 +3245,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/styles@workspace:packages/dotoriham-styles":
-  version: 0.0.0-use.local
-  resolution: "@dotoriham/styles@workspace:packages/dotoriham-styles"
-  dependencies:
-    "@dotoriham/prettier-config": "workspace:*"
-    "@dotoriham/stylelint-config": "workspace:*"
-    "@emotion/react": "npm:^11.10.6"
-    "@emotion/styled": "npm:^11.10.6"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    eslint: "npm:8.32.0"
-    eslint-config-dotoriham: "workspace:*"
-    prettier: "npm:^3.1.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    tsconfig: "workspace:*"
-    typescript: "npm:5.0.4"
-  peerDependencies:
-    "@emotion/react": ^11.10.6
-    react: 18.2.0
-    react-dom: 18.2.0
-  languageName: unknown
-  linkType: soft
-
 "@dotoriham/swiper@workspace:packages/dotoriham-swiper":
   version: 0.0.0-use.local
   resolution: "@dotoriham/swiper@workspace:packages/dotoriham-swiper"
@@ -3387,152 +3354,6 @@ __metadata:
     react-dom: ^18
   languageName: unknown
   linkType: soft
-
-"@emotion/babel-plugin@npm:^11.10.6":
-  version: 11.10.6
-  resolution: "@emotion/babel-plugin@npm:11.10.6"
-  dependencies:
-    "@babel/helper-module-imports": "npm:^7.16.7"
-    "@babel/runtime": "npm:^7.18.3"
-    "@emotion/hash": "npm:^0.9.0"
-    "@emotion/memoize": "npm:^0.8.0"
-    "@emotion/serialize": "npm:^1.1.1"
-    babel-plugin-macros: "npm:^3.1.0"
-    convert-source-map: "npm:^1.5.0"
-    escape-string-regexp: "npm:^4.0.0"
-    find-root: "npm:^1.1.0"
-    source-map: "npm:^0.5.7"
-    stylis: "npm:4.1.3"
-  checksum: 3d427c49cb2ac44208a536e92d0bcfb6ba8270373f93b672da588fec8585fe5d0845d360e5d0af00f36fed3660c2be33f2f04851e614db626779df0524bab3b1
-  languageName: node
-  linkType: hard
-
-"@emotion/cache@npm:^11.10.5":
-  version: 11.10.7
-  resolution: "@emotion/cache@npm:11.10.7"
-  dependencies:
-    "@emotion/memoize": "npm:^0.8.0"
-    "@emotion/sheet": "npm:^1.2.1"
-    "@emotion/utils": "npm:^1.2.0"
-    "@emotion/weak-memoize": "npm:^0.3.0"
-    stylis: "npm:4.1.3"
-  checksum: 6790f3d98d783f9bd4aa8d9dd03016c14a096ec93c8f15d76fb9a3f5bb7f8669839dfdf343765b0da77be6974a787f95c21f55ea0354ba348e821d1d3bf16b65
-  languageName: node
-  linkType: hard
-
-"@emotion/hash@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "@emotion/hash@npm:0.9.0"
-  checksum: b63428f7c8186607acdca5d003700cecf0ded519d0b5c5cc3b3154eafcad6ff433f8361bd2bac8882715b557e6f06945694aeb6ba8b25c6095d7a88570e2e0bb
-  languageName: node
-  linkType: hard
-
-"@emotion/is-prop-valid@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@emotion/is-prop-valid@npm:1.2.0"
-  dependencies:
-    "@emotion/memoize": "npm:^0.8.0"
-  checksum: 1827efd49ac095c56888a5ef59e87fa998ded2827877465c19b5530c5f09cb4ac5912e33c278840d25bd79d98adfe51089a636fdc94c9e6d92fadeb55aeb7bcd
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@emotion/memoize@npm:0.8.0"
-  checksum: c87bb110b829edd8e1c13b90a6bc37cebc39af29c7599a1e66a48e06f9bec43e8e53495ba86278cc52e7589549492c8dfdc81d19f4fdec0cee6ba13d2ad2c928
-  languageName: node
-  linkType: hard
-
-"@emotion/react@npm:^11.10.6":
-  version: 11.10.6
-  resolution: "@emotion/react@npm:11.10.6"
-  dependencies:
-    "@babel/runtime": "npm:^7.18.3"
-    "@emotion/babel-plugin": "npm:^11.10.6"
-    "@emotion/cache": "npm:^11.10.5"
-    "@emotion/serialize": "npm:^1.1.1"
-    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.0"
-    "@emotion/utils": "npm:^1.2.0"
-    "@emotion/weak-memoize": "npm:^0.3.0"
-    hoist-non-react-statics: "npm:^3.3.1"
-  peerDependencies:
-    react: ">=16.8.0"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 2a51d48957a212d3fab0ae274c36d2e4d2e0de646bae864c164c66ac73e7814aa450b3802480a9718cdb3c8ecee998986b7dadd50c973374cd03e87c491d4d24
-  languageName: node
-  linkType: hard
-
-"@emotion/serialize@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@emotion/serialize@npm:1.1.1"
-  dependencies:
-    "@emotion/hash": "npm:^0.9.0"
-    "@emotion/memoize": "npm:^0.8.0"
-    "@emotion/unitless": "npm:^0.8.0"
-    "@emotion/utils": "npm:^1.2.0"
-    csstype: "npm:^3.0.2"
-  checksum: ac5338e33d71e33a7017735bca0d8eef27f5dc33adec7fd0cd6710f94588bc181fcd3e816da592af0acb0494bebb45424373f99447ad5e8601509eb6c25ab02d
-  languageName: node
-  linkType: hard
-
-"@emotion/sheet@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@emotion/sheet@npm:1.2.1"
-  checksum: c1140f7ad74c992ac410c3aa0a795e2a47269e7ebf9886dc120ff0b72c55531239f0b5c495438549ef33689f501df73f1787cfaff41e62a76bdfbc04236adf1d
-  languageName: node
-  linkType: hard
-
-"@emotion/styled@npm:^11.10.6":
-  version: 11.10.6
-  resolution: "@emotion/styled@npm:11.10.6"
-  dependencies:
-    "@babel/runtime": "npm:^7.18.3"
-    "@emotion/babel-plugin": "npm:^11.10.6"
-    "@emotion/is-prop-valid": "npm:^1.2.0"
-    "@emotion/serialize": "npm:^1.1.1"
-    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.0"
-    "@emotion/utils": "npm:^1.2.0"
-  peerDependencies:
-    "@emotion/react": ^11.0.0-rc.0
-    react: ">=16.8.0"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 63ba98d355128ed42ca258d8a895d7bc802dd53bd961491fa0f3cf7ec24c3b9333a5156a65b76bc8abc4b7ee72048e2c9850a3de825e2d7ea6d2255a30699be6
-  languageName: node
-  linkType: hard
-
-"@emotion/unitless@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@emotion/unitless@npm:0.8.0"
-  checksum: 176141117ed23c0eb6e53a054a69c63e17ae532ec4210907a20b2208f91771821835f1c63dd2ec63e30e22fcc984026d7f933773ee6526dd038e0850919fae7a
-  languageName: node
-  linkType: hard
-
-"@emotion/use-insertion-effect-with-fallbacks@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@emotion/use-insertion-effect-with-fallbacks@npm:1.0.0"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 839251cc9c46eee1477eb71bb50c26e8c171fdc95295d7df87432a3be9e454ecf886c2e05cafe4128ab6023184bf2840acf25c3f3308123348f6756376f9c4ba
-  languageName: node
-  linkType: hard
-
-"@emotion/utils@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@emotion/utils@npm:1.2.0"
-  checksum: 21826f95e2cfe7b185d4e7151f02d891682cd32d98b4c5f8c202bca7771e219472677c8ebca82f5bc26fc0098073af6814361bbfcea0de3aac1925d8198985b3
-  languageName: node
-  linkType: hard
-
-"@emotion/weak-memoize@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@emotion/weak-memoize@npm:0.3.0"
-  checksum: f43ef4c8b7de70d9fa5eb3105921724651e4188e895beb71f0c5919dc899a7b8743e1fdd99d38b9092dd5722c7be2312ebb47fbdad0c4e38bea58f6df5885cc0
-  languageName: node
-  linkType: hard
 
 "@esbuild/aix-ppc64@npm:0.19.11":
   version: 0.19.11
@@ -8718,17 +8539,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "babel-plugin-macros@npm:3.1.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.12.5"
-    cosmiconfig: "npm:^7.0.0"
-    resolve: "npm:^1.19.0"
-  checksum: 30be6ca45e9a124c58ca00af9a0753e5410ec0b79a737714fc4722bbbeb693e55d9258f05c437145ef4a867c2d1603e06a1c292d66c243ce1227458c8ea2ca8c
-  languageName: node
-  linkType: hard
-
 "babel-plugin-polyfill-corejs2@npm:^0.3.3":
   version: 0.3.3
   resolution: "babel-plugin-polyfill-corejs2@npm:0.3.3"
@@ -9785,7 +9595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convert-source-map@npm:^1.4.0, convert-source-map@npm:^1.5.0, convert-source-map@npm:^1.7.0":
+"convert-source-map@npm:^1.4.0, convert-source-map@npm:^1.7.0":
   version: 1.9.0
   resolution: "convert-source-map@npm:1.9.0"
   checksum: dc55a1f28ddd0e9485ef13565f8f756b342f9a46c4ae18b843fe3c30c675d058d6a4823eff86d472f187b176f0adf51ea7b69ea38be34be4a63cbbf91b0593c8
@@ -9857,7 +9667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^7.0.0, cosmiconfig@npm:^7.0.1, cosmiconfig@npm:^7.1.0":
+"cosmiconfig@npm:^7.0.1, cosmiconfig@npm:^7.1.0":
   version: 7.1.0
   resolution: "cosmiconfig@npm:7.1.0"
   dependencies:
@@ -12839,13 +12649,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-root@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "find-root@npm:1.1.0"
-  checksum: caa799c976a14925ba7f31ca1a226fe73d3aa270f4f1b623fcfeb1c6e263111db4beb807d8acd31bd4d48d44c343b93688a9288dfbccca27463c36a0301b0bb9
-  languageName: node
-  linkType: hard
-
 "find-up@npm:^2.0.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0"
@@ -13825,7 +13628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hoist-non-react-statics@npm:^3.3.0, hoist-non-react-statics@npm:^3.3.1, hoist-non-react-statics@npm:^3.3.2":
+"hoist-non-react-statics@npm:^3.3.0, hoist-non-react-statics@npm:^3.3.2":
   version: 3.3.2
   resolution: "hoist-non-react-statics@npm:3.3.2"
   dependencies:
@@ -20842,7 +20645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.5.6, source-map@npm:^0.5.7":
+"source-map@npm:^0.5.6":
   version: 0.5.7
   resolution: "source-map@npm:0.5.7"
   checksum: 9b4ac749ec5b5831cad1f8cc4c19c4298ebc7474b24a0acf293e2f040f03f8eeccb3d01f12aa0f90cf46d555c887e03912b83a042c627f419bda5152d89c5269
@@ -21473,13 +21276,6 @@ __metadata:
   bin:
     stylelint: bin/stylelint.js
   checksum: 3faf0de4654405c57f3f7e36a80d40694fb7d50d490fb8a07f6e822c534855651acd66499a6cbdd387920f76ec79f8bbe65ca5807bfc2361c9d06a0ba92d8ed8
-  languageName: node
-  linkType: hard
-
-"stylis@npm:4.1.3":
-  version: 4.1.3
-  resolution: "stylis@npm:4.1.3"
-  checksum: 0065b6954f7007ded81598d8390c92682dd312f4d9a7f928e70190f716ee4019e29f5dd364016f8428b8ef9b5b6b950b2be717d76a7d813302cdbf1321084374
   languageName: node
   linkType: hard
 

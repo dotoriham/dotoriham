@@ -1,5 +1,5 @@
 {
-  "include": ["./src", "../../../@types"],
+  "include": ["./src", "../../@types"],
   "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
     "rootDir": "src",
@@ -15,7 +15,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
-    "composite": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "composite": true
   }
 }

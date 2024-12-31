@@ -7,8 +7,5 @@
     "nextjs.json",
     "react-library.json",
     "css-modules.json"
-  ],
-  "devDependencies": {
-    "typescript-plugin-css-modules": "^5.0.2"
-  }
+  ]
 }

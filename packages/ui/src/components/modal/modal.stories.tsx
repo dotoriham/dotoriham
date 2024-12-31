@@ -28,11 +28,4 @@ export const Base: Story = {
   render: () => <BaseComponent />,
 };
 
-const CompoundComponent = () => {
-  return <Modal />;
-};
-export const CompoundPattern: Story = {
-  render: () => <CompoundComponent />,
-};
-
 export default meta;

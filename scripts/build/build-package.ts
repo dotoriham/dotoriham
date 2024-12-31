@@ -8,6 +8,7 @@ import { generateDts } from './generate.dts';
 import { createPackageConfig } from 'scripts/rollup/create-package-config';
 import { compile } from './complie';
 import { getBuildTime } from './get-build-time';
+import { generateCSS } from './generate-css';
 
 const logger = createLogger('build-package');
 
@@ -32,6 +33,7 @@ export async function buildPackage(inputPackageName: string) {
     const config = createPackageConfig(packagePath);
     logger.log(`Compiling ${formattedPackageName} package with rollup...`);
 
+    await generateCSS();
     await compile(config);
 
     if (await fs.pathExists(path.join(packagePath, 'esm/index.css'))) {

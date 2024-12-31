@@ -1,20 +1,10 @@
 {
-  "include": [
-    "./scripts",
-    "./@types",
-    "./packages/@docs/*/src",
-    "./packages/@dotoriham/*/src",
-    "./packages/@dotorihamx/*/src",
-    "./apps/*"
-  ],
+  "include": ["./scripts", "./@types", "./packages/*", "./apps/*"],
   "exclude": [
     "node_modules",
-    "./packages/@docs/*/esm/**/*",
-    "./packages/@docs/*/cjs/**/*",
-    "./packages/@docs/*/lib/**/*",
-    "./packages/@dotoriham/*/lib/**/*",
-    "./packages/@dotoriham/*/esm/**/*",
-    "./packages/@dotoriham/*/cjs/**/*"
+    "./packages/*/lib/**/*",
+    "./packages/*/esm/**/*",
+    "./packages/*/cjs/**/*"
   ],
   "compilerOptions": {
     "baseUrl": ".",

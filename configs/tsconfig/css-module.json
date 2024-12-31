@@ -1,8 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
-  "compilerOptions": {
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
-  },
   "exclude": ["node_modules"]
 }

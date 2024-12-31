@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from '@dotoriham/animate';
+import { Animate, AnimatePresence } from '@dotoriham/animate';
 
 interface DimmedProps {
   isOpen: boolean;
@@ -9,7 +9,7 @@ export const Dimmed = ({ isOpen, onClick }: DimmedProps) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <Animate
           onClick={onClick}
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.6 }}

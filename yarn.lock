@@ -3069,7 +3069,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/icons@workspace:*, @dotoriham/icons@workspace:packages/icons":
+"@dotoriham/icons@npm:^0.1.0, @dotoriham/icons@workspace:*, @dotoriham/icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@dotoriham/icons@workspace:packages/icons"
   dependencies:
@@ -3194,7 +3194,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/react-utils@workspace:^, @dotoriham/react-utils@workspace:packages/react-utils":
+"@dotoriham/react-utils@npm:^0.1.0, @dotoriham/react-utils@workspace:packages/react-utils":
   version: 0.0.0-use.local
   resolution: "@dotoriham/react-utils@workspace:packages/react-utils"
   dependencies:
@@ -3325,9 +3325,9 @@ __metadata:
   resolution: "@dotoriham/ui@workspace:packages/ui"
   dependencies:
     "@dotoriham/animate": "npm:^0.1.14"
-    "@dotoriham/icons": "workspace:*"
+    "@dotoriham/icons": "npm:^0.1.0"
     "@dotoriham/prettier-config": "workspace:*"
-    "@dotoriham/react-utils": "workspace:^"
+    "@dotoriham/react-utils": "npm:^0.1.0"
     "@dotoriham/stylelint-config": "workspace:*"
     "@storybook/react": "npm:^7.0.5"
     "@testing-library/jest-dom": "npm:^6.2.0"

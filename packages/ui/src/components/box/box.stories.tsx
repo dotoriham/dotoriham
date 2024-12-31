@@ -1,10 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Box } from './box';
 
 const meta: Meta<typeof Box> = {
-  title: 'Box',
   component: Box,
   decorators: [(Story) => <Story />],
+  title: 'Box',
 };
 
 type Story = StoryObj<typeof Box>;

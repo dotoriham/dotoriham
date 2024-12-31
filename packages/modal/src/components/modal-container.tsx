@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { AnimatePresence, motion } from '@dotoriham/animate';
+import { AnimatePresence, Animate } from '@dotoriham/animate';
 
 import { ModalVariantType, modalVariants } from './modal-utils';
 import classes from './modal.module.css';
@@ -31,7 +31,7 @@ export const ModalContainer = ({
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <Animate
           variants={modalVariants[variant]}
           initial="hidden"
           animate="visible"
@@ -44,7 +44,7 @@ export const ModalContainer = ({
             }}>
             {children}
           </div>
-        </motion.div>
+        </Animate>
       )}
     </AnimatePresence>
   );

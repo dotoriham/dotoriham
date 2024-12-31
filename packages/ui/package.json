@@ -16,11 +16,10 @@
   },
   "dependencies": {
     "@dotoriham/animate": "^0.1.14",
-    "@dotoriham/icons": "workspace:*",
-    "@dotoriham/react-utils": "workspace:^"
+    "@dotoriham/icons": "^0.1.0",
+    "@dotoriham/react-utils": "^0.1.0"
   },
   "devDependencies": {
-    "eslint-config-dotoriham": "workspace:*",
     "@dotoriham/prettier-config": "workspace:*",
     "@dotoriham/stylelint-config": "workspace:*",
     "@storybook/react": "^7.0.5",
@@ -31,6 +30,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/ui": "^1.1.3",
     "eslint": "8.32.0",
+    "eslint-config-dotoriham": "workspace:*",
     "happy-dom": "^13.3.8",
     "hygen": "^6.2.11",
     "prettier": "^3.1.1",

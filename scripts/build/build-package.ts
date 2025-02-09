@@ -34,7 +34,7 @@ export async function buildPackage(inputPackageName: string) {
 
     logger.log(`Compiling ${formattedPackageName} package with rollup...`);
 
-    // await generateCSS();
+    await generateCSS();
     await compile(config);
 
     if (await fs.pathExists(path.join(packagePath, 'esm/index.css'))) {

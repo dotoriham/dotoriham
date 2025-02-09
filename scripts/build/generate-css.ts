@@ -46,10 +46,10 @@ async function generateCSSLayers() {
   });
 }
 
-// Generates individual css files for each @dotoriham/core component
+// Generates individual css files for each @dotoriham/ui component
 export async function generateCoreCSS() {
   const packagesPath = glob.convertPathToPattern(getPath('packages'));
-  const files = await glob(`${packagesPath}/@dotoriham/ui/src/**/*.css`);
+  const files = await glob(`${packagesPath}/ui/src/**/*.css`);
   const modules = files.filter((file) => file.endsWith('.module.css'));
   const global = files.find((file) => file.endsWith('global.css'))!;
 

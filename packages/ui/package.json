@@ -14,7 +14,8 @@
         "types": "./lib/index.d.ts",
         "default": "./cjs/index.cjs"
       }
-    }
+    },
+    "./styles.css": "./styles.css"
   },
   "license": "MIT",
   "scripts": {

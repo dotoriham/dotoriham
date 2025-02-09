@@ -102,6 +102,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/dotoriham-utils"\
     },\
     {\
+      "name": "@dotoriham/drag-drop",\
+      "reference": "workspace:packages/drag-drop"\
+    },\
+    {\
       "name": "@dotoriham/event-manager",\
       "reference": "workspace:packages/event-manager"\
     },\
@@ -139,6 +143,7 @@ const RAW_RUNTIME_STATE =
   "fallbackExclusionList": [\
     ["@dotoriham/animate", ["workspace:packages/animate"]],\
     ["@dotoriham/bottomsheet", ["workspace:packages/dotoriham-bottomsheet"]],\
+    ["@dotoriham/drag-drop", ["workspace:packages/drag-drop"]],\
     ["@dotoriham/dragdrop", ["workspace:packages/dotoriham-dragdrop"]],\
     ["@dotoriham/dropdown", ["workspace:packages/dotoriham-dropdown"]],\
     ["@dotoriham/error-boundary", ["workspace:packages/dotoriham-errorboundary"]],\
@@ -5825,6 +5830,22 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/dotoriham-bottomsheet/",\
         "packageDependencies": [\
           ["@dotoriham/bottomsheet", "workspace:packages/dotoriham-bottomsheet"],\
+          ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
+          ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
+          ["eslint", "npm:8.32.0"],\
+          ["eslint-config-dotoriham", "virtual:6f6aba88043c03c8e9ee3ee8135c66242b50fc588e623e5bf52e0234330b8ccf5b4d2f0644e887ef7151e861fea92f2a9ca3b95a478b1214881662601e8c66b6#workspace:configs/eslint-config-dotoriham"],\
+          ["prettier", "npm:3.1.1"],\
+          ["tsconfig", "workspace:configs/tsconfig"],\
+          ["typescript", "patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@dotoriham/drag-drop", [\
+      ["workspace:packages/drag-drop", {\
+        "packageLocation": "./packages/drag-drop/",\
+        "packageDependencies": [\
+          ["@dotoriham/drag-drop", "workspace:packages/drag-drop"],\
           ["@dotoriham/prettier-config", "workspace:configs/prettier-config"],\
           ["@dotoriham/stylelint-config", "workspace:configs/stylelint-config"],\
           ["eslint", "npm:8.32.0"],\

@@ -91,7 +91,8 @@ async function publish() {
   await git.push();
 
   // 빌드 후 생성된 .css 파일들을 삭제합니다.
-  await fs.remove(path.join(packagePath, 'styles.css'));
+  await git.add('.');
+  await git.reset(['--hard']);
 }
 
 publish();

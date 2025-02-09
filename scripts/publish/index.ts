@@ -89,6 +89,9 @@ async function publish() {
   await git.add([path.join(packagePath, 'package.json')]);
   await git.commit(`[release] Publish ${packageName}@${incrementedVersion}`);
   await git.push();
+
+  // 빌드 후 생성된 .css 파일들을 삭제합니다.
+  await fs.remove(path.join(packagePath, 'styles.css'));
 }
 
 publish();

@@ -62,8 +62,8 @@ const _Button = ({
     '--button-height': getSize('button-height', size),
     '--button-padding-x': getSize('button-padding-x', size),
     ...computedButtonColor(variant, color),
-    '--button-radius': radius === undefined ? undefined : getRadius(radius),
     '--button-font-size': getSize('dotoriham-font-size', size),
+    '--button-radius': radius === undefined ? undefined : getRadius(radius),
     ...style,
   } as CSSProperties;
 

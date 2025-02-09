@@ -1,5 +1,6 @@
 import React from 'react';
 import { DotorihamThemeProvider, useColorMode } from '../packages/ui';
+import '../packages/ui/src/styles/global.css';
 
 const decorators = [
   (Story) => {

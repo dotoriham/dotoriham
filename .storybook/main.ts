@@ -15,6 +15,10 @@ const config: StorybookConfig = {
       directory: '../packages/modal/src/components',
       titlePrefix: 'Modal',
     },
+    {
+      directory: '../packages/drag-drop/src/components',
+      titlePrefix: 'Drag and Drop',
+    },
   ],
   addons: [
     path.dirname(

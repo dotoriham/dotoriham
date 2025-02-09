@@ -53,7 +53,7 @@ export async function generateCoreCSS() {
   const modules = files.filter((file) => file.endsWith('.module.css'));
   const global = files.find((file) => file.endsWith('global.css'))!;
 
-  const outputFolder = getPath('packages/@dotoriham/ui/styles');
+  const outputFolder = getPath('packages/ui/styles');
 
   await fs.ensureDir(outputFolder);
 

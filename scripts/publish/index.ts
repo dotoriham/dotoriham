@@ -80,6 +80,7 @@ async function publish() {
     spaces: 2,
   });
   await buildPackage(packageName);
+
   await publishPackage({
     packagePath,
     name: packageName,

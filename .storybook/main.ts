@@ -36,6 +36,6 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
     disableTelemetry: true,
-  } as any,
+  },
 };
 export default config;

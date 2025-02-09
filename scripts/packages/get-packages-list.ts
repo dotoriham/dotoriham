@@ -19,11 +19,7 @@ export function getPackagesList() {
       const packages = fs.readdirSync(path.join(basePath, namespacePath));
 
       for (const packageName of packages) {
-        if (
-          fs
-            .lstatSync(path.join(basePath, namespacePath, packageName))
-            .isDirectory()
-        ) {
+        if (packageName === 'package.json') {
           srcPaths.push(path.join(namespacePath, packageName));
         }
       }
@@ -33,7 +29,8 @@ export function getPackagesList() {
   const packages: Package[] = [];
 
   for (const srcPath of srcPaths) {
-    const packageJsonPath = path.join(basePath, srcPath, 'package.json');
+    const packageJsonPath = path.join(basePath, srcPath);
+
     if (fs.pathExistsSync(packageJsonPath)) {
       packages.push({
         path: path.join(basePath, srcPath),

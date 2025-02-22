@@ -19,6 +19,10 @@ const config: StorybookConfig = {
       directory: '../packages/drag-drop/src/components',
       titlePrefix: 'Drag and Drop',
     },
+    {
+      directory: '../packages/icons/src/stories',
+      titlePrefix: 'Icons',
+    },
   ],
   addons: [
     path.dirname(

@@ -23,11 +23,11 @@ export interface FlexProps extends BoxProps {
 const _Flex = ({
   children,
   className,
-  gap,
+  gap = 0,
+  direction = 'row',
   align,
   justify,
   wrap,
-  direction,
   style,
   ...rest
 }: FlexProps) => {

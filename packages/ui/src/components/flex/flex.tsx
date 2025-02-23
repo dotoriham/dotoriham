@@ -25,9 +25,9 @@ const _Flex = ({
   className,
   gap = 0,
   direction = 'row',
-  align,
-  justify,
-  wrap,
+  align = 'flex-start',
+  justify = 'flex-start',
+  wrap = 'inherit',
   style,
   ...rest
 }: FlexProps) => {

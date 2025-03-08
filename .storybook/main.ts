@@ -23,6 +23,10 @@ const config: StorybookConfig = {
       directory: '../packages/icons/src/stories',
       titlePrefix: 'Icons',
     },
+    {
+      directory: '../packages/mounted',
+      titlePrefix: 'Mounted',
+    },
   ],
   addons: [
     path.dirname(

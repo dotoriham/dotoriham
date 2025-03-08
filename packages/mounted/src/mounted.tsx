@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 
 interface CommonProps {
   transition?: {
@@ -10,6 +10,7 @@ interface CommonProps {
     rootMargin?: string;
     threshold?: number;
   };
+  children: ReactNode;
 }
 
 interface PropsWithSuspenseTrue extends CommonProps {
@@ -24,5 +25,9 @@ interface PropsWithSuspenseFalse extends CommonProps {
 type Props = PropsWithSuspenseTrue | PropsWithSuspenseFalse;
 
 export const Mounted = (props: Props) => {
-  return null;
+  if (props.suspense) {
+    return <Suspense fallback={props.fallback}>{props.children}</Suspense>;
+  }
+
+  return <>{props.children}</>;
 };

@@ -3068,7 +3068,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dotoriham/icons@npm:^0.1.0, @dotoriham/icons@workspace:*, @dotoriham/icons@workspace:packages/icons":
+"@dotoriham/icons@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@dotoriham/icons@npm:0.1.0"
+  dependencies:
+    "@svgr/plugin-jsx": "npm:^6.3.1"
+    "@svgr/plugin-prettier": "npm:^6.3.1"
+  peerDependencies:
+    "@svgr/core": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 533405b72a8de20757b92283ccfb624504891148564faf04645749e37dffa5e2808a2edd1559f9ee368bc5b00e8a79a96c1aa1db486dd24b3d814f99e48886b0
+  languageName: node
+  linkType: hard
+
+"@dotoriham/icons@workspace:*, @dotoriham/icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@dotoriham/icons@workspace:packages/icons"
   dependencies:
@@ -3132,12 +3146,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dotoriham/mounted@workspace:packages/mounted":
+  version: 0.0.0-use.local
+  resolution: "@dotoriham/mounted@workspace:packages/mounted"
+  dependencies:
+    "@dotoriham/prettier-config": "workspace:*"
+    "@dotoriham/stylelint-config": "workspace:*"
+    "@storybook/react": "npm:^8.3.2"
+    "@types/react": "npm:^18"
+    eslint: "npm:8.32.0"
+    eslint-config-dotoriham: "workspace:*"
+    prettier: "npm:^3.1.1"
+    react: "npm:18.2.0"
+    tsconfig: "workspace:*"
+    typescript: "npm:5.0.4"
+  peerDependencies:
+    react: ^18
+  languageName: unknown
+  linkType: soft
+
 "@dotoriham/package-template@workspace:packages/package-template":
   version: 0.0.0-use.local
   resolution: "@dotoriham/package-template@workspace:packages/package-template"
   dependencies:
     "@dotoriham/prettier-config": "workspace:*"
-    "@dotoriham/stylelint-config": "workspace:*"
     eslint: "npm:8.32.0"
     eslint-config-dotoriham: "workspace:*"
     prettier: "npm:^3.1.1"

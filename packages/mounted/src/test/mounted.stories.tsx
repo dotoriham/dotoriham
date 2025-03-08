@@ -5,7 +5,7 @@ import {
   SuspenseQueryProvider,
   useSuspenseQuery,
 } from './promise-client';
-import { Mounted } from '../mounted';
+import { Mounted } from '../components/mounted';
 
 export default {
   title: 'Mounted',
@@ -67,3 +67,64 @@ export const Lazy: Story = {
 };
 
 const isLazy = (index: number) => index % 3 === 0;
+
+export const Transition: Story = {
+  render: () => {
+    return (
+      <>
+        <Mounted transition={{ delay: 500 }} key="slide-up">
+          <div
+            style={{
+              backgroundColor: 'lightgray',
+              height: '500px',
+              marginBottom: '20px',
+              width: '500px',
+            }}>
+            Slide Up
+          </div>
+        </Mounted>
+
+        <div style={{ height: '700px' }} />
+
+        <Mounted transition={{ delay: 500 }} key="fade-in">
+          <div
+            style={{
+              backgroundColor: 'lightgray',
+              height: '500px',
+              marginBottom: '20px',
+              width: '500px',
+            }}>
+            Fade In
+          </div>
+        </Mounted>
+      </>
+    );
+  },
+};
+
+export const LazyTransition: Story = {
+  render: () => {
+    return (
+      <>
+        {[...Array(20)].map((_, i) => (
+          <Mounted
+            lazy={
+              isLazy(i) ? { freezeOnceVisible: true, threshold: 1 } : undefined
+            }
+            transition={isLazy(i) ? { delay: 0 } : undefined}
+            key={i}>
+            <div
+              style={{
+                backgroundColor: 'lightgray',
+                height: '500px',
+                marginBottom: '20px',
+                width: '500px',
+              }}>
+              {isLazy(i) ? 'Lazy' : 'Not Lazy'} {i}
+            </div>
+          </Mounted>
+        ))}
+      </>
+    );
+  },
+};

@@ -28,7 +28,6 @@ function UserNameWithSuspense() {
 }
 
 const promiseClient = new Client();
-
 export const Suspense: Story = {
   render: () => {
     return (
@@ -40,3 +39,31 @@ export const Suspense: Story = {
     );
   },
 };
+
+export const Lazy: Story = {
+  render: () => {
+    return (
+      <>
+        {[...Array(20)].map((_, i) => (
+          <Mounted
+            lazy={
+              isLazy(i) ? { freezeOnceVisible: true, threshold: 1 } : undefined
+            }
+            key={i}>
+            <div
+              style={{
+                backgroundColor: 'lightgray',
+                height: '500px',
+                marginBottom: '20px',
+                width: '500px',
+              }}>
+              {isLazy(i) ? 'Lazy' : 'Not Lazy'} {i}
+            </div>
+          </Mounted>
+        ))}
+      </>
+    );
+  },
+};
+
+const isLazy = (index: number) => index % 3 === 0;

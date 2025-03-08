@@ -6,6 +6,7 @@ import {
   useSuspenseQuery,
 } from './promise-client';
 import { Mounted } from '../components/mounted';
+import { withMounted } from '../components/with-mounted';
 
 export default {
   title: 'Mounted',
@@ -125,6 +126,42 @@ export const LazyTransition: Story = {
           </Mounted>
         ))}
       </>
+    );
+  },
+};
+
+const TestWithMounted = withMounted(
+  () => {
+    const data = useSuspenseQuery({
+      promiseFn: fetchMockUserWithDelay,
+      promiseKey: 'test',
+    });
+
+    return (
+      <div
+        style={{
+          backgroundColor: 'lightgray',
+          height: '500px',
+          marginBottom: '20px',
+          width: '500px',
+        }}>
+        withMounted {data.name}
+      </div>
+    );
+  },
+  {
+    fallback: <div>Loading...</div>,
+    suspense: true,
+    transition: { delay: 500, duration: 300 },
+  },
+);
+
+export const WithMounted: Story = {
+  render: () => {
+    return (
+      <SuspenseQueryProvider client={promiseClient}>
+        <TestWithMounted />
+      </SuspenseQueryProvider>
     );
   },
 };

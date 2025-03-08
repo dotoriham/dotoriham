@@ -6,7 +6,6 @@ import { Transition, TransitionProps } from './transition';
 interface CommonProps {
   transition?: TransitionProps;
   lazy?: LazyProps;
-  children: ReactNode;
 }
 
 interface PropsWithSuspenseTrue extends CommonProps {
@@ -20,7 +19,7 @@ interface PropsWithSuspenseFalse extends CommonProps {
 
 export type MountedProps = PropsWithSuspenseTrue | PropsWithSuspenseFalse;
 
-export const Mounted = (props: MountedProps) => {
+export const Mounted = (props: PropsWithChildren<MountedProps>) => {
   return (
     <SuspenseWrapper
       suspense={props.suspense}

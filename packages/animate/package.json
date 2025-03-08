@@ -27,14 +27,19 @@
   },
   "devDependencies": {
     "@dotoriham/prettier-config": "workspace:*",
-    "@dotoriham/stylelint-config": "workspace:*",
+    "@storybook/react": "^8.3.2",
+    "@types/react": "^18",
     "eslint": "8.32.0",
     "eslint-config-dotoriham": "workspace:*",
     "prettier": "^3.1.1",
+    "react": "18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "5.0.4"
   },
   "dependencies": {
     "framer-motion": "^11.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18"
   }
 }

@@ -27,6 +27,10 @@ const config: StorybookConfig = {
       directory: '../packages/mounted',
       titlePrefix: 'Mounted',
     },
+    {
+      directory: '../packages/animate',
+      titlePrefix: 'Animate',
+    },
   ],
   addons: [
     path.dirname(

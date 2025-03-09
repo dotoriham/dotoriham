@@ -8,7 +8,6 @@ export const useToggle = (initialValue = false) => {
       setValue(value);
       return;
     }
-
     setValue((value) => !value);
   }, []);
 

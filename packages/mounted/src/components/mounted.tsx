@@ -2,6 +2,7 @@ import { PropsWithChildren, ReactNode, Suspense } from 'react';
 
 import { Lazy, LazyProps } from './lazy';
 import { Transition, TransitionProps } from './transition';
+import { useIsMounted } from '../hooks/use-is-mounted';
 
 interface CommonProps {
   transition?: TransitionProps;
@@ -20,6 +21,12 @@ interface PropsWithSuspenseFalse extends CommonProps {
 export type MountedProps = PropsWithSuspenseTrue | PropsWithSuspenseFalse;
 
 export const Mounted = (props: PropsWithChildren<MountedProps>) => {
+  const isMounted = useIsMounted();
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <SuspenseWrapper
       suspense={props.suspense}

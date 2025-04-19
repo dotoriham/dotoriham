@@ -4,3 +4,4 @@ export { default as DotorihamLogoIcon } from './DotorihamLogo';
 export { default as DotorihamSimpleCharacterIcon } from './DotorihamSimpleCharacter';
 export { default as GoogleIconIcon } from './GoogleIcon';
 export { default as SymbolCharacterIcon } from './SymbolCharacter';
+export { default as SymbolIcon } from './Symbol';
